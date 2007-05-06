@@ -1,0 +1,10 @@
+{{ object.content }}
+
+----
+
+http://MiCHiLU.com{{ object.get_absolute_url }}
+
+ - Added at         {{ object.add_date|date:"r" }}
+ - Last modified at {{ object.last_mod|date:"r" }}
+
+{% include "cc.txt" %}

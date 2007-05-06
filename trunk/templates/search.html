@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+<html>
+<head>
+<title>{% block title %} - Search{% endblock %}</title>
+{% block meta %}
+<link rel="alternate" type="application/atom+xml" title="MiCHiLU.com" href="http://feeds.feedburner.com/michilu" />
+{% endblock %}
+</head>
+<body>
+{% block content %}
+<!-- Google Search Result Snippet Begins -->
+<div id="googleSearchUnitIframe"></div>
+
+<script type="text/javascript">
+   var googleSearchIframeName = 'googleSearchUnitIframe';
+   var googleSearchFrameWidth = 700;
+   var googleSearchFrameborder = 0 ;
+   var googleSearchDomain = 'www.google.co.jp';
+</script>
+<script type="text/javascript"
+         src="http://www.google.com/afsonline/show_afs_search.js">
+</script>
+<!-- Google Search Result Snippet Ends -->
+{% endblock %}    
+</body>
+</html>

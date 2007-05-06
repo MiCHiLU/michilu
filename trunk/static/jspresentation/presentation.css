@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+* {
+  white-space: nomal;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow: hidden;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background: black;
+  display: none;
+}
+
+a {
+  color: #FFF;
+}
+
+
+#jspresentation {
+  width: 100%;
+  background-color: black;
+  height: 100%;
+  list-style: none;
+  position: relative;
+
+}
+
+.page {
+  top: 0;
+  left: 0;
+  background-color: #FF6A00;
+  background-image: url(background.gif);
+  background-repeat: repeat-x;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 900px;
+}
+
+.page.black {
+  background: black;
+}
+
+.page h1 {
+  margin: 0.8em;
+  margin-top: 2.8em;
+  margin-bottom: 0.5em;
+  font-size: 3em;
+  width: 3em;
+}
+
+.page h1 .index-number {
+  display: block;
+  margin-bottom: -0.2em;
+}
+
+.page h2 {
+  white-space: nomal;
+  margin-top: 0.3em;
+  font-size: 4em;
+  text-align: center;
+}
+
+.page h3 {
+  white-space: nowrap;
+  margin-top: 3em;
+  font-size: 4em;
+  text-align: center;
+}
+
+FlashAction {
+  white-space: nowrap;
+  margin-top: 3em;
+  font-size: 4em;
+  text-align: center;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.page p {
+  white-space: normal;
+  //margin-left: 1em;
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+.page ul, .page ol {
+  font-size: 2em;
+  margin-left: 8em;
+  margin-bottom: 0.2em;
+}
+
+.page ul li, .page ol li {
+  white-space: normal;
+  margin-bottom: 0.2em;
+}
+
+.page dl {
+  white-space: normal;
+}
+
+.page li p {
+  white-space: normal;
+  font-size: 1em;
+  margin-bottom: 0.2em;
+  text-align: left;
+}
+
+.page dt {
+  margin-left: 4em;
+  font-size: 2em;
+  text-align: left;
+}
+
+.page dd {
+  font-size: 1em;
+}
+
+.page dd a {
+  white-space: normal;
+  margin-left: 2em;
+  font-size: 1.5em;
+}
+
+.page .impact,
+.page .impact2, 
+.page .impact3 {
+  white-space: nowrap;
+  font-size: 4em;
+  margin: 0em;
+  text-align: center;
+}
+
+.page .impact {
+  margin-top: 3em;
+}
+
+.page .impact2 {
+  margin-top: 2.2em;
+}
+
+.page .impact3 {
+  margin-top: 1.4em;
+}
+
+.page .impact2 p,
+.page .impact3 p {
+  white-space: nowrap;
+  font-size: 1em;
+  margin: 0;
+}
+
+.page .whisp {
+  white-space: nowrap;
+  font-size: 2em;
+  margin: 0em;
+  margin-top: 6.9em;
+  text-align: center;
+}
+
+.page .address {
+  font-style: italic;
+  font-size: 1em;
+  margin: 2em;
+  margin-top: 1em;
+  text-align: right;
+  list-style: none;
+}
+
+.page pre {
+  //font-family: 'Lucida Console',monospace;
+  font-size: 1.8em;
+  white-space: pre;
+  background-color: #012;
+  //width: 100%;
+}
+
+.page pre strong {
+  //font-family: 'Lucida Console',monospace;
+  font-weight: bold;
+  color: #FF0;
+}
+
+.page .presentation-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #C22;
+  text-align: right;
+}
+.page .presentation-footer p {
+  padding: 0.4em;
+  font-size: 1em;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.presentation-only {
+  display: block;
+}
+
+/*
+以下、 JavaScript で挿入
+body { font-size: x }
+.page { width: window.innerWidth }
+*/

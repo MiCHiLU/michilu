@@ -1,0 +1,185 @@
+{% extends "base.html" %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>MiCHiLU.co{% block title_after %} - powered by Django blog{% endblock %}</title>
+	
+    {% block css %}
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="{{ MEDIA_URL }}favicon.ico" type="image/ico" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ MEDIA_URL }}styles/home.css" type="text/css" media="all" />
+	<!--[if lte IE 7]>
+		<style type="text/css" media="all">@import url("{{ MEDIA_URL }}styles/ie.css");</style>
+	<![endif]-->
+	<!-- Scripts -->
+    {% endblock %}
+	
+    {% block meta %}
+    <!-- Geo Info -->
+    <meta name="geo.position" content="35.45;139.30" />
+    <meta name="geo.region" content="JP" />
+    <meta name="geo.placename" content="Tokyo" />
+    <meta name="geo.country" content="JP" />
+    <meta name="ICBM" content="35.45;139.30" />
+    <link rel="alternate" type="application/atom+xml" title="MiCHiLU.com" href="http://feeds.feedburner.com/michilu" />
+    <link rel="alternate" type="application/atom+xml" title="MiCHiLU.com" href="http://feeds.feedburner.com/michilu/short" />
+    <link rel="openid.server" href="http://www.myopenid.com/server" />
+    <link rel="openid.delegate" href="http://MiCHiLU.myopenid.com/" />
+    <META name="verify-v1" content="RB57my3VdwYrbv88CyW1Pr/FJzKNt375DPSMMiRKM9U=" />
+    {% endblock %}
+</head>
+
+{% block body %}
+<body id="home" class="generic">
+{% endblock %}
+
+{% block content %}
+<div id="container">
+	<div id="header">
+		<h1><a href="/">MiCHiLU</a>.COM</h1>
+
+		<ul id="nav-global">
+			<li id="powered-by-Django">powered by <a href="http://www.djangoproject.com/">Django</a>.</li>
+			{% include "navi-line.html" %}
+		</ul>
+	</div><!-- END #header -->
+
+	<div id="content">
+		
+		<div id="content-primary">		
+			<div id="posts">
+				<h2>Posts</h2>
+				<p class="more"><a href="/blog/posts/all">More posts</a> / <a href="http://feeds.feedburner.com/michilu">Feed</a></p>
+				
+				
+				
+					
+						<div class="post lead-post">
+							{% for object in object_list %}
+							{% if forloop.first %}
+							<h3 class="title"><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h3>
+
+							<div class="intro">
+                            {{ object.content_s|escape }}
+                            ...
+</div> <p class="refer"><a href="{{ object.get_absolute_url }}"><strong>Read</strong></a></p>
+						</div>
+						<ul class="recent-posts">
+						{% endif %}
+    				    	{% if not forloop.first %}
+					
+						
+				
+					
+						<li class="post">
+							
+							<a class="url" href="{{ object.get_absolute_url }}">
+								
+								<strong class="title">{{ object.title }}</strong>
+							</a>
+							<p class="summary">{{ object.content_s|escape }}...<span class="refer"><a href="{{ object.get_absolute_url }}"><strong>Read</strong></a></span></p>
+						</li>
+					
+					    {% endif %}
+							{% if forloop.last %}
+    				    				
+						</ul><!-- END .recent-posts -->
+					    {% endif %}
+					    {% endfor %}
+					    
+				        
+			</div><!-- END #posts -->
+
+			<div id="recommendations">
+				<h2>Recommendations</h2>
+				
+					<div class="recommendation listen">
+						<h3>Listen</h3>
+						{% include "recommendations/listen.html" %}
+					</div>
+				
+					<div class="recommendation read">
+						<h3>Read</h3>
+						{% include "recommendations/read.html" %}
+						{% load blog_extras %}{% book_list %}
+					</div>
+				
+					<div class="recommendation gadgets">
+						<h3>Gadgets</h3>
+						{% include "recommendations/gadgets.html" %}
+						{% load blog_extras %}{% gadgets_list %}
+					</div>
+				
+			</div><!-- END #recommendations -->
+			
+		</div><!-- END #content-primary -->
+		
+		<div id="content-secondary">
+			<div id="photos">
+				<h2>Photos</h2>
+				<p class="more"><a href="http://flickr.com/photos/michilu/">More photos</a> / <a href="http://api.flickr.com/services/feeds/photos_public.gne?id=66294481@N00">Feed</a></p>
+				{% load blog_extras %}{% photo %}
+			</div>
+
+			<div id="badges">
+			    <ul>
+				<li>
+					<div id="lingr">
+						<script type="text/javascript" src="http://www.lingr.com/room/1Zrn3erMCRp/badge/render" charset="utf-8"></script>
+					</div>
+    			</li>
+				<li>
+					<script type="text/javascript" src="http://embed.technorati.com/embed/mrdbum52v.js"></script>
+				</li>
+				</ul>
+			</div>
+
+			<div id="django-doc-ja">
+				<h2>
+					⋙ 
+				<a href="/django/doc-ja/index/">
+					Django オンラインドキュメント和訳
+				</a>
+					 : Revision {% load doc_extras %}{% completed_revision %}
+				</h2>
+			</div>
+
+			<div id="technorati-links">
+				<h2>Back Links</h2>
+				<p class="more"><a href="http://www.technorati.com/search/http://michilu.com">More links</a> / <a href="http://feeds.technorati.com/search/http%3A%2F%2Fmichilu.com">Feed</a></p>			
+				{% load blog_extras %}{% technorati_links %}
+			</div>
+
+			<div id="links">
+				<h2>Links</h2>		
+				<p class="more"><a href="http://del.icio.us/MiCHiLU">More links</a> / <a href="http://del.icio.us/rss/MiCHiLU">Feed</a></p>			
+				{% load blog_extras %}{% bookmark_list %}
+			</div>
+
+	 		<div id="about">
+				<h2>About the author</h2>
+			
+				<p class="vcard">I'm <a class="url fn" href="http://michilu.com/">takanao ENDOH</a> and this is my site. Send love letters to {% include "email.html" %}.</p>
+    		</div>
+		</div><!-- END #content-extra -->
+
+	</div><!-- END #content -->
+
+	<div id="footer">
+		<p>
+		    <a href="/">MiCHiLU.com</a> powered by <a href="http://www.djangoproject.com/">Django</a> ;-) 
+    		Join **<a href="http://djangoproject.jp/">Django-ja</a>** , 
+    		at <a href="http://groups.google.com/group/django-ja">Google Groups</a>, 
+    		at <a href="http://www.lingr.com/room/django-ja">Lingr</a>. 
+		</p>
+	</div><!-- END #footer -->
+</div><!-- END #container -->
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:dc="http://purl.org/dc/elements/1.1/" >
+
+	<title>MiCHiLU's Photos</title>
+	<link rel="self" href="http://api.flickr.com/services/feeds/photos_public.gne?id=66294481@N00" />
+	<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/"/>
+	<id>tag:flickr.com,2005:/photos/public/242207</id>
+	<icon>http://www.flickr.com/images/buddyicon.jpg?66294481@N00</icon>
+	<subtitle>A feed of MiCHiLU's Photos</subtitle>
+	<updated>2007-03-04T04:57:55Z</updated>
+	<generator uri="http://www.flickr.com/">Flickr</generator>
+
+	<entry>
+		<title>Real duck ?</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/409526099/"/>
+		<id>tag:flickr.com,2005:/photo/409526099</id>
+		<published>2007-03-04T04:57:55Z</published>
+		<updated>2007-03-04T04:57:55Z</updated>
+                <dc:date.Taken>2007-03-03T20:57:55-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/409526099/&quot; title=&quot;Real duck ?&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/180/409526099_7a8af62404_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;Real duck ?&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/180/409526099_7a8af62404_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>Real duck !</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/409524806/"/>
+		<id>tag:flickr.com,2005:/photo/409524806</id>
+		<published>2007-03-04T04:56:01Z</published>
+		<updated>2007-03-04T04:56:01Z</updated>
+                <dc:date.Taken>2007-03-03T20:56:01-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/409524806/&quot; title=&quot;Real duck !&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/124/409524806_7eeb6edd0b_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;Real duck !&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/124/409524806_7eeb6edd0b_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>duck! :-)</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/409314457/"/>
+		<id>tag:flickr.com,2005:/photo/409314457</id>
+		<published>2007-03-04T00:56:31Z</published>
+		<updated>2007-03-04T00:56:31Z</updated>
+                <dc:date.Taken>2007-03-03T16:56:31-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/409314457/&quot; title=&quot;duck! :-)&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/177/409314457_4391c660aa_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;duck! :-)&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/177/409314457_4391c660aa_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>海老とバジルのペペロンチーノ</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/407521799/"/>
+		<id>tag:flickr.com,2005:/photo/407521799</id>
+		<published>2007-03-02T06:25:31Z</published>
+		<updated>2007-03-02T06:25:31Z</updated>
+                <dc:date.Taken>2007-03-01T22:25:31-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/407521799/&quot; title=&quot;海老とバジルのペペロンチーノ&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/147/407521799_b913470d83_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;海老とバジルのペペロンチーノ&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/147/407521799_b913470d83_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>石狩パスタ - 牛乳味噌仕立て</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/406524848/"/>
+		<id>tag:flickr.com,2005:/photo/406524848</id>
+		<published>2007-03-01T06:46:28Z</published>
+		<updated>2007-03-01T06:46:28Z</updated>
+                <dc:date.Taken>2007-02-28T22:46:28-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/406524848/&quot; title=&quot;石狩パスタ - 牛乳味噌仕立て&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/161/406524848_a3a5696ce0_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;石狩パスタ - 牛乳味噌仕立て&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/161/406524848_a3a5696ce0_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>デブサミ2007</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/389742817/"/>
+		<id>tag:flickr.com,2005:/photo/389742817</id>
+		<published>2007-02-14T03:02:09Z</published>
+		<updated>2007-02-14T03:02:09Z</updated>
+                <dc:date.Taken>2007-02-13T19:02:09-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/389742817/&quot; title=&quot;デブサミ2007&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/124/389742817_80be339ed6_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;デブサミ2007&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/124/389742817_80be339ed6_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>デブサミ2007</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/389735099/"/>
+		<id>tag:flickr.com,2005:/photo/389735099</id>
+		<published>2007-02-14T02:51:05Z</published>
+		<updated>2007-02-14T02:51:05Z</updated>
+                <dc:date.Taken>2007-02-13T18:51:05-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/389735099/&quot; title=&quot;デブサミ2007&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/155/389735099_15494154e2_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;デブサミ2007&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/155/389735099_15494154e2_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>モス匠チーズ</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/360239777/"/>
+		<id>tag:flickr.com,2005:/photo/360239777</id>
+		<published>2007-01-17T05:14:11Z</published>
+		<updated>2007-01-17T05:14:11Z</updated>
+                <dc:date.Taken>2007-01-16T21:14:11-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/360239777/&quot; title=&quot;モス匠チーズ&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/163/360239777_8e2b5cde3c_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;モス匠チーズ&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/163/360239777_8e2b5cde3c_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>20070113.jpg</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/355615995/"/>
+		<id>tag:flickr.com,2005:/photo/355615995</id>
+		<published>2007-01-13T08:59:40Z</published>
+		<updated>2007-01-13T08:59:40Z</updated>
+                <dc:date.Taken>2007-01-13T17:55:40-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/355615995/&quot; title=&quot;20070113.jpg&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/153/355615995_5c22238cf6_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;20070113.jpg&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/153/355615995_5c22238cf6_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>Mega Mac</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/354630815/"/>
+		<id>tag:flickr.com,2005:/photo/354630815</id>
+		<published>2007-01-12T06:50:34Z</published>
+		<updated>2007-01-12T06:50:34Z</updated>
+                <dc:date.Taken>2007-01-11T22:50:34-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/354630815/&quot; title=&quot;Mega Mac&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/128/354630815_84bdf7a5db_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;Mega Mac&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/128/354630815_84bdf7a5db_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>Mega Mac</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/354630803/"/>
+		<id>tag:flickr.com,2005:/photo/354630803</id>
+		<published>2007-01-12T06:50:33Z</published>
+		<updated>2007-01-12T06:50:33Z</updated>
+                <dc:date.Taken>2007-01-11T22:50:33-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/354630803/&quot; title=&quot;Mega Mac&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/155/354630803_883e5cff6f_m.jpg&quot; width=&quot;180&quot; height=&quot;240&quot; alt=&quot;Mega Mac&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/155/354630803_883e5cff6f_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>kaiten-sushi</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/348534756/"/>
+		<id>tag:flickr.com,2005:/photo/348534756</id>
+		<published>2007-01-07T04:01:28Z</published>
+		<updated>2007-01-07T04:01:28Z</updated>
+                <dc:date.Taken>2007-01-06T20:01:28-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/348534756/&quot; title=&quot;kaiten-sushi&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/137/348534756_4cdb966a7c_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;kaiten-sushi&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;事故ってる。&lt;/p&gt;</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/137/348534756_4cdb966a7c_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>20061125.jpg</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/305518285/"/>
+		<id>tag:flickr.com,2005:/photo/305518285</id>
+		<published>2006-11-25T07:12:45Z</published>
+		<updated>2006-11-25T07:12:45Z</updated>
+                <dc:date.Taken>2006-11-24T23:12:45-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/305518285/&quot; title=&quot;20061125.jpg&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/116/305518285_7941b3f412_m.jpg&quot; width=&quot;180&quot; height=&quot;240&quot; alt=&quot;20061125.jpg&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/116/305518285_7941b3f412_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>20061121.jpg</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/302337456/"/>
+		<id>tag:flickr.com,2005:/photo/302337456</id>
+		<published>2006-11-21T00:45:53Z</published>
+		<updated>2006-11-21T00:45:53Z</updated>
+                <dc:date.Taken>2006-11-20T16:45:53-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/302337456/&quot; title=&quot;20061121.jpg&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/112/302337456_7197167a4e_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;20061121.jpg&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/112/302337456_7197167a4e_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>2006全日本理美容選手権大会</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/302316528/"/>
+		<id>tag:flickr.com,2005:/photo/302316528</id>
+		<published>2006-11-21T00:10:07Z</published>
+		<updated>2006-11-21T00:10:07Z</updated>
+                <dc:date.Taken>2006-11-20T16:10:07-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/302316528/&quot; title=&quot;2006全日本理美容選手権大会&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/99/302316528_1aa1130d17_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;2006全日本理美容選手権大会&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/99/302316528_1aa1130d17_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>Xmas tree</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/299252037/"/>
+		<id>tag:flickr.com,2005:/photo/299252037</id>
+		<published>2006-11-17T06:44:42Z</published>
+		<updated>2006-11-17T06:44:42Z</updated>
+                <dc:date.Taken>2006-11-16T22:44:42-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/299252037/&quot; title=&quot;Xmas tree&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/108/299252037_8c99fa3d3e_m.jpg&quot; width=&quot;180&quot; height=&quot;240&quot; alt=&quot;Xmas tree&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/108/299252037_8c99fa3d3e_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>Shiba Park Hotel PRIMULA</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/285327454/"/>
+		<id>tag:flickr.com,2005:/photo/285327454</id>
+		<published>2006-11-01T04:03:08Z</published>
+		<updated>2006-11-01T04:03:08Z</updated>
+                <dc:date.Taken>2006-10-31T20:03:08-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/285327454/&quot; title=&quot;Shiba Park Hotel PRIMULA&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/107/285327454_917a87531a_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;Shiba Park Hotel PRIMULA&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/107/285327454_917a87531a_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>Shiba Park Hotel PRIMULA</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/285327432/"/>
+		<id>tag:flickr.com,2005:/photo/285327432</id>
+		<published>2006-11-01T04:03:07Z</published>
+		<updated>2006-11-01T04:03:07Z</updated>
+                <dc:date.Taken>2006-10-31T20:03:07-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/285327432/&quot; title=&quot;Shiba Park Hotel PRIMULA&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/114/285327432_f47052f6c8_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;Shiba Park Hotel PRIMULA&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/114/285327432_f47052f6c8_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>20061028.jpg</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/281051841/"/>
+		<id>tag:flickr.com,2005:/photo/281051841</id>
+		<published>2006-10-28T03:57:38Z</published>
+		<updated>2006-10-28T03:57:38Z</updated>
+                <dc:date.Taken>2006-10-27T20:57:38-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/281051841/&quot; title=&quot;20061028.jpg&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/51/281051841_f5cbe661cb_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;20061028.jpg&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/51/281051841_f5cbe661cb_m.jpg" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+	<entry>
+		<title>beer</title>
+		<link rel="alternate" type="text/html" href="http://www.flickr.com/photos/michilu/277246282/"/>
+		<id>tag:flickr.com,2005:/photo/277246282</id>
+		<published>2006-10-23T12:45:40Z</published>
+		<updated>2006-10-23T12:45:40Z</updated>
+                <dc:date.Taken>2006-10-23T05:45:40-08:00</dc:date.Taken>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/michilu/&quot;&gt;MiCHiLU&lt;/a&gt; posted a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/michilu/277246282/&quot; title=&quot;beer&quot;&gt;&lt;img src=&quot;http://farm1.static.flickr.com/79/277246282_8b6cfdf784_m.jpg&quot; width=&quot;180&quot; height=&quot;240&quot; alt=&quot;beer&quot; style=&quot;border: 1px solid #ddd;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		<author>
+			<name>MiCHiLU</name>
+			<uri>http://www.flickr.com/people/michilu/</uri>
+		</author>
+        <link rel="enclosure" type="image/jpeg" href="http://farm1.static.flickr.com/79/277246282_8b6cfdf784_m.jpg" />
+		<category term="beer" scheme="http://www.flickr.com/photos/tags/" />
+		<category term="moblog" scheme="http://www.flickr.com/photos/tags/" />
+                
+
+	</entry>
+
+</feed>

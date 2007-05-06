@@ -1,0 +1,42 @@
+function is_not_empty (element)
+{
+	var permalink = map(itemgetter("id"), getElementsByTagAndClassName("span", "permalink", element));
+
+	if (permalink.length >= 1)
+	{
+		return permalink[0];
+	} else {
+		return false;
+	}
+};
+
+function togglePermalink(d)
+{
+	var permalink = $(d.id);
+	var permalink_span = is_not_empty(permalink);
+	
+	if (permalink_span)
+	{
+		removeElement($(permalink_span));
+	} else {
+		var s = SPAN({ "id": "permalink-"+getNodeAttribute(permalink, "id") }, "¶"); //"&#182;"
+		setElementClass(s, "permalink");
+		insertSiblingNodesAfter(permalink.childNodes[0], s);
+	}
+};
+
+function addPermalink(d)
+{
+	var permalink = $(d.id);
+	var permalink_span = is_not_empty(permalink);
+
+	if (!permalink_span)
+	{
+		var link = getNodeAttribute(permalink, "id");
+		var s = SPAN({ "id": "permalink-"+link }, A({ "href": "#"+link }, "¶"));
+		setElementClass(s, "permalink");
+		insertSiblingNodesAfter(permalink.childNodes[0], s);
+	}
+};
+
+l = true;

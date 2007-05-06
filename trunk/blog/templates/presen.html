@@ -1,0 +1,26 @@
+{% load markup %}
+{% extends "blog_base.html" %}
+<html>
+<head>
+<title>{% block title_before %}{{ object.title }} - {% endblock %}</title>
+{% block meta %}
+<link rel="alternate" type="application/atom+xml" title="MiCHiLU.com" href="http://feeds.feedburner.com/michilu" />
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}pygments_style.css" />
+<link rel="stylesheet" href="{{ MEDIA_URL }}jspresentation/base.css" type="text/css" media="all" />
+<link rel="alternate stylesheet" href="{{ MEDIA_URL }}jspresentation/document.css" title="document" type="text/css" media="screen" />
+<link rel="stylesheet" href="{{ MEDIA_URL }}jspresentation/presentation.css" title="presentation" type="text/css" media="screen" id="presentation-style-sheet" />
+<link rel="stylesheet" href="{{ MEDIA_URL }}jspresentation/print.css" title="presentation" type="text/css" media="print" />
+<script type="text/javascript" src="{{ MEDIA_URL }}jspresentation/core2.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL }}jspresentation/main.js"></script>
+{% endblock %}
+</head>
+<body>
+{% block header %}{{ object.title }} - MiCHiLU.com{% endblock %}
+{% block content %}
+    {{ object.content|restructuredtext }}
+{% endblock %}
+{% block footer %}{% endblock %}
+</body>
+</html>

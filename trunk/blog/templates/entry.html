@@ -1,0 +1,42 @@
+{% load markup %}
+{% extends "blog_base.html" %}
+<html>
+<head>
+<title>{% block title_before %}{{ object.title }} - {% endblock %}</title>
+{% block meta %}
+<link rel="alternate" type="application/atom+xml" title="MiCHiLU.com" href="http://feeds.feedburner.com/michilu" />
+{% endblock %}
+</head>
+<body>
+{% block presentation %}
+    {% if object.ispresen %}
+    <p>
+    <span id="presentation_switch"><strong>⋙<a href="{{ object.get_absolute_url_presen}}">Start Presentation only Firefox.</a></strong></span>
+    </p>
+    {% endif %}
+{% endblock %}
+{% load comments.comments %}
+{% block content %}
+    {{ object.content|restructuredtext }}
+    {{ object.add_date|date:"r" }}
+    <a href="{{ object.get_absolute_url_text }}">source</a>
+    <sapn id="edit">edit</sapn>
+    <br />{% include "cc.html" %}
+    <hr />
+    <h2><a name="comments">Comments</a></h2>
+    {% get_free_comment_list for blog.entry object.id as comment_list %}
+    {% for comment in comment_list %}
+    	<div class="comment" id="c{{ comment.id }}">
+    	    <h3>
+    			#
+    			{{ comment.person_name }}
+    			 : [{{ comment.submit_date|date:"r" }}]
+    			<a href="#c{{ comment.id }}">¶</a>
+		    </h3>
+    	    {{ comment.comment|escape|urlizetrunc:"40"|linebreaks }}
+    	</div>
+    {% endfor %}
+    {% free_comment_form for blog.entry object.id %}
+{% endblock %}
+</body>
+</html>
