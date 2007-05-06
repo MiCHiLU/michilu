@@ -1,0 +1,10 @@
+{% if links %}
+<ul>
+	{% for link in links %}
+	<li class="link">
+		<a class="url" href="{{ link.link }}">{{ link.title }}</a>⋙ 
+		<span class="extended">{{ link.description }}{% if link.tags %} [{{ link.tags }}]{% endif %}</span>
+	</li>
+	{% endfor %}
+</ul>
+{% endif %}

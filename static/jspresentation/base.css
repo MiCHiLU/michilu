@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "メイリオ", Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  border: none;
+}
+
+.print-only {
+  display: none;
+}
+
+.presentation-only {
+  display: none;
+}

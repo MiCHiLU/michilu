@@ -1,0 +1,17 @@
+{% load markup %}
+{% extends "blog_base.html" %}
+{% block content %}
+<ul>
+{% for object in object_list %}
+<li>
+    <a href="{{ object.get_absolute_url }}">
+        {{ object.title }}
+        {% if object.tags_list %}
+            :{{ object.tags_list }}
+        {% endif %}
+    </a>
+     - {{ object.add_date|date:"r" }}
+</li>
+{% endfor %}
+</ul>
+{% endblock %}

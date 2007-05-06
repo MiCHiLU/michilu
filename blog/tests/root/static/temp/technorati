@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:tapi="http://api.technorati.com/dtd/tapi-002.xml">
+<channel>
+<generator>Technorati v1.0</generator>
+<image>
+<url>http://static.technorati.com/pix/logos/logo_sm.gif</url>
+<title>Technorati logo</title>
+<link>http://technorati.com</link>
+</image>
+<webMaster>support@technorati.com (Technorati Support)</webMaster>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<ttl>60</ttl>
+<textInput>
+<title>Search Technorati</title>
+<description>Search millions of blogs for the latest on:</description>
+<name>s</name>
+<link>http://technorati.com/search.php</link>
+</textInput>
+<tapi:result>
+    <tapi:url>http://michilu.com</tapi:url>
+    <tapi:inboundblogs>0</tapi:inboundblogs>
+    <tapi:inboundlinks>0</tapi:inboundlinks>
+    <tapi:rankingstart>2881568</tapi:rankingstart>
+</tapi:result>
+<title>Technorati Search for: http://michilu.com</title>
+<link>http://michilu.com</link>
+<description></description>
+<pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+<item>
+<title>常山</title>
+<link>http://navy.ap.teacup.com/django/265.html</link><comments>http://technorati.com/search/http://navy.ap.teacup.com/django/265.html</comments>
+<guid isPermaLink="true">http://navy.ap.teacup.com/django/265.html</guid>
+<pubDate>Fri, 16 Mar 2007 17:05:44 GMT</pubDate>
+<description>おぉ、ついに登場しました:) Django 始まりましたね:) 続きが楽しみです:) Creating a Django superuser manage.py shellからのsuperuserの作成の仕方です。 &lt;a class=&quot;cosmoslinks&quot; href=&quot;http://michilu.com/blog/posts/28&quot;&gt;[Django]: Django チュートリアルの後にやったこと。&lt;/a&gt;
+<!-- Begin pageImpression -->
+<script type="text/javascript">
+    var zzt=new Image();
+    zzt.src="http://static.technorati.com/z/294968456.gif?anM9MSZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA=";
+</script>
+
+<noscript>
+    <div><img width="1" height="1" alt="" src="http://static.technorati.com/z/294968456.gif?anM9MCZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA="/></div>
+</noscript> 
+<!-- End pageImpression -->
+</description>
+<source url="http://navy.ap.teacup.com/django/rss.xml">常山</source>
+<tapi:inboundblogs>3</tapi:inboundblogs>
+<tapi:inboundlinks>6</tapi:inboundlinks>
+<tapi:rank></tapi:rank>
+<tapi:linkcreated>Sun, 18 Mar 2007 06:46:19 GMT</tapi:linkcreated>
+<tapi:linkurl>http://michilu.com/blog/posts/28</tapi:linkurl>
+</item>
+<item>
+<title>Twisted Mind</title>
+<link>http://d.hatena.ne.jp/Voluntas/20070318/1174187833</link><comments>http://technorati.com/search/http://d.hatena.ne.jp/Voluntas/20070318/1174187833</comments>
+<guid isPermaLink="true">http://d.hatena.ne.jp/Voluntas/20070318/1174187833</guid>
+<pubDate>Fri, 16 Mar 2007 09:56:20 GMT</pubDate>
+<description>Django チュートリアルの後にやったこと。 - MiCHiLU.com &lt;a class=&quot;cosmoslinks&quot; href=&quot;http://michilu.com/blog/posts/28&quot;&gt;http://michilu.com/blog/posts/28&lt;/a&gt; via 常山フィード MiCHiLUさんのDjango勉強方法、とても参考になる。
+<!-- Begin pageImpression -->
+<script type="text/javascript">
+    var zzt=new Image();
+    zzt.src="http://static.technorati.com/z/294968456.gif?anM9MSZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA=";
+</script>
+
+<noscript>
+    <div><img width="1" height="1" alt="" src="http://static.technorati.com/z/294968456.gif?anM9MCZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA="/></div>
+</noscript> 
+<!-- End pageImpression -->
+</description>
+<source url="http://d.hatena.ne.jp/Voluntas/rss">Twisted Mind</source>
+<tapi:inboundblogs>25</tapi:inboundblogs>
+<tapi:inboundlinks>72</tapi:inboundlinks>
+<tapi:rank></tapi:rank>
+<tapi:linkcreated>Sun, 18 Mar 2007 03:17:13 GMT</tapi:linkcreated>
+<tapi:linkurl>http://michilu.com/blog/posts/28</tapi:linkurl>
+</item>
+<item>
+<title>常山</title>
+<link>http://navy.ap.teacup.com/django/264.html</link><comments>http://technorati.com/search/http://navy.ap.teacup.com/django/264.html</comments>
+<guid isPermaLink="true">http://navy.ap.teacup.com/django/264.html</guid>
+<pubDate>Fri, 16 Mar 2007 17:05:44 GMT</pubDate>
+<description>EN | Console on Windows without Admin rights どうなんだろう、調べてみよう &lt;a class=&quot;cosmoslinks&quot; href=&quot;http://michilu.com/blog/posts/27&quot;&gt;[Django]: 「Django オンラインドキュメント和訳」公開してます。&lt;/a&gt; お疲れ様です、使わせていただきます:) Django community please stand up (for DB2) これが成立するとDB2が新しく増えます:)
+<!-- Begin pageImpression -->
+<script type="text/javascript">
+    var zzt=new Image();
+    zzt.src="http://static.technorati.com/z/294968456.gif?anM9MSZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA=";
+</script>
+
+<noscript>
+    <div><img width="1" height="1" alt="" src="http://static.technorati.com/z/294968456.gif?anM9MCZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA="/></div>
+</noscript> 
+<!-- End pageImpression -->
+</description>
+<source url="http://navy.ap.teacup.com/django/rss.xml">常山</source>
+<tapi:inboundblogs>3</tapi:inboundblogs>
+<tapi:inboundlinks>6</tapi:inboundlinks>
+<tapi:rank></tapi:rank>
+<tapi:linkcreated>Sat, 17 Mar 2007 16:46:11 GMT</tapi:linkcreated>
+<tapi:linkurl>http://michilu.com/blog/posts/27</tapi:linkurl>
+</item>
+<item>
+<title>top | スパムとか</title>
+<link>http://www.everes.net</link><comments>http://technorati.com/search/http://www.everes.net</comments>
+<guid isPermaLink="true">http://www.everes.net</guid>
+<pubDate>Sat, 17 Mar 2007 07:35:45 GMT</pubDate>
+<description>link ..more » アマゾン川のポロロッカでサーフィンをする人々の写真やムービー - GIGAZINE » &lt;a class=&quot;cosmoslinks&quot; href=&quot;http://michilu.com/django/doc-ja/index/&quot;&gt;Django オンラインドキュメント和訳&lt;/a&gt; Python, Django, open-source » IBM 魅惑的なPython: Python実装に駆り立てたもの - Japan 言語仕様としてのPythonは、Guido
+<!-- Begin pageImpression -->
+<script type="text/javascript">
+    var zzt=new Image();
+    zzt.src="http://static.technorati.com/z/294968456.gif?anM9MSZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA=";
+</script>
+
+<noscript>
+    <div><img width="1" height="1" alt="" src="http://static.technorati.com/z/294968456.gif?anM9MCZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA="/></div>
+</noscript> 
+<!-- End pageImpression -->
+</description>
+<source url="http://www.everes.net/blog/rss/">top | スパムとか</source>
+<tapi:atomurl>http://www.everes.net/blog/atom/</tapi:atomurl>
+<tapi:inboundblogs>34</tapi:inboundblogs>
+<tapi:inboundlinks>89</tapi:inboundlinks>
+<tapi:rank></tapi:rank>
+<tapi:linkcreated>Thu, 15 Mar 2007 04:58:06 GMT</tapi:linkcreated>
+<tapi:linkurl>http://michilu.com/django/doc-ja/index/</tapi:linkurl>
+</item>
+<item>
+<title>Twisted Mind</title>
+<link>http://d.hatena.ne.jp/Voluntas/20070313/1173790398</link><comments>http://technorati.com/search/http://d.hatena.ne.jp/Voluntas/20070313/1173790398</comments>
+<guid isPermaLink="true">http://d.hatena.ne.jp/Voluntas/20070313/1173790398</guid>
+<pubDate>Fri, 16 Mar 2007 09:56:20 GMT</pubDate>
+<description>キャッシュを使っているようで、なかなかいい感じです。 キャッシュ？というかたは下記を参考にするといいと思います。 Django で memcached を使う - MiCHiLU.com &lt;a class=&quot;cosmoslinks&quot; href=&quot;http://michilu.com/blog/posts/24&quot;&gt;http://michilu.com/blog/posts/24&lt;/a&gt;
+<!-- Begin pageImpression -->
+<script type="text/javascript">
+    var zzt=new Image();
+    zzt.src="http://static.technorati.com/z/294968456.gif?anM9MSZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA=";
+</script>
+
+<noscript>
+    <div><img width="1" height="1" alt="" src="http://static.technorati.com/z/294968456.gif?anM9MCZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA="/></div>
+</noscript> 
+<!-- End pageImpression -->
+</description>
+<source url="http://d.hatena.ne.jp/Voluntas/rss">Twisted Mind</source>
+<tapi:inboundblogs>25</tapi:inboundblogs>
+<tapi:inboundlinks>72</tapi:inboundlinks>
+<tapi:rank></tapi:rank>
+<tapi:linkcreated>Tue, 13 Mar 2007 12:53:18 GMT</tapi:linkcreated>
+<tapi:linkurl>http://michilu.com/blog/posts/24</tapi:linkurl>
+</item>
+<item>
+<title>top | スパムとか</title>
+<link>http://www.everes.net/2007/mar/11/django-etude-disc-three-finished/</link><comments>http://technorati.com/search/http://www.everes.net/2007/mar/11/django-etude-disc-three-finished/</comments>
+<guid isPermaLink="true">http://www.everes.net/2007/mar/11/django-etude-disc-three-finished/</guid>
+<pubDate>Sat, 17 Mar 2007 07:35:45 GMT</pubDate>
+<description>MiCHiLUさんの &lt;a class=&quot;cosmoslinks&quot; href=&quot;http://michilu.com/blog/posts/26/presen&quot;&gt;資料は早くもIT戦記さんのタイムマシーン型(Firefox限定)&lt;/a&gt; だったりして、刺激的でした。 MiCHiLUさんのセッションと平行して行われたrhaco勉強会も、大きな笑い声が聞こえてきたので楽...
+<!-- Begin pageImpression -->
+<script type="text/javascript">
+    var zzt=new Image();
+    zzt.src="http://static.technorati.com/z/294968456.gif?anM9MSZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA=";
+</script>
+
+<noscript>
+    <div><img width="1" height="1" alt="" src="http://static.technorati.com/z/294968456.gif?anM9MCZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA="/></div>
+</noscript> 
+<!-- End pageImpression -->
+</description>
+<source url="http://www.everes.net/blog/rss/">top | スパムとか</source>
+<tapi:atomurl>http://www.everes.net/blog/atom/</tapi:atomurl>
+<tapi:inboundblogs>34</tapi:inboundblogs>
+<tapi:inboundlinks>89</tapi:inboundlinks>
+<tapi:rank></tapi:rank>
+<tapi:linkcreated>Sat, 10 Mar 2007 15:30:57 GMT</tapi:linkcreated>
+<tapi:linkurl>http://michilu.com/blog/posts/26/presen</tapi:linkurl>
+</item>
+<item>
+<title>常山</title>
+<link>http://navy.ap.teacup.com/django/250.html</link><comments>http://technorati.com/search/http://navy.ap.teacup.com/django/250.html</comments>
+<guid isPermaLink="true">http://navy.ap.teacup.com/django/250.html</guid>
+<pubDate>Fri, 16 Mar 2007 17:05:44 GMT</pubDate>
+<description>いや〜、今回も濃かったです。 &lt;a class=&quot;cosmoslinks&quot; href=&quot;http://michilu.com/&quot;&gt;michilu&lt;/a&gt; さんのドキュメントの量と内容の濃さと、グニャラくんの発表したsennaの表示速度の速さと。
+<!-- Begin pageImpression -->
+<script type="text/javascript">
+    var zzt=new Image();
+    zzt.src="http://static.technorati.com/z/294968456.gif?anM9MSZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA=";
+</script>
+
+<noscript>
+    <div><img width="1" height="1" alt="" src="http://static.technorati.com/z/294968456.gif?anM9MCZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA="/></div>
+</noscript> 
+<!-- End pageImpression -->
+</description>
+<source url="http://navy.ap.teacup.com/django/rss.xml">常山</source>
+<tapi:inboundblogs>3</tapi:inboundblogs>
+<tapi:inboundlinks>6</tapi:inboundlinks>
+<tapi:rank></tapi:rank>
+<tapi:linkcreated>Sat, 10 Mar 2007 12:52:32 GMT</tapi:linkcreated>
+<tapi:linkurl>http://michilu.com/</tapi:linkurl>
+</item>
+<item>
+<title>常山</title>
+<link>http://navy.ap.teacup.com/django/246.html</link><comments>http://technorati.com/search/http://navy.ap.teacup.com/django/246.html</comments>
+<guid isPermaLink="true">http://navy.ap.teacup.com/django/246.html</guid>
+<pubDate>Fri, 16 Mar 2007 17:05:44 GMT</pubDate>
+<description>Blogから。 [Django]newforms（？） むっ、そうなのか(?)。 &lt;a class=&quot;cosmoslinks&quot; href=&quot;http://michilu.com/blog/posts/26&quot;&gt;[Presen][Django]: Django Blog - views.py書いたら負けだと思っ...&lt;/a&gt; 凄すぎますorz。初心者救済ページとして完成させてはいかがかと;P [Django]UserProfile的处理 サンプルつきで説明しています。
+<!-- Begin pageImpression -->
+<script type="text/javascript">
+    var zzt=new Image();
+    zzt.src="http://static.technorati.com/z/294968456.gif?anM9MSZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA=";
+</script>
+
+<noscript>
+    <div><img width="1" height="1" alt="" src="http://static.technorati.com/z/294968456.gif?anM9MCZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA="/></div>
+</noscript> 
+<!-- End pageImpression -->
+</description>
+<source url="http://navy.ap.teacup.com/django/rss.xml">常山</source>
+<tapi:inboundblogs>3</tapi:inboundblogs>
+<tapi:inboundlinks>6</tapi:inboundlinks>
+<tapi:rank></tapi:rank>
+<tapi:linkcreated>Fri, 09 Mar 2007 17:17:34 GMT</tapi:linkcreated>
+<tapi:linkurl>http://michilu.com/blog/posts/26</tapi:linkurl>
+</item>
+<item>
+<title>Twisted Mind</title>
+<link>http://d.hatena.ne.jp/Voluntas/20070309/1173446421</link><comments>http://technorati.com/search/http://d.hatena.ne.jp/Voluntas/20070309/1173446421</comments>
+<guid isPermaLink="true">http://d.hatena.ne.jp/Voluntas/20070309/1173446421</guid>
+<pubDate>Fri, 16 Mar 2007 09:56:20 GMT</pubDate>
+<description>&lt;a class=&quot;cosmoslinks&quot; href=&quot;http://michilu.com/blog/posts/26&quot;&gt;http://michilu.com/blog/posts/26&lt;/a&gt;
+<!-- Begin pageImpression -->
+<script type="text/javascript">
+    var zzt=new Image();
+    zzt.src="http://static.technorati.com/z/294968456.gif?anM9MSZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA=";
+</script>
+
+<noscript>
+    <div><img width="1" height="1" alt="" src="http://static.technorati.com/z/294968456.gif?anM9MCZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA="/></div>
+</noscript> 
+<!-- End pageImpression -->
+</description>
+<source url="http://d.hatena.ne.jp/Voluntas/rss">Twisted Mind</source>
+<tapi:inboundblogs>25</tapi:inboundblogs>
+<tapi:inboundlinks>72</tapi:inboundlinks>
+<tapi:rank></tapi:rank>
+<tapi:linkcreated>Fri, 09 Mar 2007 13:20:21 GMT</tapi:linkcreated>
+<tapi:linkurl>http://michilu.com/blog/posts/26</tapi:linkurl>
+</item>
+<item>
+<title>常山</title>
+<link>http://navy.ap.teacup.com/django/245.html</link><comments>http://technorati.com/search/http://navy.ap.teacup.com/django/245.html</comments>
+<guid isPermaLink="true">http://navy.ap.teacup.com/django/245.html</guid>
+<pubDate>Fri, 16 Mar 2007 17:05:44 GMT</pubDate>
+<description>[Django]在Django中使用ChartDirector ChartDirectorってなんだ? [Python][Django]開発版をPostgreSQLバックエンドで使うとモーダルに使えなくな... むっ。そうなのか。 &lt;a class=&quot;cosmoslinks&quot; href=&quot;http://michilu.com/blog/posts/25/&quot;&gt;[Django]: nose-django を試してみた&lt;/a&gt; test tool使えるようにしないとなぁ &amp;gt; 自分
+<!-- Begin pageImpression -->
+<script type="text/javascript">
+    var zzt=new Image();
+    zzt.src="http://static.technorati.com/z/294968456.gif?anM9MSZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA=";
+</script>
+
+<noscript>
+    <div><img width="1" height="1" alt="" src="http://static.technorati.com/z/294968456.gif?anM9MCZyZWY9LSZ2aXNpdG9yaWQ9LSZ1c2VyaWQ9LSZzZXNzaW9uaWQ9LSZ1c2VyY2xhc3M9LSZhYmNsYXNzPS0mYWJzd2l0Y2g9LSZtZW1iZXI9LSZzZXNzaW9uc3RhcnR0aW1lPTExNzQyMDQyMTAmc2Vzc2lvbmR1cmF0aW9uPS0mdmlzaXRjb3VudD0xJnZpc2l0c3RhcnR0aW1lPTExNzQyMDQyMTAmdmlzaXRkdXJhdGlvbj0tJnZpc2l0cGFnZWNvdW50PTEmbmV3YmllZmxhZz0wJmF1dGhvcml6ZWQ9MCZibG9nY2xhaW1zPTA="/></div>
+</noscript> 
+<!-- End pageImpression -->
+</description>
+<source url="http://navy.ap.teacup.com/django/rss.xml">常山</source>
+<tapi:inboundblogs>3</tapi:inboundblogs>
+<tapi:inboundlinks>6</tapi:inboundlinks>
+<tapi:rank></tapi:rank>
+<tapi:linkcreated>Fri, 09 Mar 2007 10:05:29 GMT</tapi:linkcreated>
+<tapi:linkurl>http://michilu.com/blog/posts/25/</tapi:linkurl>
+</item>
+</channel>
+</rss>

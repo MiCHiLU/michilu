@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="ROBOTS" 
+          content="ALL" />
+    <meta name="keywords" 
+          content="Python, Django, open-source" />
+    <meta http-equiv="Content-type" 
+          content="text/html; charset=utf-8" />
+    <title>{{ title }}</title>
+    <meta name="Copyright" 
+          content="Copyright (c) 2005-2007 Yasushi Masuda." />
+    <meta name="description" 
+          content="Django Documentation - ja" />
+    <link type="text/css" rel="stylesheet" 
+          href="{{ MEDIA_URL }}doc-ja/css/site.css" />
+	    <script language="javascript" type="text/javascript">
+	    var debug = true;
+	    var load = ["Iter", "DOM", ];
+	    load.push("/static/doc-ja/js/logic.js", "/static/doc-ja/js/connect.js");
+	    window.onload = function (){
+	        var i = document.createElement('script');
+	        i.id = 'init';
+	        i.src = '/static/init.js';
+	        i.charset = 'UTF-8';
+	        document.body.appendChild(i);
+	    }
+	    </script>
+  </head>
+  <body>
+    <div id="wrapper" 
+         class="">
+      <div id="header">
+        <div id="topnav">
+          <a href="/django/doc-ja/index/">Django doc-ja.</a>
+        </div>
+      </div>
+      
+      <div id="page" 
+           class="">
+
+<div id="rootlayer">
+  <div id="sublayer">
+    <div id="main">
+      <div class="paddingbox">
+        <div class="document">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+    </div>
+  </div><!--sublayer-->
+</div><!--rootlayer-->
+
+      </div><!--page-->
+      <div id="footer">
+        
+<div class="paddingbox">
+  <div id="acknowledgement">
+  Copyright (c) 2005-2007 Yasushi Masuda, All rights reserved.
+  </div>
+</div>
+<div id="deployinfo">
+  <div id="icons">
+    <a href="http://www.djangoproject.com/">
+      <img src="{{ MEDIA_URL }}doc-ja/img/djangosite100x25.gif" 
+	   border="0" alt="A Django site." title="A Django site." 
+	   align="middle" />
+    </a>
+  </div>
+</div>
+
+      </div>
+    </div>
+    {% include "google-analytics.html" %}
+  </body>
+</html>
+

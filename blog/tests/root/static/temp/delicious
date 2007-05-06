@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:cc="http://web.resource.org/cc/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://del.icio.us/michilu">
+<title>del.icio.us/michilu</title>
+<link>http://del.icio.us/michilu</link>
+<description></description>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://stage6.divx.com/content/show/1157092" />
+  <rdf:li rdf:resource="http://code.google.com/p/pyskype/" />
+  <rdf:li rdf:resource="http://www.dodgson.org/omo/t/?date=20061001" />
+  <rdf:li rdf:resource="http://phpspot.org/blog/archives/2007/03/wiijavascriptwi.html" />
+  <rdf:li rdf:resource="http://d.hatena.ne.jp/tasukuchan/20070311/django_senna" />
+  <rdf:li rdf:resource="http://www.djangosnippets.org/snippets/94/" />
+  <rdf:li rdf:resource="http://www.djangosnippets.org/snippets/109/" />
+  <rdf:li rdf:resource="http://wiki.script.aculo.us/scriptaculous/show/IntegrationWithDjango" />
+  <rdf:li rdf:resource="http://feihonghsu.dreamhosters.com/presentations/Unicode%20for%20Small%20Children.pdf" />
+  <rdf:li rdf:resource="http://www.mcdevzone.com/projects/miitransfer" />
+  <rdf:li rdf:resource="http://blog.ianbicking.org/restful-transactions.html" />
+  <rdf:li rdf:resource="http://code.djangoproject.com/wiki/DjangoUsers" />
+  <rdf:li rdf:resource="http://d.hatena.ne.jp/aodag/20070312/1173719979" />
+  <rdf:li rdf:resource="http://jcalderone.livejournal.com/29416.html" />
+  <rdf:li rdf:resource="http://www.parallelpython.com/" />
+  <rdf:li rdf:resource="http://gigazine.net/index.php?/news/comments/20070308_google_automation_01/" />
+  <rdf:li rdf:resource="http://gigazine.net/index.php?/news/comments/20070306_great_fire_wall/" />
+  <rdf:li rdf:resource="http://gigazine.net/index.php?/news/comments/20070305_visitors/" />
+  <rdf:li rdf:resource="http://d.hatena.ne.jp/naoya/20070223/1172229364" />
+  <rdf:li rdf:resource="http://d.hatena.ne.jp/naoya/20070222/1172116665" />
+  <rdf:li rdf:resource="http://d.hatena.ne.jp/jbking/20070310/p1" />
+  <rdf:li rdf:resource="http://labs.unoh.net/2007/03/post_73.html" />
+  <rdf:li rdf:resource="http://www.nishiohirokazu.org/blog/2007/03/haskell.html" />
+  <rdf:li rdf:resource="http://d.hatena.ne.jp/mopemope/20070314/p2" />
+  <rdf:li rdf:resource="http://d.hatena.ne.jp/mopemope/20070313/p1" />
+  <rdf:li rdf:resource="http://d.hatena.ne.jp/naoya/20070311/1173629378" />
+  <rdf:li rdf:resource="http://d.hatena.ne.jp/mopemope/20070308/p1" />
+  <rdf:li rdf:resource="http://d.hatena.ne.jp/tasukuchan/20070301/sqlite_senna_syobon" />
+  <rdf:li rdf:resource="http://www.stonemind.net/blog/2007/03/08/django-rest-redux/" />
+  <rdf:li rdf:resource="http://msugai.fc2web.com/web/CSS/selector.html" />
+  <rdf:li rdf:resource="http://twistedmatrix.com/trac/ticket/2506" />
+ </rdf:Seq>
+</items>
+</channel>
+
+<item rdf:about="http://stage6.divx.com/content/show/1157092">
+<title>Pyjug_kansai_sess1_070316 · Stage6</title>
+<link>http://stage6.divx.com/content/show/1157092</link>
+<description>関西 Python Workshop 01</description>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-18T06:49:45Z</dc:date>
+<dc:subject>Python django video</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/Python" />
+    <rdf:li resource="http://del.icio.us/tag/video" />
+    <rdf:li resource="http://del.icio.us/tag/django" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://code.google.com/p/pyskype/">
+<title>pyskype - Google Code</title>
+<link>http://code.google.com/p/pyskype/</link>
+<description>cross-platform python wrapper to the Skype API
+This project aims at a uniform Python wrapper for the Skype Public API.</description>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-18T00:32:44Z</dc:date>
+<dc:subject>Python Skype</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/Python" />
+    <rdf:li resource="http://del.icio.us/tag/Skype" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.dodgson.org/omo/t/?date=20061001">
+<title>steps to phantasien t(2006-10-01)</title>
+<link>http://www.dodgson.org/omo/t/?date=20061001</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-16T05:56:46Z</dc:date>
+<dc:subject>SQLite search senna toprint</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/SQLite" />
+    <rdf:li resource="http://del.icio.us/tag/search" />
+    <rdf:li resource="http://del.icio.us/tag/senna" />
+    <rdf:li resource="http://del.icio.us/tag/toprint" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://phpspot.org/blog/archives/2007/03/wiijavascriptwi.html">
+<title>Wii用のサイトを作る際に超便利なJavaScriptライブラリ「wii.js」:phpspot開発日誌</title>
+<link>http://phpspot.org/blog/archives/2007/03/wiijavascriptwi.html</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T13:34:56Z</dc:date>
+<dc:subject>Nintendo javascript library wii</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/wii" />
+    <rdf:li resource="http://del.icio.us/tag/javascript" />
+    <rdf:li resource="http://del.icio.us/tag/library" />
+    <rdf:li resource="http://del.icio.us/tag/Nintendo" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://d.hatena.ne.jp/tasukuchan/20070311/django_senna">
+<title>グニャラくんのグニャグニャ備忘録@はてな - Django勉強会 Disc 3</title>
+<link>http://d.hatena.ne.jp/tasukuchan/20070311/django_senna</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T13:30:27Z</dc:date>
+<dc:subject>Django doc pdf search senna</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/Django" />
+    <rdf:li resource="http://del.icio.us/tag/senna" />
+    <rdf:li resource="http://del.icio.us/tag/search" />
+    <rdf:li resource="http://del.icio.us/tag/doc" />
+    <rdf:li resource="http://del.icio.us/tag/pdf" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.djangosnippets.org/snippets/94/">
+<title>Django snippets: Keep settings.py in version control safely</title>
+<link>http://www.djangosnippets.org/snippets/94/</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T13:28:08Z</dc:date>
+<dc:subject>code django sample</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/django" />
+    <rdf:li resource="http://del.icio.us/tag/sample" />
+    <rdf:li resource="http://del.icio.us/tag/code" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.djangosnippets.org/snippets/109/">
+<title>Django snippets: Cache Any Function</title>
+<link>http://www.djangosnippets.org/snippets/109/</link>
+<description>Caches a function, using the function itself as the key, and the return
+    value as the value saved. It passes all arguments on to the function, as
+    it should.</description>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T13:24:31Z</dc:date>
+<dc:subject>cache code django sample</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/cache" />
+    <rdf:li resource="http://del.icio.us/tag/django" />
+    <rdf:li resource="http://del.icio.us/tag/sample" />
+    <rdf:li resource="http://del.icio.us/tag/code" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://wiki.script.aculo.us/scriptaculous/show/IntegrationWithDjango">
+<title>Integration With Django in scriptaculous wiki</title>
+<link>http://wiki.script.aculo.us/scriptaculous/show/IntegrationWithDjango</link>
+<description>Django is a Python web framework and it is easy to add script.aculo.us scripts to a Django-powered application.</description>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T13:22:52Z</dc:date>
+<dc:subject>django prototype.js</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/prototype.js" />
+    <rdf:li resource="http://del.icio.us/tag/django" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://feihonghsu.dreamhosters.com/presentations/Unicode%20for%20Small%20Children.pdf">
+<title>Unicode Talk</title>
+<link>http://feihonghsu.dreamhosters.com/presentations/Unicode%20for%20Small%20Children.pdf</link>
+<description>Chicago Python UsersGroupでのユニコードに関する発表資料。
+
+　内容は入門的なものですが、イラストがお茶目な、なごみ系のプレゼンです。</description>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T13:21:36Z</dc:date>
+<dc:subject>char pdf python</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/char" />
+    <rdf:li resource="http://del.icio.us/tag/python" />
+    <rdf:li resource="http://del.icio.us/tag/pdf" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.mcdevzone.com/projects/miitransfer">
+<title>Mii Transfer « /dev/random</title>
+<link>http://www.mcdevzone.com/projects/miitransfer</link>
+<description>Mii Transfer is a tiny utility which lets you copy your Miis from your Wii Remote to your computer so you can share them on sites such as MiiPlaza.net and edit them using Mii Editor.</description>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T13:19:51Z</dc:date>
+<dc:subject>Nintendo wii</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/wii" />
+    <rdf:li resource="http://del.icio.us/tag/Nintendo" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://blog.ianbicking.org/restful-transactions.html">
+<title>RESTful transactions (a speculation)</title>
+<link>http://blog.ianbicking.org/restful-transactions.html</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T13:18:28Z</dc:date>
+<dc:subject>REST</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/REST" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://code.djangoproject.com/wiki/DjangoUsers">
+<title>DjangoUsers - Django Code - Trac</title>
+<link>http://code.djangoproject.com/wiki/DjangoUsers</link>
+<description>User Communities Related to Django</description>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T13:12:39Z</dc:date>
+<dc:subject>Django 記念</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/Django" />
+    <rdf:li resource="http://del.icio.us/tag/%E8%A8%98%E5%BF%B5" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://d.hatena.ne.jp/aodag/20070312/1173719979">
+<title>aodagの日記 - WSGIはてな認証ミドルウェア</title>
+<link>http://d.hatena.ne.jp/aodag/20070312/1173719979</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T13:06:51Z</dc:date>
+<dc:subject>WSGI django toprint</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/WSGI" />
+    <rdf:li resource="http://del.icio.us/tag/django" />
+    <rdf:li resource="http://del.icio.us/tag/toprint" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://jcalderone.livejournal.com/29416.html">
+<title>jcalderone: JavaScript unit tests</title>
+<link>http://jcalderone.livejournal.com/29416.html</link>
+<description>Athena has had Nit for some time now. Nit comes in handy when code which interacts in complex ways with the runtime needs to be tested (that is, when you really want Firefox running your code, to make sure your code works with Firefox, because Firefox doe</description>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T13:04:08Z</dc:date>
+<dc:subject>UnitTEST javascript</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/javascript" />
+    <rdf:li resource="http://del.icio.us/tag/UnitTEST" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.parallelpython.com/">
+<title>Parallel Python - Home</title>
+<link>http://www.parallelpython.com/</link>
+<description>pp is a python module which provides mechanism for parallel execution of python code on SMP (systems with multiple processors or cores) and clusters (computers connected via network)
+
+    It is light, easy to install and integrate with other python soft</description>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T12:27:51Z</dc:date>
+<dc:subject>Python cluster</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/cluster" />
+    <rdf:li resource="http://del.icio.us/tag/Python" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://gigazine.net/index.php?/news/comments/20070308_google_automation_01/">
+<title>Googleはなぜ「全自動化」できないサービスでは負けるのか？～前編～ - GIGAZINE</title>
+<link>http://gigazine.net/index.php?/news/comments/20070308_google_automation_01/</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T10:54:25Z</dc:date>
+<dc:subject>goolge ネタ</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/goolge" />
+    <rdf:li resource="http://del.icio.us/tag/%E3%83%8D%E3%82%BF" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://gigazine.net/index.php?/news/comments/20070306_great_fire_wall/">
+<title>サイトが中国政府の検閲対象かをチェックできる「Great Firewall of China」 - GIGAZINE</title>
+<link>http://gigazine.net/index.php?/news/comments/20070306_great_fire_wall/</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T10:54:20Z</dc:date>
+<dc:subject>GreatFirewall</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/GreatFirewall" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://gigazine.net/index.php?/news/comments/20070305_visitors/">
+<title>1秒で10万行を処理するフリーの超高速なログ解析ソフト「Visitors」 - GIGAZINE</title>
+<link>http://gigazine.net/index.php?/news/comments/20070305_visitors/</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T10:41:13Z</dc:date>
+<dc:subject>analyzer apache</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/analyzer" />
+    <rdf:li resource="http://del.icio.us/tag/apache" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://d.hatena.ne.jp/naoya/20070223/1172229364">
+<title> Perlでモダンなネットワークサーバーを書くには</title>
+<link>http://d.hatena.ne.jp/naoya/20070223/1172229364</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T10:21:22Z</dc:date>
+<dc:subject>POE async comet perl</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/perl" />
+    <rdf:li resource="http://del.icio.us/tag/POE" />
+    <rdf:li resource="http://del.icio.us/tag/async" />
+    <rdf:li resource="http://del.icio.us/tag/comet" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://d.hatena.ne.jp/naoya/20070222/1172116665">
+<title> 負荷とは何か</title>
+<link>http://d.hatena.ne.jp/naoya/20070222/1172116665</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T10:21:18Z</dc:date>
+<dc:subject>howto linux load</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/howto" />
+    <rdf:li resource="http://del.icio.us/tag/linux" />
+    <rdf:li resource="http://del.icio.us/tag/load" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://d.hatena.ne.jp/jbking/20070310/p1">
+<title>[Python][Stackless][Django]StacklessPythonいいよ、たぶん。</title>
+<link>http://d.hatena.ne.jp/jbking/20070310/p1</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T10:21:13Z</dc:date>
+<dc:subject>Python django sample stackless</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/stackless" />
+    <rdf:li resource="http://del.icio.us/tag/Python" />
+    <rdf:li resource="http://del.icio.us/tag/django" />
+    <rdf:li resource="http://del.icio.us/tag/sample" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://labs.unoh.net/2007/03/post_73.html">
+<title>ウノウラボ Unoh Labs: 専用サーバを構築するときにまず行う４つの設定</title>
+<link>http://labs.unoh.net/2007/03/post_73.html</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T09:48:24Z</dc:date>
+<dc:subject>howto linux setting</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/howto" />
+    <rdf:li resource="http://del.icio.us/tag/setting" />
+    <rdf:li resource="http://del.icio.us/tag/linux" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.nishiohirokazu.org/blog/2007/03/haskell.html">
+<title>Haskell日記</title>
+<link>http://www.nishiohirokazu.org/blog/2007/03/haskell.html</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T09:48:20Z</dc:date>
+<dc:subject>Haskell doc documentation sample</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/Haskell" />
+    <rdf:li resource="http://del.icio.us/tag/doc" />
+    <rdf:li resource="http://del.icio.us/tag/documentation" />
+    <rdf:li resource="http://del.icio.us/tag/sample" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://d.hatena.ne.jp/mopemope/20070314/p2">
+<title>回転と脱線 - AOP weave</title>
+<link>http://d.hatena.ne.jp/mopemope/20070314/p2</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T09:48:17Z</dc:date>
+<dc:subject>Python toprint</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/toprint" />
+    <rdf:li resource="http://del.icio.us/tag/Python" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://d.hatena.ne.jp/mopemope/20070313/p1">
+<title>[技術]Twistedのbloking対策</title>
+<link>http://d.hatena.ne.jp/mopemope/20070313/p1</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T09:48:13Z</dc:date>
+<dc:subject>twisted</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/twisted" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://d.hatena.ne.jp/naoya/20070311/1173629378">
+<title>naoyaのはてなダイアリー - prefork サーバーと thundering herd 問題</title>
+<link>http://d.hatena.ne.jp/naoya/20070311/1173629378</link>
+<description>prefork サーバーの thundering herd 問題を起点に深追いした内容をまとめてみました。</description>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T09:42:43Z</dc:date>
+<dc:subject>POE perl thread</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/POE" />
+    <rdf:li resource="http://del.icio.us/tag/perl" />
+    <rdf:li resource="http://del.icio.us/tag/thread" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://d.hatena.ne.jp/mopemope/20070308/p1">
+<title>[技術][Nevow]Nevowにurlresolverを装備させる</title>
+<link>http://d.hatena.ne.jp/mopemope/20070308/p1</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-15T09:15:37Z</dc:date>
+<dc:subject>nevow pyhton toprint twisted</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/pyhton" />
+    <rdf:li resource="http://del.icio.us/tag/twisted" />
+    <rdf:li resource="http://del.icio.us/tag/toprint" />
+    <rdf:li resource="http://del.icio.us/tag/nevow" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://d.hatena.ne.jp/tasukuchan/20070301/sqlite_senna_syobon">
+<title>グニャラくんのグニャグニャ備忘録@はてな - SQLiteスレでのSennaの話題</title>
+<link>http://d.hatena.ne.jp/tasukuchan/20070301/sqlite_senna_syobon</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-12T13:20:37Z</dc:date>
+<dc:subject>SQLite Senna search</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/SQLite" />
+    <rdf:li resource="http://del.icio.us/tag/Senna" />
+    <rdf:li resource="http://del.icio.us/tag/search" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://www.stonemind.net/blog/2007/03/08/django-rest-redux/">
+<title>stone mind » django REST redux</title>
+<link>http://www.stonemind.net/blog/2007/03/08/django-rest-redux/</link>
+<description>This is the third post in a series exploring how to create a basic tagging application, and how to do so in the Django framework so that I may better understand Django as well as other technologies and development approaches that are at least somewhat new</description>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-09T12:01:55Z</dc:date>
+<dc:subject>REST django toprint</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/REST" />
+    <rdf:li resource="http://del.icio.us/tag/django" />
+    <rdf:li resource="http://del.icio.us/tag/toprint" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://msugai.fc2web.com/web/CSS/selector.html">
+<title>CSS 概説 | セレクタ</title>
+<link>http://msugai.fc2web.com/web/CSS/selector.html</link>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-09T08:36:32Z</dc:date>
+<dc:subject>CSS selector</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/CSS" />
+    <rdf:li resource="http://del.icio.us/tag/selector" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+<item rdf:about="http://twistedmatrix.com/trac/ticket/2506">
+<title>      #2506 (Memcached client) – Twisted – Trac</title>
+<link>http://twistedmatrix.com/trac/ticket/2506</link>
+<description>Memcached (http://www.danga.com/memcached/) is a cache server to keep objects in memory. I attach a memcache protocol implementation, with tests.</description>
+<dc:creator>MiCHiLU</dc:creator>
+<dc:date>2007-03-09T03:36:53Z</dc:date>
+<dc:subject>memcached toread twisted</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://del.icio.us/tag/twisted" />
+    <rdf:li resource="http://del.icio.us/tag/memcached" />
+    <rdf:li resource="http://del.icio.us/tag/toread" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+
+</rdf:RDF>

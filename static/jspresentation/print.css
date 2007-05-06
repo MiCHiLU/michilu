@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+body {
+  font-size: 6mm;
+}
+
+#jspresentation {
+  list-style: none;
+}
+
+.page {
+  border: 0.5mm solid #ccc;
+  width: 158mm;
+  height: 110mm;
+
+  /* Opera がバグってるから */
+  margin: auto;
+  margin-bottom: 20mm;
+
+  position: relative;
+  top: 5mm;
+}
+
+.page.odd {
+  page-break-after: always;
+}
+
+.page.first-child {
+  border: none;
+  height: 240mm;
+}
+
+.page.first-child h1 {
+  font-size: 12mm;
+  margin-top: 50mm;
+  margin-bottom: 30mm;
+}
+
+.page.first-child h1 .index-number {
+  display: block;
+}
+
+.page h2 {
+  font-size: 8mm;
+  margin: 5mm;
+}
+
+.page.first-child ul.address {
+  list-style: none;
+  text-align: right;
+}
+
+.page p.impact {
+  white-space: nowrap;
+  top: 0;
+  left:0;
+  width: 158mm;
+  line-height: 110mm;
+  height: 110mm;
+  position: absolute;
+  font-size: 14mm;
+  text-align: center;
+  overflow: hidden;
+}
+
+.page p {
+  white-space: normal;
+  margin-left: 5mm;
+  margin-bottom: 2mm;
+}
+
+.page ul {
+  white-space: normal;
+  margin-left: 10mm;
+  margin-bottom: 2mm;
+}
+
+.page ul li {
+  margin-bottom: 1mm;
+}
+
+.presentation-only {
+  display: block;
+}
+
+.print-only {
+  display: block;
+}
+
+.screen-only {
+  display: none;
+}
+
+.page .print-top-logo {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 0;
+  margin: 3mm;
+}
+
+.page.first-child .print-top-logo {
+  height: 30mm;
+  position: static;
+  text-align: right;
+}
+

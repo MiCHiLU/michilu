@@ -1,0 +1,67 @@
+/* based from wilsonminer.com */
+
+/* SPECIAL CLASSES */
+.clear { clear:both; }
+.invisible { visibility:hidden; }
+.small { font-size:11px; }
+.quiet { color:#9B9C8D; font-weight:normal !important; }
+.caps { font-size:0.9em; text-transform:uppercase; }
+
+/* LISTS */
+ul.linklist { padding-left:0; }
+.linklist li { list-style-type:none; padding:0.2em 0; line-height:1.2em; margin-left:0; }
+.linklist li a { font-weight:bold; }
+
+/* PHOTO LISTS */
+.photo-list li { list-style-type:none; float:left; padding-right:10px; padding-bottom:10px; }
+
+/* LEAD IMAGES */
+.lead-image { position:relative; margin-left:-20px; margin-bottom:15px; clear:both; }
+.lead-image img { padding-right:10px; }
+
+/* POST LISTS */
+#content ul.posts-list li { list-style-type:none; margin-bottom:1.6em; width:700px; }
+#content .posts-list .post p { font:1.1em/1.4em Georgia, Times, sans-serif; margin-bottom:0.8em; }
+#content .posts-list .post p.post-footer { margin-top:-0.4em !important; font-family:"Lucida Grande","Bitstream Vera Sans", Verdana, Arial, sans-serif !important; margin-top:1.6em; font-size:11px !important; color:#9B9C8D; }
+
+/* PAGE CONTAINER */
+#container { width:1000px; position:relative; }
+
+/* HEADER */
+#header { position:relative; height:112px; }
+#header h1 { position:absolute; bottom:20px; left:20px; width:247px; height:22px; color:#FFFFFF;}
+#header h1 a { width:247px; height:0; padding:22px 0 0 0; color:#333333;
+/* background:url(http://media.wilsonminer.com/images/site/logo_green.gif) no-repeat; overflow:hidden; font-size:1px; */
+}
+#header #nav-global { position:absolute; bottom:20px;left:310px; }
+#header #nav-global li { list-style-type:none; float:left;	margin-right:30px; line-height:1em;  color:#EEDDCC; }
+#header #nav-global li a:link, 
+#header #nav-global li a:visited { text-transform:uppercase; font-weight:bold; color:white; }
+#header #nav-global li a:hover { color:#EEDDCC; }
+
+/* CONTENT */
+#content { background:white; float:left; width:100%; border-bottom:8px solid #FF6A00; }
+#content h1 { font-size:2em; margin:0.5em 0; line-height:1.15em; clear:both; color:#FFAA00; }
+#content h2 { font-size:1em; line-height:1.2em; margin:1.6em 0; color:#9B9C8D; }
+#content h3 { font-size:1.5em; line-height:1.2em; margin:0.6em 0; color:#FFAA00; }
+#content p { font-size:1em; margin:0.5em 0; }
+
+/* FOOTER */
+/* #footer { clear:both; padding:20px 30px; color:#EEDDCC; font-size:0.85em; padding-left:80px; background:url(http://media.wilsonminer.com/images/site/logo-footer.gif) 20px 20px no-repeat; } */
+#footer { clear:both; padding:20px 30px; color:#EEDDCC; font-size:1.5em; padding-left:80px; background:url() 20px 20px no-repeat; }
+#footer a:link,
+#footer a:visited { color:white; }
+#footer a:hover { color:#EEDDCC; }
+
+/* CLEARFIX */
+.clearfix:after {
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* Hide from IE Mac \*/
+.clearfix {display:block;}
+/* End hide from IE Mac */

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+<html>
+<head>
+<title>{% block title%} - 500{% endblock %}</title>
+</head>
+<body>
+{% block content %}
+    500 server error.
+    back to <a href="/">top</a>.
+{% endblock %}
+</body>
+</html>

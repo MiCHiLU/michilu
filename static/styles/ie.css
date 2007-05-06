@@ -1,0 +1,16 @@
+/* based from wilsonminer.com */
+
+/* IE 6 & 7 */
+#home #photos { *height:320px; }
+#home #photos h2 { *position:absolute; }
+#home #photos .more { *position:absolute; *margin-top:0; *right:0; *top:1.6em; }
+#home #photos a.photo { *margin-top:0 !important; }
+#home #photos a.title { *position:relative; }
+
+.lead-image { *left:-20px; *margin-left:0; *float:left; *clear:both; }
+.lead-image img { *float:left; }
+
+/* IE 6 ONLY */
+#home #recommendations .recommendation strong, #home #recommendations .recommendation span { _word-wrap:break-word; }
+
+#post-detail #primary-related { _width:240px; }

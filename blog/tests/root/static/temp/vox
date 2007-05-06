@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed
+    xmlns="http://www.w3.org/2005/Atom"
+    xmlns:at="http://www.sixapart.com/ns/at"
+    xmlns:icbm="http://postneo.com/icbm"
+    xmlns:rvw="http://purl.org/NET/RVW/0.2/"
+    xml:lang="en">
+    <title>MiCHiLU&#39;s blog</title>
+    <link rel="self" type="application/atom+xml" title="MiCHiLU&#39;s blog (Atom)" href="http://michilu.vox.com/library/books/page/1/atom.xml" />
+    <link rel="alternate" type="text/html" title="MiCHiLU&#39;s blog" href="http://michilu.vox.com/library/books/page/1/"/> 
+    <link rel="service.post" type="application/atom+xml" title="MiCHiLU&#39;s blog" href="http://www.vox.com/services/atom/svc=post/collection_id=6a00c2251d4f16f21900c2251d4d1f549d" /> 
+    <link rel="service.subscribe" type="application/atom+xml" title="MiCHiLU&#39;s blog" href="http://michilu.vox.com/library/books/atom.xml" />    
+    <link rel="next" type="application/atom+xml" title="MiCHiLU&#39;s blog" href="http://michilu.vox.com/library/books/page/2/atom.xml" /> 
+    <link rel="last" type="application/atom+xml" title="MiCHiLU&#39;s blog" href="http://michilu.vox.com/library/books/page/3/atom.xml" />  
+    <generator uri="http://www.vox.com/">Vox</generator>
+    <updated>2007-03-15T08:43:12Z</updated> 
+    <author>
+        <name>MiCHiLU</name>
+        <uri>http://michilu.vox.com/</uri>
+    </author> 
+    <id>tag:vox.com,2006:6p00c2251d4f16f219/</id>  
+    
+    <entry>
+        <title>こんな僕でも社長になれた</title>   
+        <link rel="alternate" type="text/html" title="こんな僕でも社長になれた" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d414286c4c3c7f.html" />  
+        <link rel="service.post" type="application/atom+xml" title="こんな僕でも社長になれた" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d414286c4c3c7f.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="こんな僕でも社長になれた" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d414286c4c3c7f" />          <id>tag:vox.com,2007-03-15:asset-6a00c2251d4f16f21900d414286c4c3c7f</id>
+        <published>2007-03-15T08:43:12Z</published>
+        <updated>2007-03-15T08:43:12Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4847017099/sixapart-vox1-22" title="Buy こんな僕でも社長になれた at Amazon"><img
+                    src="http://a4.vox.com/6a00c2251d4f16f21900d414286c4c3c7f-320pi" alt="こんな僕でも社長になれた" title="こんな僕でも社長になれた" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>ハッカーと画家 コンピュータ時代の創造者たち</title>   
+        <link rel="alternate" type="text/html" title="ハッカーと画家 コンピュータ時代の創造者たち" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d414213d90685e.html" />  
+        <link rel="service.post" type="application/atom+xml" title="ハッカーと画家 コンピュータ時代の創造者たち" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d414213d90685e.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="ハッカーと画家 コンピュータ時代の創造者たち" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d414213d90685e" />          <id>tag:vox.com,2007-03-12:asset-6a00c2251d4f16f21900d414213d90685e</id>
+        <published>2007-03-12T09:28:44Z</published>
+        <updated>2007-03-12T09:28:44Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4274065979/sixapart-vox1-22" title="Buy ハッカーと画家 コンピュータ時代の創造者たち at Amazon"><img
+                    src="http://a0.vox.com/6a00c2251d4f16f21900d414213d90685e-320pi" alt="ハッカーと画家 コンピュータ時代の創造者たち" title="ハッカーと画家 コンピュータ時代の創造者たち" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>デザイニング・インターフェース ―パターンによる実践的インタラクションデザイン</title>   
+        <link rel="alternate" type="text/html" title="デザイニング・インターフェース ―パターンによる実践的インタラクションデザイン" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900cd9719a8c84cd5.html" />  
+        <link rel="service.post" type="application/atom+xml" title="デザイニング・インターフェース ―パターンによる実践的インタラクションデザイン" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900cd9719a8c84cd5.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="デザイニング・インターフェース ―パターンによる実践的インタラクションデザイン" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900cd9719a8c84cd5" />          <id>tag:vox.com,2007-03-12:asset-6a00c2251d4f16f21900cd9719a8c84cd5</id>
+        <published>2007-03-12T09:28:30Z</published>
+        <updated>2007-03-12T09:28:30Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873113164/sixapart-vox1-22" title="Buy デザイニング・インターフェース ―パターンによる実践的インタラクションデザイン at Amazon"><img
+                    src="http://a0.vox.com/6a00c2251d4f16f21900cd9719a8c84cd5-320pi" alt="デザイニング・インターフェース ―パターンによる実践的インタラクションデザイン" title="デザイニング・インターフェース ―パターンによる実践的インタラクションデザイン" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>Beginning Javascript With DOM Scripting And Ajax: From NOvice to Professional (Beginning: from Novice to Professional)</title>   
+        <link rel="alternate" type="text/html" title="Beginning Javascript With DOM Scripting And Ajax: From NOvice to Professional (Beginning: from Novice to Professional)" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4142556d06a47.html" />  
+        <link rel="service.post" type="application/atom+xml" title="Beginning Javascript With DOM Scripting And Ajax: From NOvice to Professional (Beginning: from Novice to Professional)" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4142556d06a47.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="Beginning Javascript With DOM Scripting And Ajax: From NOvice to Professional (Beginning: from Novice to Professional)" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d4142556d06a47" />          <id>tag:vox.com,2007-03-12:asset-6a00c2251d4f16f21900d4142556d06a47</id>
+        <published>2007-03-12T09:28:12Z</published>
+        <updated>2007-03-12T09:28:12Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/1590596803/sixapart-vox1-22" title="Buy Beginning Javascript With DOM Scripting And Ajax: From NOvice to Professional (Beginning: from Novice to Professional) at Amazon"><img
+                    src="http://a0.vox.com/6a00c2251d4f16f21900d4142556d06a47-320pi" alt="Beginning Javascript With DOM Scripting And Ajax: From NOvice to Professional (Beginning: from Novice to Professional)" title="Beginning Javascript With DOM Scripting And Ajax: From NOvice to Professional (Beginning: from Novice to Professional)" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>Pro Javascript Techniques (Pro)</title>   
+        <link rel="alternate" type="text/html" title="Pro Javascript Techniques (Pro)" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d414213d8c685e.html" />  
+        <link rel="service.post" type="application/atom+xml" title="Pro Javascript Techniques (Pro)" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d414213d8c685e.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="Pro Javascript Techniques (Pro)" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d414213d8c685e" />          <id>tag:vox.com,2007-03-12:asset-6a00c2251d4f16f21900d414213d8c685e</id>
+        <published>2007-03-12T09:27:48Z</published>
+        <updated>2007-03-12T09:27:48Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/1590597273/sixapart-vox1-22" title="Buy Pro Javascript Techniques (Pro) at Amazon"><img
+                    src="http://a4.vox.com/6a00c2251d4f16f21900d414213d8c685e-320pi" alt="Pro Javascript Techniques (Pro)" title="Pro Javascript Techniques (Pro)" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>TurboGears×Python</title>   
+        <link rel="alternate" type="text/html" title="TurboGears×Python" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d09e5ad76abe2b.html" />  
+        <link rel="service.post" type="application/atom+xml" title="TurboGears×Python" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d09e5ad76abe2b.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="TurboGears×Python" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d09e5ad76abe2b" />          <id>tag:vox.com,2007-03-09:asset-6a00c2251d4f16f21900d09e5ad76abe2b</id>
+        <published>2007-03-09T05:52:53Z</published>
+        <updated>2007-03-09T05:52:53Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4774130567/sixapart-vox1-22" title="Buy TurboGears×Python at Amazon"><img
+                    src="http://a2.vox.com/6a00c2251d4f16f21900d09e5ad76abe2b-320pi" alt="TurboGears×Python" title="TurboGears×Python" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>人月の神話―狼人間を撃つ銀の弾はない</title>   
+        <link rel="alternate" type="text/html" title="人月の神話―狼人間を撃つ銀の弾はない" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d09e5641efbe2b.html" />  
+        <link rel="service.post" type="application/atom+xml" title="人月の神話―狼人間を撃つ銀の弾はない" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d09e5641efbe2b.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="人月の神話―狼人間を撃つ銀の弾はない" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d09e5641efbe2b" />          <id>tag:vox.com,2007-02-19:asset-6a00c2251d4f16f21900d09e5641efbe2b</id>
+        <published>2007-02-19T10:10:44Z</published>
+        <updated>2007-02-19T10:10:44Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4894716658/sixapart-vox1-22" title="Buy 人月の神話―狼人間を撃つ銀の弾はない at Amazon"><img
+                    src="http://a7.vox.com/6a00c2251d4f16f21900d09e5641efbe2b-320pi" alt="人月の神話―狼人間を撃つ銀の弾はない" title="人月の神話―狼人間を撃つ銀の弾はない" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>Linuxアドバンストネットワークサーバ構築ガイド HAサーバ構築編</title>   
+        <link rel="alternate" type="text/html" title="Linuxアドバンストネットワークサーバ構築ガイド HAサーバ構築編" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900cd97145c734cd5.html" />  
+        <link rel="service.post" type="application/atom+xml" title="Linuxアドバンストネットワークサーバ構築ガイド HAサーバ構築編" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900cd97145c734cd5.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="Linuxアドバンストネットワークサーバ構築ガイド HAサーバ構築編" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900cd97145c734cd5" />          <id>tag:vox.com,2007-02-19:asset-6a00c2251d4f16f21900cd97145c734cd5</id>
+        <published>2007-02-19T07:51:31Z</published>
+        <updated>2007-02-19T07:51:31Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4798011894/sixapart-vox1-22" title="Buy Linuxアドバンストネットワークサーバ構築ガイド HAサーバ構築編 at Amazon"><img
+                    src="http://a3.vox.com/6a00c2251d4f16f21900cd97145c734cd5-320pi" alt="Linuxアドバンストネットワークサーバ構築ガイド HAサーバ構築編" title="Linuxアドバンストネットワークサーバ構築ガイド HAサーバ構築編" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>完全図解周期表―自然界のしくみを理解する第1歩</title>   
+        <link rel="alternate" type="text/html" title="完全図解周期表―自然界のしくみを理解する第1歩" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d09e563cfebe2b.html" />  
+        <link rel="service.post" type="application/atom+xml" title="完全図解周期表―自然界のしくみを理解する第1歩" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d09e563cfebe2b.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="完全図解周期表―自然界のしくみを理解する第1歩" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d09e563cfebe2b" />          <id>tag:vox.com,2007-02-19:asset-6a00c2251d4f16f21900d09e563cfebe2b</id>
+        <published>2007-02-19T07:48:06Z</published>
+        <updated>2007-03-07T12:16:21Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4315517895/sixapart-vox1-22" title="Buy 完全図解周期表―自然界のしくみを理解する第1歩 at Amazon"><img
+                    src="http://a6.vox.com/6a00c2251d4f16f21900d09e563cfebe2b-320pi" alt="完全図解周期表―自然界のしくみを理解する第1歩" title="完全図解周期表―自然界のしくみを理解する第1歩" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>相対性理論が明かすブラックホール</title>   
+        <link rel="alternate" type="text/html" title="相対性理論が明かすブラックホール" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4141beb10685e.html" />  
+        <link rel="service.post" type="application/atom+xml" title="相対性理論が明かすブラックホール" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4141beb10685e.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="相対性理論が明かすブラックホール" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d4141beb10685e" />          <id>tag:vox.com,2007-02-19:asset-6a00c2251d4f16f21900d4141beb10685e</id>
+        <published>2007-02-19T07:47:52Z</published>
+        <updated>2007-02-19T07:47:52Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4315517631/sixapart-vox1-22" title="Buy 相対性理論が明かすブラックホール at Amazon"><img
+                    src="http://a0.vox.com/6a00c2251d4f16f21900d4141beb10685e-320pi" alt="相対性理論が明かすブラックホール" title="相対性理論が明かすブラックホール" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>天文学会注目の75の銀河68の恒星―最先端装置で撮影,待望の精細画像</title>   
+        <link rel="alternate" type="text/html" title="天文学会注目の75の銀河68の恒星―最先端装置で撮影,待望の精細画像" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4142008406a47.html" />  
+        <link rel="service.post" type="application/atom+xml" title="天文学会注目の75の銀河68の恒星―最先端装置で撮影,待望の精細画像" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4142008406a47.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="天文学会注目の75の銀河68の恒星―最先端装置で撮影,待望の精細画像" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d4142008406a47" />          <id>tag:vox.com,2007-02-19:asset-6a00c2251d4f16f21900d4142008406a47</id>
+        <published>2007-02-19T07:47:38Z</published>
+        <updated>2007-02-19T07:47:38Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4315517585/sixapart-vox1-22" title="Buy 天文学会注目の75の銀河68の恒星―最先端装置で撮影,待望の精細画像 at Amazon"><img
+                    src="http://a0.vox.com/6a00c2251d4f16f21900d4142008406a47-320pi" alt="天文学会注目の75の銀河68の恒星―最先端装置で撮影,待望の精細画像" title="天文学会注目の75の銀河68の恒星―最先端装置で撮影,待望の精細画像" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>まるごとJavaScript &amp; Ajax ! Vol.1</title>   
+        <link rel="alternate" type="text/html" title="まるごとJavaScript &amp; Ajax ! Vol.1" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4141beae7685e.html" />  
+        <link rel="service.post" type="application/atom+xml" title="まるごとJavaScript &amp; Ajax ! Vol.1" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4141beae7685e.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="まるごとJavaScript &amp; Ajax ! Vol.1" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d4141beae7685e" />          <id>tag:vox.com,2007-02-19:asset-6a00c2251d4f16f21900d4141beae7685e</id>
+        <published>2007-02-19T07:44:03Z</published>
+        <updated>2007-02-19T07:44:03Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4844323644/sixapart-vox1-22" title="Buy まるごとJavaScript &amp; Ajax ! Vol.1 at Amazon"><img
+                    src="http://a7.vox.com/6a00c2251d4f16f21900d4141beae7685e-320pi" alt="まるごとJavaScript &amp; Ajax ! Vol.1" title="まるごとJavaScript &amp; Ajax ! Vol.1" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>ネットワークセキュリティHacks―プロが使うテクニック&amp;ツール100選</title>   
+        <link rel="alternate" type="text/html" title="ネットワークセキュリティHacks―プロが使うテクニック&amp;ツール100選" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d09e55c7ccbe2b.html" />  
+        <link rel="service.post" type="application/atom+xml" title="ネットワークセキュリティHacks―プロが使うテクニック&amp;ツール100選" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d09e55c7ccbe2b.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="ネットワークセキュリティHacks―プロが使うテクニック&amp;ツール100選" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d09e55c7ccbe2b" />          <id>tag:vox.com,2007-02-17:asset-6a00c2251d4f16f21900d09e55c7ccbe2b</id>
+        <published>2007-02-17T12:05:12Z</published>
+        <updated>2007-02-17T12:05:12Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873112060/sixapart-vox1-22" title="Buy ネットワークセキュリティHacks―プロが使うテクニック&amp;ツール100選 at Amazon"><img
+                    src="http://a4.vox.com/6a00c2251d4f16f21900d09e55c7ccbe2b-320pi" alt="ネットワークセキュリティHacks―プロが使うテクニック&amp;ツール100選" title="ネットワークセキュリティHacks―プロが使うテクニック&amp;ツール100選" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>WEB+DB PRESS Vol.37</title>   
+        <link rel="alternate" type="text/html" title="WEB+DB PRESS Vol.37" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4141f06b96a47.html" />  
+        <link rel="service.post" type="application/atom+xml" title="WEB+DB PRESS Vol.37" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4141f06b96a47.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="WEB+DB PRESS Vol.37" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d4141f06b96a47" />          <id>tag:vox.com,2007-02-15:asset-6a00c2251d4f16f21900d4141f06b96a47</id>
+        <published>2007-02-15T04:32:51Z</published>
+        <updated>2007-02-15T04:32:51Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4774130419/sixapart-vox1-22" title="Buy WEB+DB PRESS Vol.37 at Amazon"><img
+                    src="http://a1.vox.com/6a00c2251d4f16f21900d4141f06b96a47-320pi" alt="WEB+DB PRESS Vol.37" title="WEB+DB PRESS Vol.37" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>WEB+DB PRESS Vol.36</title>   
+        <link rel="alternate" type="text/html" title="WEB+DB PRESS Vol.36" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900cd97135c054cd5.html" />  
+        <link rel="service.post" type="application/atom+xml" title="WEB+DB PRESS Vol.36" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900cd97135c054cd5.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="WEB+DB PRESS Vol.36" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900cd97135c054cd5" />          <id>tag:vox.com,2007-02-15:asset-6a00c2251d4f16f21900cd97135c054cd5</id>
+        <published>2007-02-15T04:31:46Z</published>
+        <updated>2007-02-15T04:31:46Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4774130036/sixapart-vox1-22" title="Buy WEB+DB PRESS Vol.36 at Amazon"><img
+                    src="http://a5.vox.com/6a00c2251d4f16f21900cd97135c054cd5-320pi" alt="WEB+DB PRESS Vol.36" title="WEB+DB PRESS Vol.36" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>みんなのPython</title>   
+        <link rel="alternate" type="text/html" title="みんなのPython" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4141ae978685e.html" />  
+        <link rel="service.post" type="application/atom+xml" title="みんなのPython" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4141ae978685e.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="みんなのPython" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d4141ae978685e" />          <id>tag:vox.com,2007-02-15:asset-6a00c2251d4f16f21900d4141ae978685e</id>
+        <published>2007-02-15T04:29:25Z</published>
+        <updated>2007-02-15T04:29:25Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/479733665X/sixapart-vox1-22" title="Buy みんなのPython at Amazon"><img
+                    src="http://a0.vox.com/6a00c2251d4f16f21900d4141ae978685e-320pi" alt="みんなのPython" title="みんなのPython" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>最新Pythonエクスプローラ Django,TurboGears,Twisted,IronPython 完全攻略</title>   
+        <link rel="alternate" type="text/html" title="最新Pythonエクスプローラ Django,TurboGears,Twisted,IronPython 完全攻略" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4142164c03c7f.html" />  
+        <link rel="service.post" type="application/atom+xml" title="最新Pythonエクスプローラ Django,TurboGears,Twisted,IronPython 完全攻略" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4142164c03c7f.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="最新Pythonエクスプローラ Django,TurboGears,Twisted,IronPython 完全攻略" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d4142164c03c7f" />          <id>tag:vox.com,2007-02-15:asset-6a00c2251d4f16f21900d4142164c03c7f</id>
+        <published>2007-02-15T04:28:53Z</published>
+        <updated>2007-02-15T04:28:53Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4774130427/sixapart-vox1-22" title="Buy 最新Pythonエクスプローラ Django,TurboGears,Twisted,IronPython 完全攻略 at Amazon"><img
+                    src="http://a0.vox.com/6a00c2251d4f16f21900d4142164c03c7f-320pi" alt="最新Pythonエクスプローラ Django,TurboGears,Twisted,IronPython 完全攻略" title="最新Pythonエクスプローラ Django,TurboGears,Twisted,IronPython 完全攻略" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>アイデアのヒント</title>   
+        <link rel="alternate" type="text/html" title="アイデアのヒント" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900cd97135bde4cd5.html" />  
+        <link rel="service.post" type="application/atom+xml" title="アイデアのヒント" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900cd97135bde4cd5.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="アイデアのヒント" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900cd97135bde4cd5" />          <id>tag:vox.com,2007-02-15:asset-6a00c2251d4f16f21900cd97135bde4cd5</id>
+        <published>2007-02-15T04:28:25Z</published>
+        <updated>2007-02-15T04:28:25Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4484031019/sixapart-vox1-22" title="Buy アイデアのヒント at Amazon"><img
+                    src="http://a6.vox.com/6a00c2251d4f16f21900cd97135bde4cd5-320pi" alt="アイデアのヒント" title="アイデアのヒント" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>スケーラブルWebサイト</title>   
+        <link rel="alternate" type="text/html" title="スケーラブルWebサイト" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4142164b13c7f.html" />  
+        <link rel="service.post" type="application/atom+xml" title="スケーラブルWebサイト" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4142164b13c7f.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="スケーラブルWebサイト" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d4142164b13c7f" />          <id>tag:vox.com,2007-02-15:asset-6a00c2251d4f16f21900d4142164b13c7f</id>
+        <published>2007-02-15T04:27:26Z</published>
+        <updated>2007-02-15T04:27:26Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873113113/sixapart-vox1-22" title="Buy スケーラブルWebサイト at Amazon"><img
+                    src="http://a1.vox.com/6a00c2251d4f16f21900d4142164b13c7f-320pi" alt="スケーラブルWebサイト" title="スケーラブルWebサイト" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+    
+    <entry>
+        <title>Python &amp; Xml</title>   
+        <link rel="alternate" type="text/html" title="Python &amp; Xml" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4141a40ff685e.html" />  
+        <link rel="service.post" type="application/atom+xml" title="Python &amp; Xml" href="http://michilu.vox.com/library/book/6a00c2251d4f16f21900d4141a40ff685e.html#comments" /> 
+        <link rel="service.edit" type="application/atom+xml" title="Python &amp; Xml" href="http://www.vox.com/atom/svc=post/asset_id=6a00c2251d4f16f21900d4141a40ff685e" />          <id>tag:vox.com,2007-02-12:asset-6a00c2251d4f16f21900d4141a40ff685e</id>
+        <published>2007-02-12T16:45:47Z</published>
+        <updated>2007-02-12T16:45:47Z</updated>
+    
+        <author>
+            <name>MiCHiLU</name>
+            <uri>http://michilu.vox.com/</uri>
+        </author>
+    
+        
+        <content type="html" xml:base="http://michilu.vox.com/">
+            <![CDATA[
+                <div xmlns="http://www.w3.org/1999/xhtml" xmlns:at="http://www.sixapart.com/ns/at">
+       
+                <a href="http://www.amazon.co.jp/exec/obidos/ASIN/0596001282/sixapart-vox1-22" title="Buy Python &amp; Xml at Amazon"><img
+                    src="http://a7.vox.com/6a00c2251d4f16f21900d4141a40ff685e-320pi" alt="Python &amp; Xml" title="Python &amp; Xml" /></a> 
+                </div>
+            ]]>
+        </content> 
+    </entry> 
+</feed>

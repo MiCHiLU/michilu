@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}pygments_style.css" />
+{% endblock %}
+{% block header %}
+    {% include "navi.html" %}
+    {% block presentation %}{% endblock %}
+    <br />
+{% endblock %}
+{% block footer %}
+    {% include "navi.html" %}
+{% endblock %}
