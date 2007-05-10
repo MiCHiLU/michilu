@@ -15,18 +15,10 @@
           content="Django Documentation - ja" />
     <link type="text/css" rel="stylesheet" 
           href="{{ MEDIA_URL }}doc-ja/css/site.css" />
-	    <script language="javascript" type="text/javascript">
-	    var debug = true;
-	    var load = ["Iter", "DOM", ];
-	    load.push("/static/doc-ja/js/logic.js", "/static/doc-ja/js/connect.js");
-	    window.onload = function (){
-	        var i = document.createElement('script');
-	        i.id = 'init';
-	        i.src = '/static/init.js';
-	        i.charset = 'UTF-8';
-	        document.body.appendChild(i);
-	    }
-	    </script>
+    <script type="text/javascript" language="javascript" 
+            src="{{ MEDIA_URL }}lib/jQuery/jquery-1.1.2.pack.js"></script>
+    <script type="text/javascript" language="javascript" 
+            src="{{ MEDIA_URL }}doc-ja/js/site.js"></script>
   </head>
   <body>
     <div id="wrapper" 

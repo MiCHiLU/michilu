@@ -10,7 +10,7 @@ function is_not_empty (element)
 	}
 };
 
-function togglePermalink(d)
+function toggle_permalink (d)
 {
 	var permalink = $(d.id);
 	var permalink_span = is_not_empty(permalink);
@@ -19,13 +19,13 @@ function togglePermalink(d)
 	{
 		removeElement($(permalink_span));
 	} else {
-		var s = SPAN({ "id": "permalink-"+getNodeAttribute(permalink, "id") }, "¶"); //"&#182;"
-		setElementClass(s, "permalink");
-		insertSiblingNodesAfter(permalink.childNodes[0], s);
+		var span = SPAN({"id": "permalink-"+getNodeAttribute(permalink, "id")}, "¶"); //"&#182;"
+		setElementClass(span, "permalink");
+		insertSiblingNodesAfter(permalink.childNodes[0], span);
 	}
 };
 
-function addPermalink(d)
+function add_permalink (d)
 {
 	var permalink = $(d.id);
 	var permalink_span = is_not_empty(permalink);
@@ -33,9 +33,9 @@ function addPermalink(d)
 	if (!permalink_span)
 	{
 		var link = getNodeAttribute(permalink, "id");
-		var s = SPAN({ "id": "permalink-"+link }, A({ "href": "#"+link }, "¶"));
-		setElementClass(s, "permalink");
-		insertSiblingNodesAfter(permalink.childNodes[0], s);
+		var span = SPAN({"id": "permalink-"+link}, A({"href": "#"+link}, "¶"));
+		setElementClass(span, "permalink");
+		insertSiblingNodesAfter(permalink.childNodes[0], span);
 	}
 };
 

@@ -6,7 +6,7 @@
 
 #status codeとtemplateを確認する
 >>> checklist = { \
-        "/":"index.html", \
+        "/":"blog/index.html", \
     }
 >>> c = Client()
 >>> for url in checklist.keys():
@@ -149,8 +149,8 @@ u'http://www.w3.org/2005/Atom'
 200
 >>> for i in response.template:
 ...     i.name
-'all.html'
-'blog_base.html'
+'blog/entry_list.html'
+'blog/base.html'
 'base.html'
 'navi.html'
 'navi-line.html'
@@ -206,8 +206,8 @@ True
 200
 >>> for one in response.template:
 ...     one.name
-'presen.html'
-'blog_base.html'
+'blog/entry_presen.html'
+'blog/base.html'
 'base.html'
 'google-analytics.html'
 
@@ -220,13 +220,13 @@ False
 >>> from templatetags.blog_extras import *
 >>> recommendations()
 >>> len(book_list()["lists"])
-20
+10
 >>> len(gadgets_list()["lists"])
 9
 >>> photo()["photo"].keys()
 ['src', 'link', 'title']
 >>> len(technorati_links()["links"])
-5
+3
 >>> len(bookmark_list()["links"])
-15
+10
 """

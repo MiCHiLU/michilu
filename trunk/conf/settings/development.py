@@ -27,60 +27,37 @@ if DEBUG:
 _proj_db = os.path.abspath('%s../db/%s.db' % (_proj_path, _proj_name))
 
 
-DATABASE_ENGINE = 'sqlite3'           # 'postgresql', 'mysql', 'sqlite3' or 'ado_mssql'.
-DATABASE_NAME = _proj_db             # Or path to database file if using sqlite3.
-DATABASE_USER = ''             # Not used with sqlite3.
-DATABASE_PASSWORD = ''         # Not used with sqlite3.
-DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
-DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
+DATABASE_ENGINE = 'sqlite3'
+DATABASE_NAME = _proj_db
 
-# Local time zone for this installation. All choices can be found here:
-# http://www.postgresql.org/docs/current/static/datetime-keywords.html#DATETIME-TIMEZONE-SET-TABLE
+
 TIME_ZONE = 'Asia/Tokyo'
-
-# Language code for this installation. All choices can be found here:
-# http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
-# http://blogs.law.harvard.edu/tech/stories/storyReader$15
 LANGUAGE_CODE = 'en-us'
-
 SITE_ID = 1
-
-# If you set this to False, Django will make some optimizations so as not
-# to load the internationalization machinery.
 USE_I18N = True
 
-_server_domain = "http://michilu.com:8080"
+SERVER_DOMAIN = "http://michilu.com"
+_static_domain = SERVER_DOMAIN + ":8080"
 _static_path = "/static/"
 
-# Absolute path to the directory that holds media.
-# Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = _proj_path + _static_path
 if DEBUG:
     MEDIA_ROOT = os.path.abspath(".%s" % _static_path)
 
-# URL that handles the media served from MEDIA_ROOT.
-# Example: "http://media.lawrence.com"
-MEDIA_URL = _server_domain + _static_path
+MEDIA_URL = _static_domain + _static_path
 if DEBUG:
     MEDIA_URL = _static_path
 
-# URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
-# trailing slash.
-# Examples: "http://foo.com/media/", "/media/".
 ADMIN_MEDIA_PREFIX = '/media/'
+SECRET_KEY = None
 
-# Make this unique, and don't share it with anybody.
-SECRET_KEY = ''
-
-# List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.load_template_source',
     'django.template.loaders.app_directories.load_template_source',
-#     'django.template.loaders.eggs.load_template_source',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
-    "michilu._main.context_processors.context",
+    "michilu.utils.context_processors.context",
 )
 
 MIDDLEWARE_CLASSES = (
@@ -113,7 +90,8 @@ if CUSTOM_TEST:
             t.append(i)
     MIDDLEWARE_CLASSES = tuple(t)
 
-CUSTOM_DOC_JA = os.path.abspath(_proj_path + "../doc-jp/%s.txt")
+CUSTOM_DOC_JA_DIR = "../doc-jp/"
+CUSTOM_DOC_JA_FILE = os.path.abspath(_proj_path + CUSTOM_DOC_JA_DIR + "%s.txt")
 #default value を設定する    #TODO
 
 CUSTOM_FEED_DATA_path = "static/temp/%s"
@@ -135,21 +113,14 @@ INSTALLED_APPS = (
     'django.contrib.sitemaps',
     'django.contrib.comments',
     
-    'michilu._main',
+    'michilu.utils',
     'michilu.blog',
     'michilu.doc',
 )
 
-if DEBUG:
-    import imp
-    _optional_settings = "_settings"
-    _settings = None
-    try:
-        f, fn, desc = imp.find_module(_optional_settings, ["../"])
-        _settings = imp.load_module(_optional_settings, f, fn, desc)
-    except ImportError:
-        pass
-    if _settings:
-        for key in _settings.__dict__.keys():
-            if key[0] != "_":
-                vars()[key] = _settings.__dict__[key]
+from utils import utils
+optional_settings = utils.get_optional_settings("%sconf/settings/settings_overload.py" % _proj_path)
+if optional_settings:
+    for key,var in optional_settings.items():
+        vars()[key] = var
+    #print "#"*10 + " SETTINGS OVERLOADED " + "#"*10

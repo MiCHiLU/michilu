@@ -1,7 +1,13 @@
+from django.conf.urls.defaults import *
 from django.contrib.syndication.feeds import Feed
 from django.utils.feedgenerator import Atom1Feed, Rss201rev2Feed, RssUserland091Feed
 from michilu.blog.models import Entry, Tag
 from django.contrib.comments.models import FreeComment
+from django.contrib.syndication.views import feed
+from django.views.decorators.cache import cache_page
+
+full_feed = cache_page(feed,  60 * 60 * 3)
+
 
 class LatestEntries(Feed):
     feed_type = Atom1Feed
@@ -58,4 +64,23 @@ class LatestComments(LatestEntries):
 
     def item_pubdate(self, obj):
         return obj.submit_date
-    
+
+
+feeds = {
+    'blog': LatestEntries,          #Atom1Feed
+    'xml': LatestEntries_xml,       #Rss201rev2Feed
+    'rdf': LatestEntries_rdf,       #RssUserland091Feed
+    'django': LatestEntries_django, #Atom1Feed
+    'comments': LatestComments,     #Comments
+}
+
+
+urlpatterns = patterns('',)
+
+urlpatterns += patterns('',
+    (r'^(?P<url>(rdf|xml))', full_feed, {'feed_dict': feeds}),
+    (r'^(?P<url>comments)/', feed, {'feed_dict': feeds}),
+    (r'^(?P<url>\w+)/short/', feed, {'feed_dict': feeds}),
+    (r'^(?P<url>django)/', full_feed, {'feed_dict': feeds}),
+    (r'^(?P<url>\w+)/', full_feed, {'feed_dict': feeds}),
+)
