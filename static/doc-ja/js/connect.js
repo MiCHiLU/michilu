@@ -1,23 +1,8 @@
-Behavior.register(
-	'a[id]',
-	function(el){
-		el.onmouseover = function(){
-			addPermalink(this);
-		}
-	}
-);
-
-/*
-Behavior.register(
-	'a[id]',
-	function(el){
-		el.onmouseout = function(){
-			togglePermalink(this);
-		}
-	}
-);
-*/
-
-Behavior.apply()
+map(
+	function(selected){
+		connect(selected, "onmouseover", function(){add_permalink(this);});
+	},
+	$$("a[id]")
+)
 
 c = true;

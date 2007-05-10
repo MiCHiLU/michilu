@@ -1,22 +1,11 @@
-from django.contrib.sitemaps import GenericSitemap
-from michilu.blog.models import Entry
-from datetime import datetime
+from django.conf.urls.defaults import *
+from michilu.blog.sitemaps import blog_sitemaps
+from michilu.doc.sitemaps import doc_sitemaps
 
-info_dict = {
-    "queryset": Entry.objects.all(),
-    "date_field": "last_mod",
-}
+sitemaps = {}
+sitemaps.update(blog_sitemaps)
+sitemaps.update(doc_sitemaps)
 
-class IndexSitemap(object):
-    def get_urls(self):
-        return [{
-            'location':     "http://michilu.com/",
-            'lastmod':      datetime.now(),
-            'changefreq':   "hourly",
-            'priority':     0.7 ,
-        }]
-
-sitemaps = {
-    "blog": GenericSitemap(info_dict, priority=0.6),
-    "index": IndexSitemap(),
-}
+urlpatterns = patterns('', 
+    (r'^$', 'django.contrib.sitemaps.views.sitemap',{'sitemaps': sitemaps}),
+)

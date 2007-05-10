@@ -25,15 +25,9 @@ TypeError: __init__() takes at least 2 arguments (1 given)
 
 ##>>> a_cache.process_request()
 
-##template tag
-#>>> from django.conf import settings
-#>>> from django.template import Context, Template
-#>>> t = Template("{% load main_extras %}{% media_url %}")
-#>>> t.render(Context())
-#'/static/'
 
 #context processors
->>> from _main import context_processors
+>>> import context_processors
 >>> context = context_processors.context(request=None)
 >>> context
 {'MEDIA_URL': '/static/'}

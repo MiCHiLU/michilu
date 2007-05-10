@@ -1,41 +1,17 @@
 from django.conf.urls.defaults import *
-from michilu.blog.models import Entry
-from michilu.blog.feeds import LatestEntries, LatestEntries_xml, LatestEntries_rdf, LatestEntries_django, LatestComments
-from michilu.sitemaps import sitemaps
-import michilu.settings
-from django.contrib.syndication.views import feed
-from django.views.decorators.cache import cache_page
-
-full_feed = cache_page(feed,  60 * 60 * 3)
-
-
-feeds = {
-    'blog': LatestEntries, #Atom1Feed
-    'xml': LatestEntries_xml, #Rss201rev2Feed
-    'rdf': LatestEntries_rdf, #RssUserland091Feed
-    'django': LatestEntries_django, #Atom1Feed
-    'comments': LatestComments #Comments
-}
 
 
 urlpatterns = patterns("",)
 
 urlpatterns += patterns('', 
-    (r'^$', "michilu.blog.views.index"), 
-    (r'^django/doc-ja/', include('michilu.doc.urls')),
+    (r'^$', include('michilu.blog.urls')), 
     (r'^blog/', include('michilu.blog.urls')),
-    (r'^sitemap.xml$', 'django.contrib.sitemaps.views.sitemap',{'sitemaps': sitemaps}),
+    (r'^django/doc-ja/', include('michilu.doc.urls')),
+    (r'^sitemap.xml$', include('michilu.sitemaps')),
     #(r'^admin/', include('django.contrib.admin.urls')),
 
-    (r'^feeds/(?P<url>comments)/', feed, {'feed_dict': feeds}),
-    (r'^feeds/(?P<url>\w+)/short/', feed, {'feed_dict': feeds}),
-    (r'^feeds/(?P<url>django)/', full_feed, {'feed_dict': feeds}),
-    (r'^feeds/(?P<url>\w+)/', full_feed, {'feed_dict': feeds}),
-    (r'^index.(?P<url>(rdf|xml))', full_feed, {'feed_dict': feeds}),
-)
-
-urlpatterns += patterns('django.views.generic.list_detail', 
-    (r'^comments/', include('django.contrib.comments.urls.comments')),
+    (r'^feeds/', include('michilu.blog.feeds')),
+    (r'^index.', include('michilu.blog.feeds')),
 )
 
 urlpatterns += patterns('django.views.generic.simple',
@@ -43,7 +19,9 @@ urlpatterns += patterns('django.views.generic.simple',
 )
 
 
-if michilu.settings.DEBUG:
+#from django.conf import settings
+from michilu import settings
+if settings.DEBUG:
     from django.views.static import serve
     urlpatterns += patterns("",
         (r'^(favicon.ico)$', serve, {'document_root': 'static'}),

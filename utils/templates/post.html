@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>POST メソッドのフォーム</title>
+</head>
+<body>
+<h1>HTTP POST メソッド</h1>
+
+<form action="http://127.0.0.1:8000/comments/postfree/" method="POST">
+<p>POST メソッドのフォームの例</p>
+<table>
+<tr><th>comment:</th><td><input type="text" name="comment" size="30" value="test_comment"/></td></tr>
+<tr><th>target:</th><td><input type="text" name="target" size="30" value="9:17"/></td></tr>
+<tr><th>options:</th><td><input type="text" name="options" size="30" value="ip"/></td></tr>
+<tr><th>preview:</th><td><input type="text" name="preview" size="30" value="Preview comment"/></td></tr>
+<tr><th>gonzo:</th><td><input type="text" name="gonzo" size="30" value="99104bbd35c7c2e05d6db3d315374066"/></td></tr>
+<tr><td></td><td><input type="submit" name="submit" value="送信" /></td></tr>
+</table>
+</form>
+
+</body>
+</html>
