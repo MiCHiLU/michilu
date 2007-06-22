@@ -109,15 +109,11 @@ class Entry(models.Model):
             self.tag.add(obj)
     
     def _content_s(self):
-        #i = ""
-        #for l in self.content.split("\r\n")[3:20]:
-        #    i += l
-        #return i[:200]
-        return self.content.split("\r\n")[3]
+        return self.content.splitlines()[3]
     content_s = property(_content_s)
 
     def _title_line(self):
-        l = self.content.split("\r\n")[0].split("]:")
+        l = self.content.splitlines()[0].split("]:")
         if len(l) >= 2:
             l[0] += "]"
         return l
@@ -159,6 +155,5 @@ class Entry(models.Model):
         return "/blog/posts/%s/presen/" % self.id
 
     class Admin:
-        pass
         list_display = ("title", "tags_list", "add_date", "last_mod")
         list_filter = ("tag", )

@@ -3,7 +3,7 @@ from michilu.blog.models import Entry
 from django.views.generic.list_detail import object_list
 from django.views.decorators.cache import cache_page
 
-cache_object_list = cache_page(object_list, 60 * 15)
+cache_object_list = cache_page(object_list, 15*60)
 
 entry = Entry.objects.all()
 entries = entry.order_by("-add_date")

@@ -27,21 +27,14 @@ True
 <title>Django オンラインドキュメント和訳</title>
 >>> for i in response.template:
 ...     i.name
-'doc/rest.html'
 'doc/base.html'
 'google-analytics.html'
 
->>> from templatetags.doc_extras import get_completed_revision
->>> get_completed_revision("./doc/tests/index.txt")
+>>> from templatetags.doc_extras import completed_revision
+>>> completed_revision("./doc/tests/index.txt")
 '4884 (2007/04/01)'
->>> get_completed_revision("./doc/tests/non.txt")
+>>> completed_revision("./doc/tests/non.txt")
 '----'
-
-#>>> from django.template import Context, Template
-#>>> t = Template("{% load doc_extras %}{% completed_revision %}")
-#>>> t.render(Context())
-#'4828 (2007/03/27)'
-
 
 >>> response = c.get("/django/doc-ja/index-non_0.1")
 >>> response.status_code    # "/django/doc-ja/index-non_0.1"
@@ -61,7 +54,8 @@ True
 
 >>> response = c.get("/django/doc-ja/writing-apps-guide-outline/")
 >>> response.status_code
-200
+404
+
 
 #sitemaps
 >>> from sitemaps import doc_sitemaps

@@ -1,4 +1,5 @@
 import os.path
+import imp
 
 def get_optional_settings(optional_settings=None):
     _optional_settings = optional_settings or "conf/settings/settings_overload.py"
@@ -6,7 +7,6 @@ def get_optional_settings(optional_settings=None):
     file_name = os.path.basename(_optional_settings).split(".")[0]
     _settings = None
     result = {}
-    import imp
     try:
         f, fn, desc = imp.find_module(file_name, [dir_name])
         _settings = imp.load_module(file_name, f, fn, desc)

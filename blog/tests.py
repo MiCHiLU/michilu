@@ -229,4 +229,10 @@ False
 3
 >>> len(bookmark_list()["links"])
 10
+
+>>> svnlog_message()
+'Initial import. sync to REL-2007-04-29-2111, r426.'
+>>> svnlog_message("None")
+''
+
 """
