@@ -6,7 +6,7 @@ from django.contrib.comments.models import FreeComment
 from django.contrib.syndication.views import feed
 from django.views.decorators.cache import cache_page
 
-full_feed = cache_page(feed,  60 * 60 * 3)
+full_feed = cache_page(feed,  3*60*60)
 
 
 class LatestEntries(Feed):
@@ -16,6 +16,7 @@ class LatestEntries(Feed):
     description = "MiCHiLU.com - powered by Django blog."
     title_template = "feeds/blog_title.html"
     description_template = "feeds/blog_description.html"
+    author_name = "takanao ENDOH"
     
     def __init__(self, slug, feed_url):
         if "short" in feed_url.split("/"):

@@ -10,7 +10,7 @@ if os.path.exists("../_debug"):
 TEMPLATE_DEBUG = DEBUG
 
 CUSTOM_TEST = False
-if len(sys.argv) >= 2 and sys.argv[1] == "test":
+if sys.argv[0].split("/")[-1] == "manage.py" and sys.argv[1] == "test":
     CUSTOM_TEST = True
 
 ADMINS = (
@@ -24,6 +24,7 @@ _proj_name = "michilu"
 if DEBUG:
     _proj_path = ""
     _proj_name = os.path.split(os.path.abspath(""))[-1]
+    #_proj_name = os.path.dirname(os.path.abspath(__file__))
 _proj_db = os.path.abspath('%s../db/%s.db' % (_proj_path, _proj_name))
 
 
@@ -74,9 +75,13 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.abspath('%stemplates' % _proj_path).replace(os.sep, "/"),
-    os.path.abspath('%sblog/templates' % _proj_path).replace(os.sep, "/"),
-    os.path.abspath('%sdoc/templates' % _proj_path).replace(os.sep, "/"),
+    'templates',
+    'helpdoc/templates',
+    'blog/templates',
+    'doc/templates',
+)
+TEMPLATE_DIRS = tuple(
+    [os.path.abspath("%s%s" % (_proj_path, _dir)).replace(os.sep, "/") for _dir in TEMPLATE_DIRS]
 )
 
 CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
@@ -84,11 +89,11 @@ CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
 
 if CUSTOM_TEST:
     CACHE_BACKEND = 'dummy:///'
-    t = []
-    for i in MIDDLEWARE_CLASSES:
-        if i != "django.middleware.cache.CacheMiddleware":
-            t.append(i)
-    MIDDLEWARE_CLASSES = tuple(t)
+    cache = "django.middleware.cache.CacheMiddleware"
+    if cache in MIDDLEWARE_CLASSES:
+        m = list(MIDDLEWARE_CLASSES)
+        m.remove(cache)
+        MIDDLEWARE_CLASSES = tuple(m)
 
 CUSTOM_DOC_JA_DIR = "../doc-jp/"
 CUSTOM_DOC_JA_FILE = os.path.abspath(_proj_path + CUSTOM_DOC_JA_DIR + "%s.txt")
@@ -114,6 +119,7 @@ INSTALLED_APPS = (
     'django.contrib.comments',
     
     'michilu.utils',
+    'michilu.helpdoc',
     'michilu.blog',
     'michilu.doc',
 )
@@ -123,4 +129,5 @@ optional_settings = utils.get_optional_settings("%sconf/settings/settings_overlo
 if optional_settings:
     for key,var in optional_settings.items():
         vars()[key] = var
-    #print "#"*10 + " SETTINGS OVERLOADED " + "#"*10
+    if DEBUG:
+        print "#"*10 + " SETTINGS OVERLOADED " + "#"*10

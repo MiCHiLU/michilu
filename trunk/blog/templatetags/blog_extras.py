@@ -27,7 +27,6 @@ def recommendations():
         "gadgets": "blog/recommendations/gadgets.html",
     }
 
-@register.inclusion_tag("tags/amazon.html")
 def book_list():
     f = data_open("vox")
     if not f:
@@ -41,7 +40,8 @@ def book_list():
         book_list.append(book)
     return {"lists": book_list}
 
-@register.inclusion_tag("tags/amazon.html")
+register.inclusion_tag("tags/amazon.html")(book_list)
+
 def gadgets_list():
     f = data_open("gadgets")
     if not f:
@@ -57,7 +57,8 @@ def gadgets_list():
     gadgets_list = gadgets_list[::-1][:10]
     return {"lists": gadgets_list}
 
-@register.inclusion_tag("tags/photo.html")
+register.inclusion_tag("tags/amazon.html")(gadgets_list)
+
 def photo():
     f = data_open("flickr")
     if not f:
@@ -66,13 +67,14 @@ def photo():
     photo = {}
     i = BeautifulSoup(f).find("entry")
     try:
-        values = (i.findAll("link")[0]["href"], i.title.string, i.findAll("link")[1]["href"], )
+        values = (i.findAll("link")[0]["href"], i.title.string, i.findAll("link", rel="enclosure")[0]["href"], )
         photo = dict(zip(keys, values))
     except AttributeError:
         photo = {}
     return {"photo": photo}
 
-@register.inclusion_tag("tags/links.html")
+register.inclusion_tag("tags/photo.html")(photo)
+
 def technorati_links():
     f = data_open("technorati")
     if not f:
@@ -90,7 +92,8 @@ def technorati_links():
             continue
     return {"links": technorati_links}
 
-@register.inclusion_tag("tags/links.html")
+register.inclusion_tag("tags/links.html")(technorati_links)
+
 def bookmark_list():
     f = data_open("delicious")
     if not f:
@@ -109,3 +112,15 @@ def bookmark_list():
         bookmark = dict(zip(keys, (i["rdf:about"], i.title.string, description, tags)))
         bookmark_list.append(bookmark)
     return {"links": bookmark_list}
+
+register.inclusion_tag("tags/links.html")(bookmark_list)
+
+def svnlog_message(taget_file=None):
+    taget_file = taget_file or "svnlog"
+    f = data_open(taget_file)
+    try:
+        return f.readlines()[4].strip()
+    except (AttributeError, IndexError):
+        return ""
+
+register.simple_tag(svnlog_message)

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Django オンラインドキュメント和訳" height="250">
+  </ModulePrefs>
+  <Content type="url" href="http://michilu.com/django/doc-ja/index/"></Content>
+</Module>

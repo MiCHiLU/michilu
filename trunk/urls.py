@@ -7,6 +7,7 @@ urlpatterns += patterns('',
     (r'^$', include('michilu.blog.urls')), 
     (r'^blog/', include('michilu.blog.urls')),
     (r'^django/doc-ja/', include('michilu.doc.urls')),
+    (r'^helpdoc/', include('michilu.helpdoc.urls')),
     (r'^sitemap.xml$', include('michilu.sitemaps')),
     #(r'^admin/', include('django.contrib.admin.urls')),
 
