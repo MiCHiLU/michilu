@@ -1,0 +1,13 @@
+{% if app_list %}
+  <ul>
+{% else %}
+  Documentation was not found.
+{% endif %}
+{% for app in app_list %}
+  <li>
+    <a href="{{ base_url }}{{ app }}/">{{ app }}</a>
+  </li>
+{% endfor %}
+{% if app_list %}
+  </ul>
+{% endif %}

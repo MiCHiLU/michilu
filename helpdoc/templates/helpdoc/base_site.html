@@ -1,10 +1,20 @@
 {% extends "admin/base.html" %}
 {% load i18n %}
+{% load helpdoc_extras %}
 
-{% block title %}{{ title|escape }} | {% trans 'Django site admin' %}{% endblock %}
+{% block title %}{% if content %}{% title content %} | {% endif %}{% trans 'HelpDoc' %}{% endblock %}
 
 {% block branding %}
 <h1 id="site-name">{% trans 'Django administration' %}</h1>
 {% endblock %}
 
-{% block nav-global %}{% endblock %}
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+  <a href="{% admin_base_url %}">{% trans 'Home' %}</a>
+  &rsaquo;
+  <a href="{{ base_url }}">HelpDoc</a>
+  {% helpdoc_menu %}
+</div>
+{% endblock %}
+
+{% block userlinks %}<a href="{% admin_base_url %}doc/">{% trans 'Documentation' %}</a> / <a href="{% admin_base_url %}password_change/">{% trans 'Change password' %}</a> / <a href="{% admin_base_url %}logout/">{% trans 'Log out' %}</a>{% endblock %}

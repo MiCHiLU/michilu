@@ -96,7 +96,7 @@ if CUSTOM_TEST:
         MIDDLEWARE_CLASSES = tuple(m)
 
 CUSTOM_DOC_JA_DIR = "../doc-jp/"
-CUSTOM_DOC_JA_FILE = os.path.abspath(_proj_path + CUSTOM_DOC_JA_DIR + "%s.txt")
+CUSTOM_DOC_JA_FILE = os.path.abspath(_proj_path + CUSTOM_DOC_JA_DIR + "%s%s.txt")
 #default value を設定する    #TODO
 
 CUSTOM_FEED_DATA_path = "static/temp/%s"
@@ -123,6 +123,11 @@ INSTALLED_APPS = (
     'michilu.blog',
     'michilu.doc',
 )
+
+SERIALIZATION_MODULES = {
+    "json": "utils.serializers.json"
+}
+DEFAULT_SERIALIZE_ENSURE_ASCII = False
 
 from utils import utils
 optional_settings = utils.get_optional_settings("%sconf/settings/settings_overload.py" % _proj_path)

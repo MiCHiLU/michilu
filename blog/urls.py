@@ -12,8 +12,11 @@ entries = entry.order_by("-add_date")
 urlpatterns = patterns('',)
 
 urlpatterns += patterns('',
-    (r'^$', cache_object_list, \
-        {"queryset": entries[:4], "template_name": "blog/index.html"}),
+    (r'^$', cache_object_list, dict(
+        queryset = entries[:4],
+        template_name = "blog/index.html",
+        allow_empty = True,
+    )),
 
     (r'^comments/', include('django.contrib.comments.urls.comments')),
 )
@@ -29,6 +32,9 @@ urlpatterns += patterns('django.views.generic.list_detail',
     (r"^posts/(?P<object_id>\d+)/presen/$", "object_detail", \
         {"queryset": entry, "template_name": "blog/entry_presen.html"}),
 
-    (r"^posts/", "object_list", \
+    (r"^posts/$", "object_list", \
+        {"queryset": entries, }),
+
+    (r"^posts.json$", "object_list", \
         {"queryset": entries, }),
 )

@@ -1,0 +1,21 @@
+[
+  {
+    "pk": "1", 
+    "model": "blog.entry", 
+    "fields": {
+      "content": "[TEST]: タイトル", 
+      "add_date": "2007-06-24 17:26:08", 
+      "tag": [
+        1
+      ], 
+      "last_mod": "2007-06-24 17:27:02"
+    }
+  }, 
+  {
+    "pk": "1", 
+    "model": "blog.tag", 
+    "fields": {
+      "value": "test"
+    }
+  }
+]

@@ -1,5 +1,7 @@
 {% extends "admin/base_site.html" %}
 {% load i18n %}
+{% load helpdoc_extras %}
+
 {% block breadcrumbs %}<div class="breadcrumbs"><a href="../">Home</a> &rsaquo; Documentation</div>{% endblock %}
 {% block userlinks %}<a href="../password_change/">{% trans 'Change password' %}</a> / <a href="../logout/">{% trans 'Log out' %}</a>{% endblock %}
 {% block title %}Documentation{% endblock %}
@@ -9,7 +11,7 @@
 <h1>Documentation</h1>
 
 <div id="content-main">
-  <h3><a href="/helpdoc/">Help Documentations</a></h3>
+  <h3><a href="{% if helpdoc_base_url %}{{ helpdoc_base_url }}{% else %}/helpdoc/{% endif %}">Help Documentations</a></h3>
   <p>The help documentation for installed applications.</p>
 
   <h3><a href="tags/">Tags</a></h3>
