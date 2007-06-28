@@ -6,7 +6,12 @@ from django.contrib.comments.models import FreeComment
 from django.contrib.syndication.views import feed
 from django.views.decorators.cache import cache_page
 
-full_feed = cache_page(feed,  3*60*60)
+from views import search
+from django.http import HttpResponse, Http404
+from django.utils import feedgenerator
+
+
+full_feed = cache_page(feed, 3*60*60)
 
 
 class LatestEntries(Feed):
@@ -67,6 +72,27 @@ class LatestComments(LatestEntries):
         return obj.submit_date
 
 
+def search_feed(request):
+    keyword, entry_list = search(request)
+    if not keyword:
+        raise Http404
+    title = unicode("%s - MiCHiLU Life. search feed." % keyword, "UTF-8")
+    link = "/"
+    f = feedgenerator.Atom1Feed(
+        title=title,
+        link=link,
+        description=title,
+        language=u"ja")
+
+    for item in entry_list[:20]:
+        f.add_item(title=item.title,
+            link=item.get_absolute_url(),
+            description=item.content_s,
+            pubdate=item.add_date,
+        )
+    return HttpResponse(f.writeString('utf8'), mimetype="application/atom+xml")
+search_feed = cache_page(search_feed, 3*60*60)
+
 feeds = {
     'blog': LatestEntries,          #Atom1Feed
     'xml': LatestEntries_xml,       #Rss201rev2Feed
@@ -79,6 +105,7 @@ feeds = {
 urlpatterns = patterns('',)
 
 urlpatterns += patterns('',
+    (r'^search/$', search_feed),
     (r'^(?P<url>(rdf|xml))', full_feed, {'feed_dict': feeds}),
     (r'^(?P<url>comments)/', feed, {'feed_dict': feeds}),
     (r'^(?P<url>\w+)/short/', feed, {'feed_dict': feeds}),

@@ -7,9 +7,10 @@ urlpatterns += patterns('',
     (r'^$', include('michilu.blog.urls')), 
     (r'^blog/', include('michilu.blog.urls')),
     (r'^django/doc-ja/', include('michilu.doc.urls')),
-    (r'^helpdoc/', include('michilu.helpdoc.urls')),
+    (r'^helpdoc/', include('michilu.helpdoc.urls'), dict(
+        base_url = "/helpdoc/",
+    )),
     (r'^sitemap.xml$', include('michilu.sitemaps')),
-    #(r'^admin/', include('django.contrib.admin.urls')),
 
     (r'^feeds/', include('michilu.blog.feeds')),
     (r'^index.', include('michilu.blog.feeds')),
@@ -20,7 +21,6 @@ urlpatterns += patterns('django.views.generic.simple',
 )
 
 
-#from django.conf import settings
 from michilu import settings
 if settings.DEBUG:
     from django.views.static import serve
@@ -30,6 +30,8 @@ if settings.DEBUG:
     )
     urlpatterns += patterns('',
         (r'^admin/', include('django.contrib.admin.urls')),
-    	(r'^selenium/(.*)$', serve, {'document_root': '_selenium/core', 'show_indexes':True}),
-    	(r'^tests/(.*)$', serve, {'document_root': '_tests'}),
+        (r'^accounts/login/$', 'django.contrib.auth.views.login',
+            {"template_name":"admin/login.html"}),
+        (r'^selenium/(.*)$', serve, {'document_root': '_selenium/core', 'show_indexes':True}),
+        (r'^tests/(.*)$', serve, {'document_root': '_tests'}),
     )

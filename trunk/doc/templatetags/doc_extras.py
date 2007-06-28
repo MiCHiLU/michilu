@@ -6,7 +6,7 @@ from django.conf import settings
 register = template.Library()
 
 def completed_revision(taget_file=None):
-    taget_file = taget_file or settings.CUSTOM_DOC_JA_FILE % "index"
+    taget_file = taget_file or settings.CUSTOM_DOC_JA_FILE % ("", "index")
     try:
         f = open(taget_file)
     except IOError:

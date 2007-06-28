@@ -141,9 +141,23 @@ u'Django - MiCHiLU Life.'
 >>> b["xmlns"]
 u'http://www.w3.org/2005/Atom'
 
-#/blog/posts/all のテスト
+#search feed
+>>> from utils.doctests import Test
+>>> t = Test()
+>>> url = "/feeds/search/"
+>>> urls = {\
+ url: (404, ""),\
+}
+>>> t.assertUrlsDict(urls)
+>>> response = t.c.get(url, dict(q="test"))
+>>> response.status_code
+200
+>>> response.headers["Content-Type"]
+'application/atom+xml'
+
+#/blog/posts/ のテスト
 >>> c = Client()
->>> url_posts_all = "/blog/posts/all/"
+>>> url_posts_all = "/blog/posts/"
 >>> response = c.get(url_posts_all)
 >>> response.status_code
 200
@@ -231,7 +245,7 @@ False
 10
 
 >>> svnlog_message()
-'Initial import. sync to REL-2007-04-29-2111, r426.'
+'sync to REL-2007-06-22-1721, r583.'
 >>> svnlog_message("None")
 ''
 

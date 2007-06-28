@@ -72,12 +72,10 @@ True
 }
 
 >>> t.assertUrlsDict(urls)
-Response didn't redirect as expected: Reponse code was 404 (expected 200). in '/blog/'
 Response didn't redirect as expected: Reponse code was 404 (expected 200). in '/django/doc-ja/tasting/'
 Template '/django/doc-ja/index/' was not one of the templates used to render the response. Templates used: ['404.html', 'base.html', 'google-analytics.html']
 Response didn't redirect as expected: Reponse code was 200 (expected 2000). in '/django/doc-ja/settings/'
 Template 'non-template' was not one of the templates used to render the response. Templates used: ['404.html', 'base.html', 'google-analytics.html']
-Response didn't redirect as expected: Reponse code was 404 (expected 200). in '/'
 Response redirected to '/django/doc-ja/index/', expected '/'
 Bad test. '/django/doc-ja/webdesign/': ('200', '')
 
@@ -152,6 +150,24 @@ Reset databases...
   django.contrib.comments.models
   michilu.blog.models
 
->>> flush()
 
+#DEFAULT_SERIALIZE_ENSURE_ASCII
+>>> from django.conf import settings
+>>> settings.DEFAULT_SERIALIZE_ENSURE_ASCII
+False
+>>> from django.core import serializers
+>>> from michilu.blog.models import Entry
+>>> loaddata("utils/tests/blog.json")
+
+>>> response = serializers.serialize("json", Entry.objects.all(), fields=("content"))
+>>> sample = r'[{"pk": "1", "model": "blog.entry", "fields": {"content": "[TEST]: \xe3\x82\xbf\xe3\x82\xa4\xe3\x83\x88\xe3\x83\xab"}}]'
+>>> assert(response == sample)
+>>> print response
+[{"pk": "1", "model": "blog.entry", "fields": {"content": "[TEST]: タイトル"}}]
+
+>>> response = serializers.serialize("json", Entry.objects.all(), ensure_ascii=True, fields=("content"))
+>>> sample = r'[{"pk": "1", "model": "blog.entry", "fields": {"content": "[TEST]: \\u00e3\\u0082\\u00bf\\u00e3\\u0082\\u00a4\\u00e3\\u0083\\u0088\\u00e3\\u0083\\u00ab"}}]'
+>>> assert(response == sample)
+
+>>> flush()
 """

@@ -119,7 +119,7 @@ def svnlog_message(taget_file=None):
     taget_file = taget_file or "svnlog"
     f = data_open(taget_file)
     try:
-        return f.readlines()[4].strip()
+        return f.readlines()[3].strip()
     except (AttributeError, IndexError):
         return ""
 

@@ -2,22 +2,22 @@
 """
 #markup_dispatch
 >>> from views import markup_dispatch
->>> markup_dispatch("./doc/tests/index.txt").func_name
+>>> markup_dispatch("./helpdoc/tests/index.txt").func_name
 'restructuredtext'
->>> markup_dispatch("./doc/tests/index").func_name
+>>> markup_dispatch("./helpdoc/tests/index").func_name
 'restructuredtext'
->>> markup_dispatch("./doc/tests/index", "rst").func_name
+>>> markup_dispatch("./helpdoc/tests/index", "rst").func_name
 'restructuredtext'
->>> markup_dispatch("./doc/tests/index", "non-markup")
->>> markup_dispatch("./doc/tests/index", markup="markdown", argv=dict(argv="argv")).func_name
+>>> markup_dispatch("./helpdoc/tests/index", "non-markup")
+>>> markup_dispatch("./helpdoc/tests/index", markup="markdown", argv=dict(argv="argv")).func_name
 'markdown'
->>> markup_dispatch("./doc/tests/index.textile").func_name
+>>> markup_dispatch("./helpdoc/tests/index.textile").func_name
 'textile'
->>> markup_dispatch("./doc/tests/index.markdown").func_name
+>>> markup_dispatch("./helpdoc/tests/index.markdown").func_name
 'markdown'
->>> markup_dispatch("./doc/tests/index.rst").func_name
+>>> markup_dispatch("./helpdoc/tests/index.rst").func_name
 'restructuredtext'
->>> print markup_dispatch("./doc/tests/index.html")
+>>> print markup_dispatch("./helpdoc/tests/index.html")
 None
 
 >>> from templatetags.helpdoc_extras import title
@@ -30,19 +30,24 @@ Django オンラインドキュメント和訳 : SITE TITLE
 >>> title("<div><h2>none-title<h2></div>", site_title)
 'Not Found Title Line. : SITE TITLE'
 
->>> from utils.doctests import loaddata, Test
->>> loaddata("helpdoc/fixtures/auth.json")
+>>> from django.core import management
+>>> from django.test.client import Client
+>>> management.load_data(["helpdoc/tests/auth.json"], verbosity=0)
 >>> url = "/helpdoc/"
->>> t = Test()
->>> response = t.c.get(url)
+>>> c = Client()
+>>> response = c.get(url)
 >>> response.status_code
 302
 >>> response.headers["Location"]
 '/accounts/login/?next=/helpdoc/'
->>> t.c.login(username="test", password="secret")
+>>> c.login(username="test", password="secret")
 True
->>> response = t.c.get(url)
+>>> response = c.get(url)
 >>> response.status_code
 200
+
+>>> import context_processors
+>>> context_processors.helpdoc(None)
+{'helpdoc_base_url': '/helpdoc/'}
 
 """
