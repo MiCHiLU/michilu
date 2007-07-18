@@ -60,7 +60,7 @@ True
 #sitemaps
 >>> from sitemaps import doc_sitemaps
 >>> doc_sitemaps.keys()
-['doc-ja']
+['doc-ja-0.96', 'doc-ja']
 >>> doc_sitemaps['doc-ja'].get_urls()[0].keys()
 ['priority', 'lastmod', 'changefreq', 'location']
 

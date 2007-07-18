@@ -3,7 +3,7 @@ import os.path
 
 _proj_path = "/path-to/michilu/"
 _proj_name = "michilu"
-if DEBUG:
+if CUSTOM_DEVELOPMENT:
     _proj_path = ""
     _proj_name = os.path.split(os.path.abspath(""))[-1]
 _proj_db = os.path.abspath('%s../db/%s.db' % (PROJECT_PATH, _proj_name))

@@ -1,0 +1,24 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+{% load helpdoc_extras %}
+
+{% block title %}{% if content %}{% title content %} | {% endif %}{% trans 'HelpDoc' %} - MiCHiLU.com{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'HelpDoc Demo - MiCHiLU.com' %}</h1>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+  <a href="/">{% trans 'Home' %}</a>
+  &rsaquo;
+  <a href="/demo/helpdoc/index/">HelpDoc</a>
+</div>
+{% endblock %}
+
+{% block userlinks %}{% endblock %}
+
+{% block footer %}
+	<div id="footer"></div>
+	{% include "google-analytics.html" %}
+{% endblock %}

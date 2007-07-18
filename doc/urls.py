@@ -6,12 +6,21 @@ from django.conf import settings
 render = cache_page(render, 24*60*60)
 
 
+DIR = settings.CUSTOM_DOC_JA_DIR
+PATHPATTERN = settings.CUSTOM_DOC_JA_PATHPATTERN
+
+
 urlpatterns = patterns("",)
 
 urlpatterns += patterns('',
-    (r'^(?P<doc>[0-9a-z-_\.]+)/$', render, dict(
+    (r'^/(?P<doc>[0-9a-z-_\.]+)/$', render, dict(
         template_name = "doc/base.html",
-        file_path_pattern = settings.CUSTOM_DOC_JA_FILE,
+        file_path_pattern = (DIR % "trunk/%s") % PATHPATTERN,
+    )),
+    (r'^-0.96/(?P<doc>[0-9a-z-_\.]+)/$', render, dict(
+        template_name = "doc/0.96.html",
+        file_path_pattern = (DIR % "branches/docs_0.96/%s") % PATHPATTERN,
+        encoding = "euc_jp",
     )),
 )
 

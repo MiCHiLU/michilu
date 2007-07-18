@@ -3,10 +3,11 @@ from django.conf.urls.defaults import *
 
 urlpatterns = patterns("",)
 
-urlpatterns += patterns('', 
-    (r'^$', include('michilu.blog.urls')), 
+urlpatterns += patterns('',
+    (r'^$', include('michilu.blog.urls')),
     (r'^blog/', include('michilu.blog.urls')),
-    (r'^django/doc-ja/', include('michilu.doc.urls')),
+    (r'^django/doc-ja', include('michilu.doc.urls')),
+    (r'^demo/', include('michilu.demo.urls')),
     (r'^helpdoc/', include('michilu.helpdoc.urls'), dict(
         base_url = "/helpdoc/",
     )),
@@ -22,8 +23,11 @@ urlpatterns += patterns('django.views.generic.simple',
 
 
 from michilu import settings
-if settings.DEBUG:
+if settings.CUSTOM_DEVELOPMENT:
     from django.views.static import serve
+    urlpatterns += patterns("",
+        (r'^static/helpdoc/(.*)$', serve, {'document_root': 'helpdoc/static/helpdoc'}),
+    )
     urlpatterns += patterns("",
         (r'^(favicon.ico)$', serve, {'document_root': 'static'}),
         (r'^static/(.*)$', serve, {'document_root': 'static'}),
