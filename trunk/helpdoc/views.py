@@ -3,10 +3,14 @@ from django.views.generic.simple import direct_to_template
 from django.contrib.markup.templatetags.markup import textile, markdown, restructuredtext
 from django.contrib.auth.decorators import permission_required
 import os.path
+import codecs
 
-def get_source_file(file_path):
+def get_source_file(file_path, encoding=None, **argv):
     try:
-        f = open(file_path)
+        if encoding:
+            f = codecs.open(file_path, mode="r", encoding=encoding)
+        else:
+            f = open(file_path)
     except IOError:
         return None
     return f.read()
@@ -36,7 +40,7 @@ def render(request, doc, app=None, file_path_pattern=None, base_url=None,
     template_name = template_name or "helpdoc/base_site.html"
 
     file_path = (file_path_pattern or "%s/docs/%s.txt") % (app, doc)
-    content = get_source_file(file_path)
+    content = get_source_file(file_path, **argv)
     if not content:
         raise Http404
     markup = markup_dispatch(file_path, **argv)

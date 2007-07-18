@@ -10,5 +10,5 @@ urlpatterns = patterns('',)
 urlpatterns += patterns('',
     (r'^$', index),
     (r'^(?P<app>\w+)/(?P<doc>[0-9a-z-_\.]+)/$', render),
-    (r'^(?P<app>\w+)/', redirect_to, {'url' : "index/"}),
+    (r'^(?P<app>\w+)/$', redirect_to, {'url' : "index/"}),
 )

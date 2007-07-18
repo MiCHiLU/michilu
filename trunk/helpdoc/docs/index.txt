@@ -1,0 +1,376 @@
+HelpDoc Documentation
+=====================
+
+Download
+--------
+
+ダウンロードサイト:
+  http://michilu.googlecode.com/svn/trunk/helpdoc
+
+::
+
+  $ svn co http://michilu.googlecode.com/svn/trunk/helpdoc
+  $ mv helpdoc myproject/helpdoc
+
+Install
+-------
+
+設定ファイル
+~~~~~~~~~~~~
+
+``settings.INSTALLED_APPS`` に **helpdoc** を追加します。
+
+**settings.py**
+
+::
+
+  INSTALLED_APPS = (
+      ...
+      'myproject.helpdoc',
+  )
+
+URL設定
+~~~~~~~
+
+``/helpdoc/`` へのアクセスを **myproject.helpdoc.urls** へ割り当てます。
+
+**urls.py**
+
+::
+
+  urlpatterns = patterns('',
+      ...
+      (r'^helpdoc/', include('myproject.helpdoc.urls')),
+  )
+
+必要に応じて、 **ログイン画面** URLを設定します。
+
+**urls.py**
+
+::
+
+  urlpatterns = patterns('',
+      ...
+      (r'^accounts/login/$', 'django.contrib.auth.views.login', dict(
+          template_name = "admin/login.html",
+      )),
+  )
+
+以上で設定は終わりです。プロダクトを再起動して **helpdoc** が動作しているか確認しましょう。
+次のセクションでは **helpdoc** の画面構成について案内します。
+
+Tuor
+----
+
+Django administration を開きましょう。
+通常だと http://127.0.0.1:8000/admin/ でアクセスできます。
+ログイン後の右上にいくつかのメニューが表示されています。
+
+|documentation|
+
+この中の **documentation** をクリックします。
+
+|helpdoc|
+
+いくつかのドキュメントの見出しが並んでいます。
+一番上に **Help Documentations** が新たに追加されていますので、これを選択します。
+
+|helpdoc-menu|
+
+左上のナビゲーションが **HelpDoc** になりました。
+このページが **helpdoc** アプリケーションのメインページです。
+まだ何もリストにありませんが、これから自由にドキュメントを追加していくことができます。
+
+.. |documentation| image:: /static/helpdoc/images/01documentation.png
+.. |helpdoc| image:: /static/helpdoc/images/02helpdoc.png
+.. |helpdoc-menu| image:: /static/helpdoc/images/03helpdoc-menu.png
+
+では、簡単に動作を確認するために **あなた** のアプリケーションにドキュメントを追加してみましょう。
+
+::
+
+  $ ls -d1 **/docs
+  blog/docs
+  doc/docs
+  helpdoc/docs
+
+いくつかのアプリケーションが既にインストールされているとします。
+アプリケーションディレクトリのすぐ下に **docs** という名前のディレクトリを作成します。
+
+|helpdoc-app-menu|
+
+HelpDoc のメインページをリロードすると、新しいメニューが追加されているはずです。
+
+|helpdoc-app-list|
+
+追加されたメニューをクリックしてみましょう。
+「ページが見つからない」となりますが、壊れている訳ではありません。
+なにしろまだドキュメントを書いていないですからね！
+helpdoc は docs ディレクトリの中の **index.txt** を表示しようとします。
+
+では何か書いてみましょう。
+
+::
+
+  $ mkdir blog/docs
+  $ echo "TEST" > blog/docs/index.txt
+
+テキストエディタで書き込みます。 **docs/index.txt** に保存します。
+ここでは "TEST" と書き込んだ index.txt を表示してみます。
+
+|helpdoc-test|
+
+表示されましたね！
+この要領でドキュメントを書いていきます。
+フォーマットは、Djangoがサポートしている ``reStructuredText``, ``Markdown``, ``Textile`` と ``HTML`` が使えます。
+
+もう少し実用的な例を見てみましょう。
+よいサンプルがあります。
+
+以下から **Django オンラインドキュメント和訳** をダウンロードします。
+
+- http://michilu.com/static/doc-ja/tarball/django-doc-ja-0.96.zip
+- http://michilu.com/static/doc-ja/tarball/django-doc-ja-0.96.tar.gz
+- http://michilu.com/static/doc-ja/tarball/django-doc-ja-0.96.tar.bz2
+
+::
+
+  $ curl -O http://michilu.com/static/doc-ja/tarball/django-doc-ja-0.96.zip
+  $ unzip django-doc-ja-0.96.zip
+  $ mv django-doc-ja-0.96 myproject/myapp/docs
+
+解凍し **docs** ディレクトリにリネームして配置します。
+
+|helpdoc-render|
+
+HelpDoc のメニューからアクセスしてみましょう。
+これで **オフラインでも** ドキュメントを参照することができますね！
+
+|helpdoc-title|
+
+.. |helpdoc-app-menu| image:: /static/helpdoc/images/04helpdoc-app-menu.png
+.. |helpdoc-app-list| image:: /static/helpdoc/images/05helpdoc-app-list.png
+.. |helpdoc-test| image:: /static/helpdoc/images/06helpdoc-test.png
+.. |helpdoc-render| image:: /static/helpdoc/images/07helpdoc-render.png
+.. |helpdoc-title| image:: /static/helpdoc/images/08helpdoc-title.png
+
+ここでいくつか注意事項を挙げておきます。
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Django 0.96 以降。
+- settings.INSTALLED_APPS にリストされ、且つ <app>/docs ディレクトリを持つ app が対象です。
+- 対象の app は Help Documentations にアンカーがリストされます。 permission_required("is_staff") になっています。
+
+では、もう少しだけカスタマイズの仕方について説明します。
+
+
+テキストフォーマットを指定する
+------------------------------
+
+テキストフォーマットを指定するには2つの方法があります。
+
+urls.py で指定する
+~~~~~~~~~~~~~~~~~~
+
+::
+
+  urlpatterns = patterns('',
+      ...
+      (r'^helpdoc/', include('myproject.helpdoc.urls'), dict(
+          markup = "rst", # reStructuredText
+          # markup = "markdown", # Markdown 
+          # markup = "textile", # Textile
+          # markup = "html", # HTML
+      )),
+  )
+
+拡張子で指定する
+~~~~~~~~~~~~~~~~
+
+reStructuredText:
+  filename. **txt**
+  filename. **rst**
+markdown:
+  filename. **markdown**
+Textile:
+  filename. **textile**
+HTML:
+  filename. **html**
+
+拡張子の指定が優先されます。
+何も指定されない場合は reStructuredText として解釈されます。
+
+
+テンプレートを指定する
+----------------------
+
+ベースとなるテンプレートを指定します。
+HelpDoc はマークアップテキストをレンダリングした結果を
+**content** 変数にいれてテンプレートに渡します。
+テンプレートは **content** 変数を受け取れるようにしてください。
+
+::
+
+  urlpatterns += patterns('',
+      ...
+      (r'^-0.96/(?P<doc>[0-9a-z-_\.]+)/$', render, dict(
+          template_name = "doc/base.html",
+      )), 
+  )
+
+
+ドキュメントテキストの場所を指定する
+------------------------------------
+
+デフォルトでは **app/docs** 以下のテキストファイルを参照しますが、
+任意のPATHを **file_path_pattern** に指定することができます。
+
+::
+
+  urlpatterns += patterns('',
+      ...
+      (r'^-0.96/(?P<doc>[0-9a-z-_\.]+)/$', render, dict(
+          file_path_pattern = (DIR % "branches/docs_0.96/%s") % PATHPATTERN,
+      )), 
+  )
+
+``file_path_pattern`` は文字列フォーマットの式に使用されます。
+2つの文字列フォーマットコードを含む必要があります。
+
+::
+
+  file_path_pattern = "../documentation/%s%s.txt" 
+
+1つ目のコードは ``app_name`` に相当します。
+2つ目のコードは ``file_name`` に相当します。
+  
+
+文字コードを指定する
+--------------------
+
+**※開発中の機能です**
+
+HelpDoc は文字コードの解析をしません。
+デフォルトは **UTF-8** にセットされています。
+その他の文字コードを使用する場合は urls.py で指定します。
+
+::
+
+  urlpatterns += patterns('',
+      ...
+      (r'^-0.96/(?P<doc>[0-9a-z-_\.]+)/$', render, dict(
+          encoding = "euc_jp",
+      )), 
+  )
+
+ベースURLを変更する
+-------------------
+
+**※開発中の機能です**
+
+settings.HELPDOC_BASE_URL
+
+::
+
+  urlpatterns = patterns('',
+      ...
+      (r'^mysite-help/', include('myproject.helpdoc.urls'), dict(
+          base_url = "/mysite-help/",
+      )),
+  )
+
+admin以下にしたい場合
+
+**settings.py**
+
+::
+
+  INSTALLED_APPS = (
+      ...
+      'myproject.helpdoc',
+      'django.contrib.admin',
+  )
+
+**urls.py**
+
+::
+
+  urlpatterns = patterns('',
+      ...
+      (r'^admin/mysite-help/', include('myproject.helpdoc.urls'), dict(
+          base_url = "/admin/mysite-help/",
+      )),
+  )
+
+
+views.render
+------------
+
+HelpDoc アプリケーションのレンダラーを単独で使用する方法を紹介します。
+ちょうど Django に搭載されている Generic views のような感覚でアプリに埋め込むことができます。
+
+**urls.py**
+
+::
+
+  from django.conf.urls.defaults import *
+  from django.views.decorators.cache import cache_page
+  from helpdoc.views import render
+
+  render = cache_page(render, 24*60*60)
+  
+  urlpatterns = patterns("",
+      (r'^/(?P<doc>[0-9a-z-_\.]+)/$', render, dict(
+          template_name = "doc/base.html",
+          file_path_pattern = "../documentation/trunk/%s%s.txt" 
+      )),
+      (r'^-0.96/(?P<doc>[0-9a-z-_\.]+)/$', render, dict(
+          template_name = "doc/base.html",
+          file_path_pattern = "../documentation/docs_0.96/%s%s.txt" 
+          encoding = "euc_jp",
+      )),
+  )
+
+docutilsの処理は重いので、Django に付属している ``CacheMiddleware`` で
+パフォーマンスを稼ぐことができます。
+上の例では ``helpdoc.views.render`` に 24時間キャッシュするように設定しています。
+
+
+Sitemap
+-------
+
+ドキュメントテキストから ``sitemap.xml`` を生成する方法を紹介します。
+
+**urls.py**
+
+::
+
+  from django.conf.urls.defaults import *
+  from helpdoc.util import HelpdocSitemap
+
+  class DocJaSitemap(HelpdocSitemap):
+      info_dict = dict(
+          changefreq = "weekly",
+          priority = 0.7,
+      )
+      target_dir = "../documentation/trunk/%s%s.txt"
+      location = "/django/doc-ja/%s/"
+
+  sitemaps = {
+      "doc-ja": DocJaSitemap(),
+  }
+
+  urlpatterns = patterns('',
+      (r'^sitemap.xml$', 'django.contrib.sitemaps.views.sitemap',{'sitemaps': sitemaps}),
+  )
+
+``helpdpc.util.HelpdocSitemap`` を継承した Sitemapクラスを定義します。
+デフォルト値は、 ``changefreq = "weekly", priority = 0.6,`` になっています。
+更新時刻は、ファイルシステムの更新時刻を参照しています。
+
+
+静的ファイルの配信
+------------------
+
+執筆中です。
+

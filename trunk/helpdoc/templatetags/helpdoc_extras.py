@@ -1,7 +1,7 @@
 from django import template
 from django.db.models import get_apps
 from django.core.urlresolvers import reverse
-from helpdoc.views import index
+#from helpdoc.views import index
 import os.path
 
 register = template.Library()

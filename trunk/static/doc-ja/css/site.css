@@ -156,12 +156,13 @@ pre.literal-block
 #language-selector select { border: 0px; }
 #header-tools #language-selector { display: inline; color: #ffffff; }
 
-#topnav { display: inline; height: 1em; text-align: right; color: white; }
+#topnav { display: inline; height: 1em; text-align: left; color: white; }
 #topnav a { text-decoration: none; }
 #topnav a:link { color: #99cc99; }
 #topnav a:visited { color: #669966; }
 #topnav a:hover { color: #99cc99; }
-#header #topnav { position: absolute; right: 10px; bottom: 10px; }
+#header #topnav { position: absolute; left: 10px; top: 3px; }
+#topnav h2 { font-size: 160%; }
 
 #deployinfo { display: inline; height: 70px; font-size: 80%; }
 #deployinfo img { margin: 10px; }

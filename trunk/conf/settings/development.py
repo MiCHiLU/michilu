@@ -9,6 +9,10 @@ if os.path.exists("../_debug"):
     DEBUG = (False, True)[1]
 TEMPLATE_DEBUG = DEBUG
 
+CUSTOM_DEVELOPMENT = (False, True)[0]
+if os.path.exists("../_debug"):
+    CUSTOM_DEVELOPMENT = (False, True)[1]
+
 CUSTOM_TEST = False
 if sys.argv[0].split("/")[-1] == "manage.py" and sys.argv[1] == "test":
     CUSTOM_TEST = True
@@ -21,7 +25,7 @@ MANAGERS = ADMINS
 
 _proj_path = "/data/django/michilu/"
 _proj_name = "michilu"
-if DEBUG:
+if CUSTOM_DEVELOPMENT:
     _proj_path = ""
     _proj_name = os.path.split(os.path.abspath(""))[-1]
     #_proj_name = os.path.dirname(os.path.abspath(__file__))
@@ -42,11 +46,11 @@ _static_domain = SERVER_DOMAIN + ":8080"
 _static_path = "/static/"
 
 MEDIA_ROOT = _proj_path + _static_path
-if DEBUG:
+if CUSTOM_DEVELOPMENT:
     MEDIA_ROOT = os.path.abspath(".%s" % _static_path)
 
 MEDIA_URL = _static_domain + _static_path
-if DEBUG:
+if CUSTOM_DEVELOPMENT:
     MEDIA_URL = _static_path
 
 ADMIN_MEDIA_PREFIX = '/media/'
@@ -79,6 +83,7 @@ TEMPLATE_DIRS = (
     'helpdoc/templates',
     'blog/templates',
     'doc/templates',
+    'demo/templates',
 )
 TEMPLATE_DIRS = tuple(
     [os.path.abspath("%s%s" % (_proj_path, _dir)).replace(os.sep, "/") for _dir in TEMPLATE_DIRS]
@@ -95,9 +100,8 @@ if CUSTOM_TEST:
         m.remove(cache)
         MIDDLEWARE_CLASSES = tuple(m)
 
-CUSTOM_DOC_JA_DIR = "../doc-jp/"
-CUSTOM_DOC_JA_FILE = os.path.abspath(_proj_path + CUSTOM_DOC_JA_DIR + "%s%s.txt")
-#default value を設定する    #TODO
+CUSTOM_DOC_JA_DIR = os.path.abspath(_proj_path + "../doc-jp/%s")
+CUSTOM_DOC_JA_PATHPATTERN = "%s%s.txt"
 
 CUSTOM_FEED_DATA_path = "static/temp/%s"
 if CUSTOM_TEST:
@@ -117,11 +121,12 @@ INSTALLED_APPS = (
     'django.contrib.markup',
     'django.contrib.sitemaps',
     'django.contrib.comments',
-    
+
     'michilu.utils',
     'michilu.helpdoc',
     'michilu.blog',
     'michilu.doc',
+    'michilu.demo',
 )
 
 SERIALIZATION_MODULES = {
@@ -134,5 +139,5 @@ optional_settings = utils.get_optional_settings("%sconf/settings/settings_overlo
 if optional_settings:
     for key,var in optional_settings.items():
         vars()[key] = var
-    if DEBUG:
+    if CUSTOM_DEVELOPMENT:
         print "#"*10 + " SETTINGS OVERLOADED " + "#"*10
