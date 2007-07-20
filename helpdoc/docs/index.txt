@@ -19,6 +19,8 @@ Install
 ~~~~~~~~~~~~
 
 ``settings.INSTALLED_APPS`` に **helpdoc** を追加します。
+Django 管理画面の Documentation インデクスに HelpDoc を追加するには
+``django.contrib.admin`` よりも先にリストする必要があります。
 
 **settings.py**
 
@@ -27,6 +29,9 @@ Install
   INSTALLED_APPS = (
       ...
       'myproject.helpdoc',
+      ...
+      'django.contrib.admin',
+      ...
   )
 
 URL設定
@@ -43,7 +48,7 @@ URL設定
       (r'^helpdoc/', include('myproject.helpdoc.urls')),
   )
 
-必要に応じて、 **ログイン画面** URLを設定します。
+必要に応じて、ログイン画面のURLを設定します。
 
 **urls.py**
 
@@ -158,8 +163,9 @@ HelpDoc のメニューからアクセスしてみましょう。
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Django 0.96 以降。
-- settings.INSTALLED_APPS にリストされ、且つ <app>/docs ディレクトリを持つ app が対象です。
-- 対象の app は Help Documentations にアンカーがリストされます。 permission_required("is_staff") になっています。
+- ``settings.INSTALLED_APPS`` にリストされ、且つ ``<app>/docs`` ディレクトリを持つ app が対象です。
+- 対象の app は Help Documentations にアンカーがリストされます。
+  ``login_required`` になっています。
 
 では、もう少しだけカスタマイズの仕方について説明します。
 
@@ -187,17 +193,14 @@ urls.py で指定する
 拡張子で指定する
 ~~~~~~~~~~~~~~~~
 
-reStructuredText:
-  filename. **txt**
-  filename. **rst**
-markdown:
-  filename. **markdown**
-Textile:
-  filename. **textile**
-HTML:
-  filename. **html**
+1. reStructuredText : ``filename.`` **txt**
+2. reStructuredText : ``filename.`` **rst**
+3. Markdown : ``filename.`` **markdown**
+4. Textile : ``filename.`` **textile**
+5. HTML : ``filename.`` **html**
 
 拡張子の指定が優先されます。
+また、上に列記した順に拡張子を捜査します。
 何も指定されない場合は reStructuredText として解釈されます。
 
 
@@ -250,9 +253,11 @@ HelpDoc はマークアップテキストをレンダリングした結果を
 
 **※開発中の機能です**
 
+ドキュメントテキストファイルの文字コードを指定する方法を紹介します。
 HelpDoc は文字コードの解析をしません。
 デフォルトは **UTF-8** にセットされています。
 その他の文字コードを使用する場合は urls.py で指定します。
+指定されたエンコーディングでドキュメントテキストファイルが読み出されます。
 
 ::
 
@@ -263,33 +268,42 @@ HelpDoc は文字コードの解析をしません。
       )), 
   )
 
+
 ベースURLを変更する
 -------------------
 
 **※開発中の機能です**
 
-settings.HELPDOC_BASE_URL
+Django 管理画面 ``admin`` の配下になるようなURLで表示したい場合には
+``myproject.helpdoc.urls`` が ``django.contrib.admin.urls`` よりも前にリストされるようにします。
+
+**urls.py**
 
 ::
 
   urlpatterns = patterns('',
       ...
-      (r'^mysite-help/', include('myproject.helpdoc.urls'), dict(
-          base_url = "/mysite-help/",
-      )),
+      (r'^admin/mysite-help/', include('myproject.helpdoc.urls')),
+      ...
+      (r'^admin/', include('django.contrib.admin.urls')),
+      ...
   )
 
-admin以下にしたい場合
+次に ``settings.HELPDOC_BASE_URL`` にベースパスを設定し、HelpDocコンテキストプロセッサを追加します。
+これは ``admin/doc`` で表示されるドキュメントインデクスのテンプレートを書き換えるために必要です。
 
 **settings.py**
 
 ::
 
-  INSTALLED_APPS = (
-      ...
-      'myproject.helpdoc',
-      'django.contrib.admin',
+  HELPDOC_BASE_URL  = "/admin/mysite-help/"
+
+  TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
+      "myproject.helpdoc.context_processors.helpdoc",
   )
+
+``admin/doc`` で表示されるドキュメントインデクスのテンプレートを書き換える必要がない場合は
+``urlpatterns`` に ``base_url`` 引数を与えるだけでも、うまく動作します。
 
 **urls.py**
 
@@ -300,6 +314,7 @@ admin以下にしたい場合
       (r'^admin/mysite-help/', include('myproject.helpdoc.urls'), dict(
           base_url = "/admin/mysite-help/",
       )),
+      ...
   )
 
 
@@ -364,7 +379,7 @@ Sitemap
       (r'^sitemap.xml$', 'django.contrib.sitemaps.views.sitemap',{'sitemaps': sitemaps}),
   )
 
-``helpdpc.util.HelpdocSitemap`` を継承した Sitemapクラスを定義します。
+``helpdoc.util.HelpdocSitemap`` を継承した Sitemapクラスを定義します。
 デフォルト値は、 ``changefreq = "weekly", priority = 0.6,`` になっています。
 更新時刻は、ファイルシステムの更新時刻を参照しています。
 

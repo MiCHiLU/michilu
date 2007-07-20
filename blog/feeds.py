@@ -10,6 +10,8 @@ from views import search
 from django.http import HttpResponse, Http404
 from django.utils import feedgenerator
 
+from datetime import timedelta
+
 
 full_feed = cache_page(feed, 3*60*60)
 
@@ -35,7 +37,7 @@ class LatestEntries(Feed):
         return obj.get_absolute_url()
     
     def item_pubdate(self, obj):
-        return obj.add_date
+        return obj.add_date - timedelta(hours=9)
 
 class LatestEntries_xml(LatestEntries):
     """The LatestEntries_xml class."""
@@ -69,7 +71,7 @@ class LatestComments(LatestEntries):
         return FreeComment.objects.order_by('-submit_date')[:20]
 
     def item_pubdate(self, obj):
-        return obj.submit_date
+        return obj.submit_date - timedelta(hours=9)
 
 
 def search_feed(request):
@@ -88,7 +90,7 @@ def search_feed(request):
         f.add_item(title=item.title,
             link=item.get_absolute_url(),
             description=item.content_s,
-            pubdate=item.add_date,
+            pubdate=item.add_date - timedelta(hours=9),
         )
     return HttpResponse(f.writeString('utf8'), mimetype="application/atom+xml")
 search_feed = cache_page(search_feed, 3*60*60)
