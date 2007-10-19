@@ -1,0 +1,185 @@
+{% load markup %}
+{% extends "blog/base.html" %}
+<html>
+<head>
+<title>{% block title_before %}{{ object.title }} - {% endblock %}</title>
+{% block meta %}
+<link rel="alternate" type="application/atom+xml" title="MiCHiLU.com" href="http://feeds.feedburner.com/michilu" />
+{% endblock %}
+{% block css %}
+<script type="text/javascript" language="javascript" 
+		src="{{ MEDIA_URL }}lib/jQuery/jquery-1.1.2.pack.js"></script>
+<script type="text/javascript" src="/static/s6/s6.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+
+$(function () {
+	s6.page._json = "{}";
+
+	s6.page.set = function(json, elem) {
+		//s6.page._json = s6.opts(json, s6.page._json);
+		s6.page._json = json;
+		s6.page(s6.page._json, elem);
+	};
+
+	s6.page.tmp = function(json, elem) {
+		s6.page(s6.opts(json, s6.page._json));
+		s6.page(s6.page._json, elem);
+	};
+
+	var options = $(document.body).html().match("<!-- //settings((.|\r?\n)*?)-->");
+	if (options) {
+		eval(options[1]);
+	};
+
+	var elms = $(document.body).children("div").children();
+	elms.each(function () {
+		var comment = $(this).html().match("<!--((.|\r?\n)*?)-->");
+		var script = undefined;
+		if (comment) {
+			script = comment[1];
+		} else {
+			//script = "s6.page.set(" + s6.page._json + ");";
+			script = "s6.page.set(s6.page._json);";
+		};
+		$(this).append('<script type="text/javascript">' + script + '<\/script>');
+		/*
+		var params = ["dummy", "set", {}];
+		if (comment) {
+			params = comment[1].match("s6\.page\.([a-z]+)\.({(.|\r?\n)*})");
+		};
+		s6.page[params[1]](s6.opts(params[2], s6.page._json), this);
+		*/
+	});
+
+	var src = $(document.body).children("div");
+	$(document.body).append($(src).html());
+	$(src).remove();
+	//$(".analytics").hide();
+});
+
+s6.css('html', {
+	width: '100%',
+	height: '100%',
+	padding: '0',
+	margin: '0',
+	overflow: 'hidden',
+	backgroundColor: 'black'
+});
+
+s6.options = s6.opts({
+	thema: 'custom',
+	//ratio: 3/4,					// プレゼンテーションの縦横比
+	ratio: 9/16,					// プレゼンテーションの縦横比
+	fontSize: 0.085				  // height にこの値を掛けた値がベースのフォントサイズとなる
+}, s6.options);
+
+s6.themas.custom = {
+	styles: {
+		background: {
+			backgroundColor: 'gray'
+		},
+		presentation: {
+			backgroundColor: 'black',
+			color: 'white'
+		},
+		page: {
+			backgroundColor: '#21426F',
+			backgroundImage: 'url(/static/s6/background.gif)'
+		}
+	}
+};
+
+var presentation;
+s6.attach(s6, 'ready', function() {
+	var html = document.documentElement;
+
+	var height = html.offsetHeight;
+	var width = html.offsetWidth;
+	var top = 0;
+	var left = 0;
+	var ratio = s6.options.ratio;
+
+	if (height / width < ratio) {
+		var originalWidth = width;
+		width = height / ratio;
+		left = (originalWidth - width) / 2 + 'px';
+	}
+	else {
+		var originalHeight = height;
+		height = width * ratio;
+		top = (originalHeight - height) / 2 + 'px';
+	}
+
+	var result;
+	if (result = document.cookie.match(/page=(\d+)/)) {
+		var startIndex = +result[1];
+	}
+	presentation = new s6.Presentation({ element: document.body, width: width, height: height, startIndex: startIndex });
+	presentation.style.left = left;
+	presentation.style.top = top;
+	presentation.start();
+
+	var indexNoOutline = false;
+	presentation.funcPages.index.attach('click', function(i, element, wrapper) {
+		indexNoOutline = true;
+		setTimeout(function() {
+			indexNoOutline =false
+		}, 1000);
+		wrapper.style.background = '';
+		presentation.go(i);
+	});
+
+	presentation.funcPages.index.attach('mouseover', function(i, element, wrapper) {
+		if (indexNoOutline) return;
+		wrapper.style.background = 'gray';
+	});
+	
+	presentation.funcPages.index.attach('mouseout', function(i, element, wrapper) {
+		wrapper.style.background = '';
+	});
+
+	s6.attach(document, 'keypress', function(e) {
+		var code = e.keyCode != 0 ? e.keyCode : e.charCode;
+		//alert(code);
+		switch(code) {
+			case 63235:
+			case 39:	//[>]
+			case 106:	//j
+			case 32:	//[space]
+			case 13:	//[return]
+				presentation.step();
+				break;
+			case 63234:
+			case 37:	//[<]
+			case 107:	//k
+				presentation.prev();
+				break;
+			case 63232:
+			case 38:	//[^]
+			case 27:	//[esc]
+				presentation.go('index');
+				break;
+			case 63233:
+			case 40:	//v
+				presentation.back();
+				break;
+		}
+		document.cookie = 'page=' + presentation.index;
+	});
+
+	//alert($.trim($(document.body).children("div").children().next().next().next().html().match("<!--((.|\r?\n)*)-->")[1]).slice(0,3))
+});
+// ]]>
+</script>
+
+{% endblock %}
+</head>
+<body>
+{% block header %}{% endblock %}
+{% block content %}
+	{{ object.content|restructuredtext }}
+{% endblock %}
+{% block footer %}{% endblock %}
+</body>
+</html>

@@ -4,7 +4,7 @@
 
 /* COLUMN SETUP */
 #home #content { background:url('/static/images/homepage-bg.png') repeat-y; }
-#home #content #content-primary { float:left; clear:left; width:520px; }
+#home #content #content-primary { float:left; clear:left; width:519px; }
 #home #content #content-secondary { float:right; width:480px; background:#FF6A00; color:#FFD399; }
 
 /* SIDEBAR */
@@ -16,9 +16,7 @@
 
 /* MODULES */
 #home #posts, 
-#home #recommendations,
 #home #work,
-#home #badges,
 #home #django-doc-ja,
 #home #technorati-links, 
 #home #links, 
@@ -39,19 +37,6 @@
 #home #posts .recent-posts .post .summary { font-size:11px; }
 #home #posts .recent-posts .post .refer { display:block; margin-top:0.4em; margin-bottom:3em; }
 
-/* RECOMMENDATIONS */
-#home #recommendations { background:#FFD399; float:left; }
-#home #recommendations h2,
-#home #recommendations .more { color:#F08300; }
-#home #recommendations .recommendation { position:relative; float:left; width:157px; margin:0; }
-/* #home #recommendations .recommendation strong, #home #recommendations .recommendation span { white-space:nowrap; } */
-#home #recommendations .recommendation h3 { display:block; float:left; position:absolute; left:0; top:0; z-index:1; margin:0; font-size:10px; color:white; background:#F08300; text-transform:uppercase; padding:1px 2px; }
-#home #recommendations .recommendation a.url { padding:166px 6px 0 6px; display:block; line-height:1.2em; }
-#home #recommendations .recommendation a.urls { padding:0 6px; display:block; line-height:1.2em; margin:1em 0pt; }
-#home #recommendations .recommendation a strong { font-size:12px; }
-#home #recommendations .recommendation img { position:absolute; left:0; top:0; z-index:0; }
-#home #recommendations .recommendation p { font-size:11px; padding:0 6px; }
-
 /* WORK */
 #home #work { background:#FFD399; }
 #home #work h2,
@@ -60,11 +45,6 @@
 #home #work .project h3 { display:block; float:left; position:absolute; left:0; top:0; z-index:1; margin:0; font-size:10px; color:white; background:#F08300; text-transform:uppercase; padding:1px 2px; }
 #home #work .project img { padding-bottom:10px; }
 #home #work .project .description { font-size:11px; }
-
-/* BADGES */
-#home #badges #technorati { position:absolute; top:445px;left:720px; float:left; }
-#home #badges #technorati img { position:relative; top:-20px;left:150px; float:left; }
-#home #badges ul li { list-style-type:none; margin-left:-13px; margin-top:10px; }
 
 /* django-doc-ja */
 #home #django-doc-ja { background:#F08300; }
@@ -83,13 +63,6 @@
 #home #links ul li { list-style-type:none; margin:1em 0; }
 #home #links ul li a { font-weight:bold; }
 #home #links ul li .extended { font-size:11px; }
-
-/* PHOTOS */
-#home #photos { position:relative; overflow:hidden; }
-#home #photos h2 { position:relative; color:white; margin-left:24px; }
-#home #photos a.photo { display:block; font-size:1em; margin-top:-4.4em !important; }
-#home #photos .title { font-size:1.5em; font-weight:bold; position:absolute; bottom:0; left:0; margin-bottom:24px; margin-left:24px; }
-#home #photos .more { margin-right:24px; }
 
 /* ABOUT */
 #home #about p { font-size:11px; }

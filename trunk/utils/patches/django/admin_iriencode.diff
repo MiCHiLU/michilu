@@ -1,0 +1,64 @@
+Index: django/contrib/admin/templatetags/admin_list.py
+===================================================================
+--- django/contrib/admin/templatetags/admin_list.py	(revision 6468)
++++ django/contrib/admin/templatetags/admin_list.py	(working copy)
+@@ -7,7 +7,7 @@
+ from django.utils.html import escape
+ from django.utils.text import capfirst
+ from django.utils.translation import get_date_formats, get_partial_date_formats, ugettext as _
+-from django.utils.encoding import smart_unicode, smart_str, force_unicode
++from django.utils.encoding import smart_unicode, smart_str, force_unicode, iri_to_uri
+ from django.template import Library
+ import datetime
+ 
+@@ -21,7 +21,9 @@
+     elif i == cl.page_num:
+         return u'<span class="this-page">%d</span> ' % (i+1)
+     else:
+-        return u'<a href="%s"%s>%d</a> ' % (cl.get_query_string({PAGE_VAR: i}), (i == cl.paginator.pages-1 and ' class="end"' or ''), i+1)
++        return u'<a href="%s"%s>%d</a> ' % (
++            iri_to_uri(cl.get_query_string({PAGE_VAR: i})),
++            (i == cl.paginator.pages-1 and ' class="end"' or ''), i+1)
+ paginator_number = register.simple_tag(paginator_number)
+ 
+ def pagination(cl):
+Index: django/contrib/admin/templates/admin/pagination.html
+===================================================================
+--- django/contrib/admin/templates/admin/pagination.html	(revision 6468)
++++ django/contrib/admin/templates/admin/pagination.html	(working copy)
+@@ -7,5 +7,5 @@
+ {% endfor %}
+ {% endif %}
+ {{ cl.result_count }} {% ifequal cl.result_count 1 %}{{ cl.opts.verbose_name|escape }}{% else %}{{ cl.opts.verbose_name_plural|escape }}{% endifequal %}
+-{% if show_all_url %}&nbsp;&nbsp;<a href="{{ show_all_url }}" class="showall">{% trans 'Show all' %}</a>{% endif %}
++{% if show_all_url %}&nbsp;&nbsp;<a href="{{ show_all_url|iriencode }}" class="showall">{% trans 'Show all' %}</a>{% endif %}
+ </p>
+Index: django/contrib/admin/templates/admin/change_list_results.html
+===================================================================
+--- django/contrib/admin/templates/admin/change_list_results.html	(revision 6468)
++++ django/contrib/admin/templates/admin/change_list_results.html	(working copy)
+@@ -3,7 +3,7 @@
+ <thead>
+ <tr>
+ {% for header in result_headers %}<th{{ header.class_attrib }}>
+-{% if header.sortable %}<a href="{{ header.url }}">{% endif %}
++{% if header.sortable %}<a href="{{ header.url|iriencode }}">{% endif %}
+ {{ header.text|capfirst }}
+ {% if header.sortable %}</a>{% endif %}</th>{% endfor %}
+ </tr>
+Index: django/contrib/admin/templates/admin/date_hierarchy.html
+===================================================================
+--- django/contrib/admin/templates/admin/date_hierarchy.html	(revision 6468)
++++ django/contrib/admin/templates/admin/date_hierarchy.html	(working copy)
+@@ -1,9 +1,9 @@
+ {% if show %}
+ <div class="xfull">
+ <ul class="toplinks">
+-{% if back %}<li class="date-back"><a href="{{ back.link }}">&lsaquo; {{ back.title|escape }}</a></li>{% endif %}
++{% if back %}<li class="date-back"><a href="{{ back.link|iriencode }}">&lsaquo; {{ back.title|escape }}</a></li>{% endif %}
+ {% for choice in choices %}
+-<li> {% if choice.link %}<a href="{{ choice.link }}">{% endif %}{{ choice.title|escape }}{% if choice.link %}</a>{% endif %}</li>
++<li> {% if choice.link %}<a href="{{ choice.link|iriencode }}">{% endif %}{{ choice.title|escape }}{% if choice.link %}</a>{% endif %}</li>
+ {% endfor %}
+ </ul><br class="clear" />
+ </div>

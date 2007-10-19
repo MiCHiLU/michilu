@@ -1,0 +1,25 @@
+# MIME type			Extensions
+application/x-javascript	js
+application/xslt+xml		xslt
+application/xml			xml xsl
+application/xml-dtd		dtd
+text/calendar			ics ifb
+text/css			css
+text/html			html htm
+text/plain			asc txt json
+
+# separate for **MediaList**
+application/pdf			pdf
+application/x-shockwave-flash	swf
+application/zip			zip
+audio/mp4a-latm			m4a m4p
+audio/mpeg			mpga mp2 mp3
+audio/x-aiff			aif aiff aifc
+image/gif			gif
+image/jpeg			jpeg jpg jpe
+image/png			png
+image/tiff			tiff tif
+image/x-icon			ico
+video/mp4			mp4
+video/mpeg			mpeg mpg mpe
+video/quicktime			qt mov

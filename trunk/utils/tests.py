@@ -1,5 +1,22 @@
 # -*- coding: utf-8 -*-
 """
+>>> from fields import CharField
+
+>>> field = CharField()
+>>> field.clean("æ£®é·—å¤–")
+u'\u68ee\u9dd7\u5916'
+>>> field.clean("í¡Œí¿")
+u'\U000233d0'
+
+>>> field = CharField(surrogate_pair=False)
+>>> field.clean("æ£®é·—å¤–")
+u'\u68ee\u9dd7\u5916'
+
+#>>> field.clean("í¡Œí¿")
+#    ...
+#    ValidationError: [u'Ensure this value has not surrogate pair characters.']
+
+
 >>> from cache import ObjectCache
 
 >>> o_cache = ObjectCache()
@@ -34,7 +51,7 @@ TypeError: __init__() takes at least 2 arguments (1 given)
 >>> from django.template import Context, Template
 >>> t = Template("{{ MEDIA_URL }}")
 >>> t.render(Context(context))
-'/static/'
+u'/static/'
 
 #Library loading...
 >>> from django.test.client import Client
@@ -46,11 +63,30 @@ TypeError: __init__() takes at least 2 arguments (1 given)
 >>> response.status_code
 200
 >>> [i.name for i in response.template]
-['search.html', 'base.html', 'google-analytics.html']
+['search.html', u'base.html', u'google-analytics.html']
 
 >>> from doctests import Test
 >>> from django.test.client import Client
+
 >>> t = Test()
+>>> t.assertUrlsDict({"/test/render/": (200,)})
+Found ... instances of 'TEMPLATE_STRING_IF_INVALID' in /test/render/ (expected 0)
+>>> t = Test(invalid_string=" ")
+>>> t.assertUrlsDict({"/test/render/": (200,)})
+Found ... instances of ' ' in /test/render/ (expected 0)
+>>> class MyTest(Test):
+...     invalid_string="ã‚ã»ã®ã“ãŒããŸã‚ˆ"
+>>> t = MyTest()
+>>> t.assertUrlsDict({"/test/render/": (200,)})
+Found ... instances of 'ã‚ã»ã®ã“ãŒããŸã‚ˆ' in /test/render/ (expected 0)
+>>> t = Test(invalid_string=False)
+>>> t.assertUrlsDict({"/test/render/": (200,)})
+>>> class MyTest(Test):
+...     invalid_string=False  #bool(invalid_string) is False
+>>> t = MyTest()
+>>> t.assertUrlsDict({"/test/render/": (200,)})
+
+>>> t = Test(invalid_string=False)
 >>> isinstance(t.client, Client)
 True
 >>> t.client == t.c
@@ -73,9 +109,9 @@ True
 
 >>> t.assertUrlsDict(urls)
 Response didn't redirect as expected: Reponse code was 404 (expected 200). in '/django/doc-ja/tasting/'
-Template '/django/doc-ja/index/' was not one of the templates used to render the response. Templates used: ['404.html', 'base.html', 'google-analytics.html']
+Template '/django/doc-ja/index/' was not one of the templates used to render the response. Templates used: ['404.html', u'base.html', u'google-analytics.html']
 Response didn't redirect as expected: Reponse code was 200 (expected 2000). in '/django/doc-ja/settings/'
-Template 'non-template' was not one of the templates used to render the response. Templates used: ['404.html', 'base.html', 'google-analytics.html']
+Template 'non-template' was not one of the templates used to render the response. Templates used: ['404.html', u'base.html', u'google-analytics.html']
 Response redirected to '/django/doc-ja/index/', expected '/'
 Bad test. '/django/doc-ja/webdesign/': ('200', '')
 
@@ -151,23 +187,81 @@ Reset databases...
   michilu.blog.models
 
 
-#DEFAULT_SERIALIZE_ENSURE_ASCII
->>> from django.conf import settings
->>> settings.DEFAULT_SERIALIZE_ENSURE_ASCII
-False
->>> from django.core import serializers
->>> from michilu.blog.models import Entry
->>> loaddata("utils/tests/blog.json")
+>>> from doctests import to_iter
+>>> to_iter(None)
+>>> to_iter(str("s"))
+('s',)
+>>> to_iter(list("l",))
+['l']
+>>> to_iter(tuple("t",))
+('t',)
+>>> to_iter(dict(key = "d"))
+{'key': 'd'}
 
->>> response = serializers.serialize("json", Entry.objects.all(), fields=("content"))
->>> sample = r'[{"pk": "1", "model": "blog.entry", "fields": {"content": "[TEST]: \xe3\x82\xbf\xe3\x82\xa4\xe3\x83\x88\xe3\x83\xab"}}]'
->>> assert(response == sample)
->>> print response
-[{"pk": "1", "model": "blog.entry", "fields": {"content": "[TEST]: ã‚¿ã‚¤ãƒˆãƒ«"}}]
-
->>> response = serializers.serialize("json", Entry.objects.all(), ensure_ascii=True, fields=("content"))
->>> sample = r'[{"pk": "1", "model": "blog.entry", "fields": {"content": "[TEST]: \\u00e3\\u0082\\u00bf\\u00e3\\u0082\\u00a4\\u00e3\\u0083\\u0088\\u00e3\\u0083\\u00ab"}}]'
->>> assert(response == sample)
 
 >>> flush()
 """
+
+from django.test import TestCase
+from django.newforms.util import ValidationError
+import re
+from datetime import datetime
+
+
+class FieldTest(TestCase):
+    import fields
+
+    def test_surrogate_pair(self):
+        # default
+        field = self.fields.CharField()
+        self.assertEqual(field.clean(1), u'1')
+        self.assertEqual(field.clean("ã‚"), u'\u3042')
+        self.assertEqual(field.clean("æ£®é·—å¤–"), u'\u68ee\u9dd7\u5916')
+        self.assertEqual(field.clean("í¡Œí¿"), u'\U000233d0')
+        self.assertEqual(field.clean("TESTí¡Œí¿"), u'TEST\U000233d0')
+        self.assertEqual(field.clean("í¡Œí¿TEST"), u'\U000233d0TEST')
+        # checking surrogate pair
+        field = self.fields.CharField(surrogate_pair=False)
+        self.assertEqual(field.clean(1), u'1')
+        self.assertEqual(field.clean("ã‚"), u'\u3042')
+        self.assertEqual(field.clean("æ£®é·—å¤–"), u'\u68ee\u9dd7\u5916')
+        self.assertRaises(ValidationError, field.clean, "í¡Œí¿")
+        self.assertRaises(ValidationError, field.clean, "TESTí¡Œí¿")
+        self.assertRaises(ValidationError, field.clean, "í¡Œí¿TEST")
+
+
+class UtilsTest(TestCase):
+    import utils
+
+    def test_surrogate_pair(self):
+        has_surrogate_pair = self.utils.has_surrogate_pair
+        self.assertRaises(TypeError, has_surrogate_pair)
+        self.assertRaises(TypeError, has_surrogate_pair, 1)
+        self.assertEqual(has_surrogate_pair(""), False)
+        self.assertEqual(has_surrogate_pair("a"), False)
+        self.assertEqual(has_surrogate_pair("ã‚"), False)
+        self.assertEqual(has_surrogate_pair("æ£®é·—å¤–"), False)
+        self.assertEqual(has_surrogate_pair("í¡Œí¿"), True)
+        self.assertEqual(has_surrogate_pair("TESTí¡Œí¿"), True)
+        self.assertEqual(has_surrogate_pair("í¡Œí¿TEST"), True)
+        self.assertEqual(has_surrogate_pair(u'\ud84c\ud84c\udfd0'), True)
+        self.assertEqual(has_surrogate_pair(u'\ud84c\U000233d0'), True)
+        self.assertEqual(has_surrogate_pair(u'\udfd0\ud84c\udfd0'), True)
+
+    def test_http_header_style_datetime(self):
+        self.assertTrue(re.compile("^\w{3}, \d{2} \w{3} \d{4} \d{2}:\d{2}:\d{2} GMT$")
+            .match(self.utils.http_header_style_datetime()))
+        self.assertEqual(u'Thu, 01 Jan 1970 00:00:00 GMT',
+            self.utils.http_header_style_datetime(datetime.utcfromtimestamp(0)))
+
+    def test_mimetype(self):
+        self.assertRaises(AttributeError, utils.mimetype, None)
+        self.assertEqual(utils.mimetype("NoneType"), None)
+        self.assertEqual(utils.mimetype("jpg"), "image/jpeg")
+        self.assertEqual(utils.mimetype(".jpg"), "image/jpeg")
+        self.assertEqual(utils.mimetype(".txt"), "text/plain; charset=utf-8")
+
+
+import utils
+from contrib import webdesign
+globals().update(utils.get_tests(webdesign))

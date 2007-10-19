@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import *
+from michilu.doc import feeds as doc
 
 
 urlpatterns = patterns("",)
@@ -7,12 +8,14 @@ urlpatterns += patterns('',
     (r'^$', include('michilu.blog.urls')),
     (r'^blog/', include('michilu.blog.urls')),
     (r'^django/doc-ja', include('michilu.doc.urls')),
+    (r'^offline/', include('michilu.offline.urls')),
     (r'^demo/', include('michilu.demo.urls')),
     (r'^helpdoc/', include('michilu.helpdoc.urls'), dict(
         base_url = "/helpdoc/",
     )),
     (r'^sitemap.xml$', include('michilu.sitemaps')),
 
+    (r'^feeds/(?P<url>django-doc-ja)/$', doc.feed, {'feed_dict': doc.feeds}),
     (r'^feeds/', include('michilu.blog.feeds')),
     (r'^index.', include('michilu.blog.feeds')),
 )
@@ -38,4 +41,9 @@ if settings.CUSTOM_DEVELOPMENT:
             {"template_name":"admin/login.html"}),
         (r'^selenium/(.*)$', serve, {'document_root': '_selenium/core', 'show_indexes':True}),
         (r'^tests/(.*)$', serve, {'document_root': '_tests'}),
+    )
+
+if settings.CUSTOM_TEST:
+    urlpatterns += patterns("",
+        (r'^test/', include('utils.test_views')),
     )

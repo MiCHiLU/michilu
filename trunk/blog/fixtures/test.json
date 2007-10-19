@@ -1,0 +1,10 @@
+[{"pk": "1", "model": "blog.tag", "fields": {"value": "Spam!"}},{"pk": "2", "model": "blog.tag", "fields": {"value": "Spam!Spam!"}},{"pk": "3", "model": "blog.tag", "fields": {"value": "Spam!Spam!Spam!"}},{"pk": "1", "model": "blog.entry", "fields": {"content": "test
+====
+
+Spam!", "add_date": "2007-08-29 13:26:06", "tag": [], "last_mod": "2007-08-30 01:01:33"}},{"pk": "2", "model": "blog.entry", "fields": {"content": "test
+====
+
+Spam!Spam!", "add_date": "2007-08-29 13:26:06", "tag": [], "last_mod": "2007-08-30 01:01:33"}},{"pk": "3", "model": "blog.entry", "fields": {"content": "test
+====
+
+Spam!Spam!Spam!", "add_date": "2007-08-29 13:26:06", "tag": [], "last_mod": "2007-08-30 01:01:33"}}]

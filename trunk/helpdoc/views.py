@@ -5,12 +5,13 @@ from django.contrib.auth.decorators import login_required
 from django.conf import settings
 import os.path
 import codecs
+import util
 
 def find_source_file(file_path):
     if os.path.exists(file_path):
         return file_path
     file_path = os.path.splitext(file_path)[0]
-    for extension in ("txt","rst","markdown","textile","html"):
+    for extension in util.markup_extensions:
         _file_path = "%s.%s" % (file_path, extension)
         if os.path.exists(_file_path):
             return _file_path

@@ -11,7 +11,12 @@
 {% block presentation %}
     {% if object.ispresen %}
     <p>
-    <span id="presentation_switch"><strong>⋙<a href="{{ object.get_absolute_url_presen}}">Start Presentation only Firefox.</a></strong></span>
+    <span id="presentation_switch"><strong>⋙<a href="{{ object.get_absolute_url_presen}}">Start Presentation only Firefox and Safari 3.</a></strong></span>
+    </p>
+    {% endif %}
+    {% if object.is_s6 %}
+    <p>
+    <span id="s6_switch"><strong>⋙<a href="{{ object.get_absolute_url_s6}}">Start Presentation via s6 by amachang.</a></strong></span>
     </p>
     {% endif %}
 {% endblock %}
