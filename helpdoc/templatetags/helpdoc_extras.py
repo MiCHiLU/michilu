@@ -25,10 +25,8 @@ def title(content, site_title=None):
         except ImportError:
             pass
     
-    if title:
-        title = title.encode("UTF-8")
-    else:
-        title = "Not Found Title Line."
+    if not title:
+        title = u"Not Found Title Line."
     if site_title and (not title == site_title):
         title += " : %s" % site_title
     return title

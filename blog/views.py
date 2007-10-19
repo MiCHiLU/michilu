@@ -2,6 +2,7 @@ from django.http import HttpResponse, Http404
 from django.shortcuts import get_list_or_404
 from django.core import serializers
 from michilu.blog.models import Entry
+from michilu.utils.utils import mimetype
 
 
 def search(request):
@@ -31,26 +32,23 @@ def to_jsonp(callback, result):
     return "%s(%s)" % (callback, result)
 
 def serialized_response(objects, callback=None):
-    result = serializers.serialize("json", objects, ensure_ascii=False)
+    result = serializers.serialize("json", objects)
     if callback:
         result = to_jsonp(callback, result)
-    return HttpResponse(result, mimetype="text/plain; charset=utf-8")
+    return HttpResponse(result, mimetype=mimetype("json"))
 
 def get_latest(request):
-    objects = []
+    objects = list()
     callback = request.GET.get("callback", None)
     for key, model in model_dict.items():
-        latest_id = request.POST.get(key, None)
-        if not latest_id:
-            continue
         try:
-            objects.extend(get_list_or_404(model, id__gt=latest_id))
+            objects.extend(get_list_or_404(model))
         except Http404:
             continue
     return serialized_response(objects, callback)
 
 def get_item(request):
-    objects = []
+    objects = list()
     callback = request.GET.get("callback", None)
     model = request.POST.get("model", None)
     if model in model_dict.keys():

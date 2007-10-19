@@ -23,13 +23,13 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-_proj_path = "/data/django/michilu/"
+PROJECT_PATH = "/data/django/michilu/"
 _proj_name = "michilu"
 if CUSTOM_DEVELOPMENT:
-    _proj_path = ""
+    PROJECT_PATH = ""
     _proj_name = os.path.split(os.path.abspath(""))[-1]
     #_proj_name = os.path.dirname(os.path.abspath(__file__))
-_proj_db = os.path.abspath('%s../db/%s.db' % (_proj_path, _proj_name))
+_proj_db = os.path.abspath('%s../db/%s.db' % (PROJECT_PATH, _proj_name))
 
 
 DATABASE_ENGINE = 'sqlite3'
@@ -42,10 +42,10 @@ SITE_ID = 1
 USE_I18N = True
 
 SERVER_DOMAIN = "http://michilu.com"
-_static_domain = SERVER_DOMAIN + ":8080"
+_static_domain = SERVER_DOMAIN #+ ":8080"
 _static_path = "/static/"
 
-MEDIA_ROOT = _proj_path + _static_path
+MEDIA_ROOT = PROJECT_PATH + _static_path
 if CUSTOM_DEVELOPMENT:
     MEDIA_ROOT = os.path.abspath(".%s" % _static_path)
 
@@ -86,8 +86,10 @@ TEMPLATE_DIRS = (
     'demo/templates',
 )
 TEMPLATE_DIRS = tuple(
-    [os.path.abspath("%s%s" % (_proj_path, _dir)).replace(os.sep, "/") for _dir in TEMPLATE_DIRS]
+    [os.path.abspath("%s%s" % (PROJECT_PATH, _dir)).replace(os.sep, "/") for _dir in TEMPLATE_DIRS]
 )
+
+MIME_TYPES = "%sconf/servers/mime.types" % PROJECT_PATH
 
 CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
 #CACHE_MIDDLEWARE_SECONDS = 10
@@ -100,13 +102,13 @@ if CUSTOM_TEST:
         m.remove(cache)
         MIDDLEWARE_CLASSES = tuple(m)
 
-CUSTOM_DOC_JA_DIR = os.path.abspath(_proj_path + "../doc-jp/%s")
+CUSTOM_DOC_JA_DIR = os.path.abspath(PROJECT_PATH + "../doc-jp/%s")
 CUSTOM_DOC_JA_PATHPATTERN = "%s%s.txt"
 
 CUSTOM_FEED_DATA_path = "static/temp/%s"
 if CUSTOM_TEST:
     CUSTOM_FEED_DATA_path = "blog/tests/root/" + CUSTOM_FEED_DATA_path
-CUSTOM_FEED_DATA = os.path.abspath(_proj_path + CUSTOM_FEED_DATA_path)
+CUSTOM_FEED_DATA = os.path.abspath(PROJECT_PATH + CUSTOM_FEED_DATA_path)
 
 RESTRUCTUREDTEXT_FILTER_SETTINGS = {
     'doctitle_xform': False,
@@ -126,18 +128,15 @@ INSTALLED_APPS = (
     'michilu.helpdoc',
     'michilu.blog',
     'michilu.doc',
+    'michilu.offline',
     'michilu.demo',
 )
 
-SERIALIZATION_MODULES = {
-    "json": "utils.serializers.json"
-}
-DEFAULT_SERIALIZE_ENSURE_ASCII = False
-
 from utils import utils
-optional_settings = utils.get_optional_settings("%sconf/settings/settings_overload.py" % _proj_path)
+optional_settings = utils.get_optional_settings("%sconf/settings/settings_overload.py" % PROJECT_PATH)
 if optional_settings:
     for key,var in optional_settings.items():
         vars()[key] = var
     if CUSTOM_DEVELOPMENT:
-        print "#"*10 + " SETTINGS OVERLOADED " + "#"*10
+        pass
+        #print "#"*10 + " SETTINGS OVERLOADED " + "#"*10

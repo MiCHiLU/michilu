@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
 from urlparse import urlparse, urljoin
 from django.test.client import Client
 from django.core import management
 from django.db.models import get_app, get_apps
+from django.conf import settings
 
 
 class TestBase(object):
@@ -23,7 +25,7 @@ class TestBase(object):
             "Couldn't retrieve redirection page '%s': response code was %d (expected %d)" % 
                 (path, redirect_response.status_code, target_status_code))
     
-    def assertContains(self, response, text, count=1, status_code=200):
+    def assertContains(self, response, text, count=1, status_code=200, url="response"):
         """Assert that a response indicates that a page was retreived successfully,
         (i.e., the HTTP status code was as expected), and that ``text`` occurs ``count``
         times in the content of the response.
@@ -34,7 +36,7 @@ class TestBase(object):
                 (response.status_code, status_code))
         real_count = response.content.count(text)
         self.assertEqual(real_count, count,
-            "Found %d instances of '%s' in response (expected %d)" % (real_count, text, count))
+            "Found %d instances of '%s' in %s (expected %d)" % (real_count, text, url, count))
     
     def assertFormError(self, response, form, field, errors):
         "Assert that a form used to render the response has a specific field error"
@@ -178,26 +180,25 @@ class TestBase(object):
     assertFalse = failIf
 
 
-def to_tuple(args):
-    if isinstance(args, basestring):
-        args = (args,)
+def to_iter(args):
+    if args:
+        if not hasattr(args, "__iter__"):
+            return (args,)
     return args
 
 def reset(app_label=None, verbosity=0):
-    app_labels = to_tuple(app_label)
+    app_labels = to_iter(app_label)
 
-    if (not app_labels) or (len(app_labels) == 0):
-        app_list = get_apps()
-    else:
-        app_list = [get_app(app_label) for app_label in app_labels]
+    if not app_labels:
+        app_labels = [app.__name__.split('.')[-2] for app in get_apps()]
 
     if verbosity:
         print "Reset databases..."
-    for app in app_list:
+    for app_label in app_labels:
         try:
-            management.reset(app, interactive=False)
+            management.call_command("reset", app_label, interactive=False)
             if verbosity:
-                print "  %s" % app.__name__
+                print "  %s" % get_app(app_label).__name__
         except IndexError:
             pass
 
@@ -205,20 +206,31 @@ def loaddata(fixtures, verbosity=0):
     fixtures = fixtures or None
     if not fixtures:
         return
-    fixtures = to_tuple(fixtures)
+    fixtures = to_iter(fixtures)
+    options = dict(
+        verbosity = verbosity,
+    )
 
     if fixtures:
-        management.load_data(fixtures, verbosity)
+        management.call_command("loaddata", *fixtures, **options)
 
 def flush(verbosity=0):
-    management.flush(verbosity, interactive=False)
+    options = dict(
+        interactive = False,
+        verbosity = verbosity,
+    )
+    management.call_command("flush", **options)
 
 
 class Test(TestBase):
-    def __init__(self, fixtures=None, auth=None, **extra):
+    invalid_string = "TEMPLATE_STRING_IF_INVALID"
+
+    def __init__(self, fixtures=None, auth=None, invalid_string=None, **extra):
         self.extra = extra
         self.fixtures = fixtures
         self.auth = auth
+        if invalid_string is not None:
+            self.invalid_string = invalid_string
         self.logined = None
         self.set_client()
         if self.auth:
@@ -233,6 +245,8 @@ class Test(TestBase):
         self.logined = self.client.login(**_auth)
 
     def logout(self):
+        #TODO 
+        #http://code.djangoproject.com/changeset/5916?new_path=django%2Ftrunk%2Fdjango%2Ftest
         self.set_client()
         self.logined = None
 
@@ -262,10 +276,16 @@ class Test(TestBase):
                                         base_path=base_path)
             elif isinstance(value[0], int):
                 base_path, status_code = key, value[0]
+                if self.invalid_string:
+                    org_invalid_string = settings.TEMPLATE_STRING_IF_INVALID
+                    settings.TEMPLATE_STRING_IF_INVALID = self.invalid_string
                 response = self.client.get(base_path)
-                self.assertEqual(response.status_code, status_code, 
-                    "Response didn't redirect as expected: Reponse code was %d (expected %d). in '%s'" % 
+                self.assertEqual(response.status_code, status_code,
+                    "Response didn't redirect as expected: Reponse code was %d (expected %d). in '%s'" %
                         (response.status_code, status_code, key))
+                if self.invalid_string:
+                    self.assertContains(response, self.invalid_string, count=0, url=base_path)
+                    settings.TEMPLATE_STRING_IF_INVALID = org_invalid_string
                 try:
                     if not value[1]:
                         continue

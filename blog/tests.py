@@ -4,6 +4,9 @@
 >>> from django.test.client import Client
 >>> from BeautifulSoup import BeautifulSoup
 
+>>> from utils.doctests import loaddata
+>>> loaddata("blog/fixtures/test_for_doctest.json")
+
 #status codeとtemplateを確認する
 >>> checklist = { \
         "/":"blog/index.html", \
@@ -83,8 +86,8 @@ True
 
 #feedsのテスト
 >>> c = Client()
->>> url_sitemaps = "/feeds/blog/"
->>> response = c.get(url_sitemaps)
+>>> url_feeds = "/feeds/blog/"
+>>> response = c.get(url_feeds)
 >>> response.status_code #feeds
 200
 >>> r = BeautifulSoup(response.content)
@@ -152,7 +155,7 @@ u'http://www.w3.org/2005/Atom'
 >>> response = t.c.get(url, dict(q="test"))
 >>> response.status_code
 200
->>> response.headers["Content-Type"]
+>>> response._headers["content-type"]
 'application/atom+xml'
 
 #/blog/posts/ のテスト
@@ -164,13 +167,13 @@ u'http://www.w3.org/2005/Atom'
 >>> for i in response.template:
 ...     i.name
 'blog/entry_list.html'
-'blog/base.html'
-'base.html'
-'navi.html'
-'navi-line.html'
-'navi.html'
-'navi-line.html'
-'google-analytics.html'
+u'blog/base.html'
+u'base.html'
+u'navi.html'
+u'navi-line.html'
+u'navi.html'
+u'navi-line.html'
+u'google-analytics.html'
 
 #static test
 >>> c = Client()
@@ -178,7 +181,7 @@ u'http://www.w3.org/2005/Atom'
 >>> response = c.get(url)   #static test
 >>> response.status_code
 200
->>> response.headers["Content-Type"]
+>>> response._headers["content-type"]
 'text/css'
 
 ##free comments
@@ -221,9 +224,9 @@ True
 >>> for one in response.template:
 ...     one.name
 'blog/entry_presen.html'
-'blog/base.html'
-'base.html'
-'google-analytics.html'
+u'blog/base.html'
+u'base.html'
+u'google-analytics.html'
 
 >>> url = Entry.objects.all()[0].get_absolute_url()
 >>> response = c.get(url)
@@ -250,3 +253,18 @@ False
 ''
 
 """
+
+from django.test import TestCase
+from django.test.client import Client
+from django.utils import simplejson
+
+class RESTfulTest(TestCase):
+    fixtures = ["blog/fixtures/test.json"]
+
+    def test_json(self):
+        response = self.client.get("/blog/posts.json")
+        self.assertEqual(response.status_code, 200)
+        json_parsed = simplejson.loads(response.content)
+        self.assertEqual(len(json_parsed), 3)
+        self.assertEqual(json_parsed[0].keys(), [u'pk', u'model', u'fields'])
+

@@ -1,0 +1,49 @@
+{
+"betaManifestVersion": 1,
+
+"version": "1189431873",
+
+"entries": [
+	{ "url": "/static/google/gears/gears_init.js",
+		"src": "/static/google/gears/gears_init.js" },
+	{ "url": "/static/offline/gears.js",
+		"src": "/static/offline/gears.js" },
+
+	{ "url": "/static/doc-ja/css/site.css",
+		"src": "/static/doc-ja/css/site.css" },
+
+	{ "url": "/static/lib/jQuery/jquery-1.1.2.pack.js",
+		"src": "/static/lib/jQuery/jquery-1.1.2.pack.js" },
+	{ "url": "/static/doc-ja/js/site.js",
+		"src": "/static/doc-ja/js/site.js" },
+
+	{ "url": "/static/doc-ja/img/djangosite100x25.gif",
+		"src": "/static/doc-ja/img/djangosite100x25.gif" },
+	{ "url": "/static/doc-ja/img/ym_tai33.png",
+		"src": "/static/doc-ja/img/ym_tai33.png" },
+	{ "url": "/static/doc-ja/img/webicons/bangvoice.png",
+		"src": "/static/doc-ja/img/webicons/bangvoice.png" },
+	{ "url": "/static/doc-ja/img/webicons/bell.png",
+		"src": "/static/doc-ja/img/webicons/bell.png" },
+	{ "url": "/static/doc-ja/img/webicons/candle.png",
+		"src": "/static/doc-ja/img/webicons/candle.png" },
+	{ "url": "/static/doc-ja/img/webicons/eye.png",
+		"src": "/static/doc-ja/img/webicons/eye.png" },
+	{ "url": "/static/doc-ja/img/webicons/hand.png",
+		"src": "/static/doc-ja/img/webicons/hand.png" },
+	{ "url": "/static/doc-ja/img/webicons/info.png",
+		"src": "/static/doc-ja/img/webicons/info.png" },
+	{ "url": "/static/doc-ja/img/webicons/key.png",
+		"src": "/static/doc-ja/img/webicons/key.png" },
+	{ "url": "/static/doc-ja/img/webicons/megaphone.png",
+		"src": "/static/doc-ja/img/webicons/megaphone.png" },
+	{ "url": "/static/doc-ja/img/webicons/note.png",
+		"src": "/static/doc-ja/img/webicons/note.png" },
+	{ "url": "/static/doc-ja/img/webicons/skull.png",
+		"src": "/static/doc-ja/img/webicons/skull.png" },
+	{ "url": "/static/doc-ja/img/webicons/stop.png",
+		"src": "/static/doc-ja/img/webicons/stop.png" },
+	{ "url": "/static/doc-ja/img/webicons/tools.png",
+		"src": "/static/doc-ja/img/webicons/tools.png" }
+]
+}

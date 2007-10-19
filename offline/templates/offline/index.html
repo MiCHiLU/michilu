@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title_after %} - Offline Contents{% endblock %}
+{% block js %}
+	<script type="text/javascript" language="javascript"
+		src="/static/lib/jQuery/jquery-1.1.2.pack.js"></script>
+
+	<script type="text/javascript" language="javascript"
+		src="/static/google/gears/gears_init.js"></script>
+
+	<script type="text/javascript" language="javascript"
+		src="/static/offline/gears.js"></script>
+{% endblock %}
+{% block body %}
+<h1>
+	<a href="/">MiCHiLU.com</a>
+	- Offline Contents
+</h1>
+
+<ul>
+	<li>
+		<a href="/django/doc-ja/index/">Django オンラインドキュメント 和訳 (0.97-pre, trunk)</a>
+	</li>
+	<li>
+		<a href="/django/doc-ja-0.96/index/">Django オンラインドキュメント 和訳 (0.96)</a>
+	</li>
+</ul>
+
+<p>
+	using <a href="http://gears.google.com/">Google Gears</a>.
+</p>
+{% endblock %}
